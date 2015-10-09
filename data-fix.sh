@@ -1,0 +1,1 @@
+psql -d sida -c "update school set data = data || hstore('_version', (substring((data->'_version')::text from 1 for 4) || '-' || substring((data->'_version')::text from 5 for 2) || '-' || substring((data->'_version')::text from 7 for 2))) where position('-' in (data->'_version')::text)=0"          

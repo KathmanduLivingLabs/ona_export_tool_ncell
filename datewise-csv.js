@@ -14,7 +14,7 @@ pg.connect(conString, function(err, client, done) {
 	//client.query('create table school as select jsonarray_to_hstoreset($1::json) as data;', [dataFile]);
 	//client.query('alter table school add column xid serial;');
 
-	client.query("select * from school where ((data->'_version')::timestamp)>$1::timestamp and ((data->'_version')::timestamp)<$2::timestamp;", [process.argv[4], process.argv[5]], function(err, result) {
+	client.query("select array_agg(hstore_to_json(data)) from school where ((data->'_version')::timestamp)>$1::timestamp and ((data->'_version')::timestamp)<$2::timestamp;", [process.argv[4], process.argv[5]], function(err, result) {
 		//call `done()` to release the client back to the pool
 		done();
 
@@ -27,6 +27,9 @@ pg.connect(conString, function(err, client, done) {
 		}
 
 		console.log(result.rows[0].data);
+
+		
+
 		//output: 1
 		client.end();
 		return;

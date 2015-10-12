@@ -1,6 +1,6 @@
 #!/bin/bash
-cd ~/worldbank/sida/
-from_date="2015-10-02"
-to_date="2015-10-10"
-curl -X GET -u "$sida_user:$sida_pass" https://ona.io/api/v1/data/68589.json >school.json
-ona-extract-by-date.js $from_date $to_date
+from_date=$1
+to_date=$2
+auth=$(../../keygen.sh)
+curl -X GET -u "wbsida321:KrS93r8Ttei63xN4ZB6rt0xLy" https://ona.io/api/v1/data/$4.json >$3.json
+./zipList.sh $from_date $to_date $3.json

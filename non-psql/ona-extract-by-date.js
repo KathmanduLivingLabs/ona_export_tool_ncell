@@ -17,7 +17,7 @@ var output_filenameRoot = (function(name){
 var zipList = output_filenameRoot+".zip "+output_filenameRoot+".csv ";
 var headers = [];
 data.forEach(function(item, index){
-	if(item._version>startDate && item._version<endDate){
+	if(item._version>=startDate && item._version<=endDate){
 		var attachments = [];
 		item._attachments.forEach(function(item_1, index_1){
 			var filename = JSON.stringify(item_1.filename).split("/");

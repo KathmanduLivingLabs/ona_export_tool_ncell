@@ -27,9 +27,12 @@ $(document).ready(function(){
 		console.log(query);
 		$.get(query, function(data) {
 			console.log(data);
-			var zipName = data.split(' ')[0];
-			$('<a href="' + SERVER_URL + zipName + '">Download Zipped ' + 
-					zipName.split('_')[0].toUpperCase() + 'data</a>').appendTo('.container');
+			if(data === '')
+				$('.result').html('');
+			else {
+				var zipName = data.split(' ')[0];
+				$('.result').html('<a href="' + SERVER_URL + zipName + '">Download Data</a>');
+			}
 		});
 	});
 });

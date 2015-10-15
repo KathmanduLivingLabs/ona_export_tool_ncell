@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 <head>
 <title>SIDA Data Filter</title>
+<link rel="stylesheet" href="./css/pikaday.css" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="./lib/pikaday.js"></script>
+<script type="text/javascript" src="./lib/moment.js"></script>
 
 </head>
 <body>
+	<div class="container">
+		<input type="text" id="from_datepicker">Choose a date</input>
+		<input type="text" id="to_datepicker">Choose a date</input>
+		<select class="form-type">
+			<option value="school">School</option>
+			<option value="building">Building</option>
+			<option value="buildingelement">Building Element</option>
+		</select>
+		<button id="submit_btn">Show Files</button>
+		<div class="error"></div>
+		<div class="result"></div>
+	</div>
 <script type="text/javascript" src="script.js"></script>
 </body>

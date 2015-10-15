@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 
 $startDate = $_GET['startdate'];
 $endDate = $_GET['enddate'];

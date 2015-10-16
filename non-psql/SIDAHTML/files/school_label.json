@@ -1,0 +1,201 @@
+[
+{"name":"surveyor_id","label":"Surveyor ID","repeate":"0"}
+,
+{"name":"district","label":"1.1) District:","repeate":"0"}
+,
+{"name":"vdc","label":"1.2) VDC / Municipality","repeate":"0"}
+,
+{"name":"ward","label":"Ward No:","repeate":"0"}
+,
+{"name":"location","label":"Location:","repeate":"0"}
+,
+{"name":"school_name","label":"1.3) School Name:","repeate":"0"}
+,
+{"name":"image_school_name","label":"Take Photo of main school sign","repeate":"0"}
+,
+{"name":"school_code","label":"1.4) EMIS School Code:","repeate":"0"}
+,
+{"name":"verified","label":"Verify the School Name and School EMIS","repeate":"0"}
+,
+{"name":"school_type","label":"1.5) School Type","repeate":"0"}
+,
+{"name":"school_level","label":"1.6) School Level (Grade)","repeate":"0"}
+,
+{"name":"number_pupils_staff","label":"1.7) Number of Pupils that attend the school","repeate":"0"}
+,
+{"name":"number_pupils_staff_estimate","label":"1.8) If number not  known estimate number of pupils that attend the school:","repeate":"0"}
+,
+{"name":"surveyed_date","label":"1.9) Date Surveyed:","repeate":"0"}
+,
+{"name":"senior_surveyor","label":"1.10) Name of Senior Surveyor:","repeate":"0"}
+,
+{"name":"surveyor","label":"1.11) Name of Surveyors","repeate":"0"}
+,
+{"name":"gps_coordinates","label":"1.12) GPS Coordinates","repeate":"0"}
+,
+{"name":"weather_condition","label":"1.13) Weather Condition on day of survey","repeate":"0"}
+,
+{"name":"school_contacts","label":"1.14) How many school contacts?","repeate":"general_detail/contacts"}
+,
+{"name":"contact_name","label":"1.15) Contact Name:","repeate":"0"}
+,
+{"name":"contact_position","label":"1.15.1) Contact Position","repeate":"0"}
+,
+{"name":"years","label":"1.15.2) Contact's Duration in Post","repeate":"0"}
+,
+{"name":"contact_email","label":"1.15.3) Contact Email:","repeate":"0"}
+,
+{"name":"contact_phone","label":"1.15.4) Contact Phone:","repeate":"0"}
+,
+{"name":"contact_photo","label":"1.15.5) Photo of Contact","repeate":"0"}
+,
+{"name":"exposure","label":"2) Exposure","repeate":"0"}
+,
+{"name":"distance_river","label":"2.3) Distance of site away from river /body of water ?","repeate":"0"}
+,
+{"name":"comment_distance_river","label":"Comment","repeate":"0"}
+,
+{"name":"flooding","label":"Flooding","repeate":"0"}
+,
+{"name":"risk_of_flooding","label":"2.4) Is the site at risk of flooding?","repeate":"0"}
+,
+{"name":"comment_risk_of_flooding","label":"Comment","repeate":"0"}
+,
+{"name":"image_risk_of_flooding","label":"Take Photo","repeate":"0"}
+,
+{"name":"flooding_risk","label":"Flooding","repeate":"0"}
+,
+{"name":"last_flood_event","label":"2.4.1) If yes, is there a history of flooding when was Last flood event (year - BS)","repeate":"0"}
+,
+{"name":"flood_height","label":"2.4.2) If there is a flooding risk what is Maximum historical flood height (metres)","repeate":"0"}
+,
+{"name":"comment_flood_height","label":"Comment","repeate":"0"}
+,
+{"name":"image_flood_height","label":"Take Photo","repeate":"0"}
+,
+{"name":"flood_mitigation_measures","label":"2.4.3) If there is a flooding risk are there any flood mitigation measures?","repeate":"0"}
+,
+{"name":"comment_flood_mitigation_measures","label":"Comment","repeate":"0"}
+,
+{"name":"image_flood_mitigation_measures","label":"Take Photo","repeate":"0"}
+,
+{"name":"man_made_drainage","label":"2.5) Are there any man-made drainage systems / culverts on or near the site?","repeate":"0"}
+,
+{"name":"comment_man_made_drainage","label":"Comment","repeate":"0"}
+,
+{"name":"image_man_made_drainage","label":"Take Photo","repeate":"0"}
+,
+{"name":"drainage_system_culverts_overflowed","label":"2.5.1) If yes, have the drainage systems / culverts ever overflowed / been prone to blockage?","repeate":"0"}
+,
+{"name":"comment_drainage_system_culverts_overflowed","label":"Comment","repeate":"0"}
+,
+{"name":"image_drainage_system_culverts_overflowed","label":"Take Photo","repeate":"0"}
+,
+{"name":"landslide","label":"Landslide","repeate":"0"}
+,
+{"name":"landslide_risk","label":"2.6) Is there a landslide risk ?","repeate":"0"}
+,
+{"name":"image_landslide_risk","label":"Take Photo","repeate":"0"}
+,
+{"name":"landslide_history","label":"2.6.1) If history of landslides when was last landslide event ? (year BS)","repeate":"0"}
+,
+{"name":"comment_landslide_history","label":"Comment","repeate":"0"}
+,
+{"name":"topography","label":"Topography","repeate":"0"}
+,
+{"name":"general_terrain","label":"2.7) What is the general terrain of surrounding area?","repeate":"0"}
+,
+{"name":"general_topography","label":"2.8) What is the general topography of the School campus?","repeate":"0"}
+,
+{"name":"comment_general_topography","label":"Comment","repeate":"0"}
+,
+{"name":"image_general_topography","label":"Take Photo","repeate":"0"}
+,
+{"name":"surroundings","label":"Surroundings","repeate":"0"}
+,
+{"name":"approx_distance_to_road","label":"2.9) Approximate Distance to main road from entrance to school /campus.","repeate":"0"}
+,
+{"name":"road_condition","label":"2.10) Condition of road","repeate":"0"}
+,
+{"name":"comment_road_condition","label":"Comment","repeate":"0"}
+,
+{"name":"image_road_condition","label":"Take Photo","repeate":"0"}
+,
+{"name":"linear_feature","label":"2.11) Are there any linear features or vertical offsets on the site, which could indicate an active fault / landslide risk ?","repeate":"0"}
+,
+{"name":"image_linear_feature","label":"Take Photo","repeate":"0"}
+,
+{"name":"physical_planning","label":"3) Physical Planning","repeate":"0"}
+,
+{"name":"number_of_buildings","label":"3.1) Number of School Buildings (Blocks) on school campus","repeate":"0"}
+,
+{"name":"number_of_tlc","label":"3.2) Number of Temporary Learning Centres on school campus.","repeate":"0"}
+,
+{"name":"image_number_of_tlc","label":"Take Photo","repeate":"0"}
+,
+{"name":"funded","label":"3.2.1) Who Funded and built the Temporary Learning Centres ?","repeate":"0"}
+,
+{"name":"ingo","label":"Specify INGO","repeate":"0"}
+,
+{"name":"ngo","label":"Specify NGO","repeate":"0"}
+,
+{"name":"int_donor","label":"Specify International Donor","repeate":"0"}
+,
+{"name":"local_donor","label":"Specify Local Donor","repeate":"0"}
+,
+{"name":"owns_land","label":"3.3) Who owns school campus land ?","repeate":"0"}
+,
+{"name":"safe_location","label":"3.4) Is there a safe location outside the buildings where ALL staff and students can currently assemble in an emergency event?","repeate":"0"}
+,
+{"name":"comment_safe_location","label":"Comment","repeate":"0"}
+,
+{"name":"image_safe_location","label":"Take Photo","repeate":"0"}
+,
+{"name":"location_for_tlc","label":"3.5) Excluding safe assembly location is there any additional space  for Temporary Learning  Centers on the school campus?","repeate":"0"}
+,
+{"name":"comment_safe_location","label":"Comment","repeate":"0"}
+,
+{"name":"image_safe_location","label":"Take Photo","repeate":"0"}
+,
+{"name":"toilet_functioning","label":"3.6) Number of functioning toilets?","repeate":"0"}
+,
+{"name":"comment_toilet_functioning","label":"Comment","repeate":"0"}
+,
+{"name":"image_toilet_functioning","label":"Take Photo","repeate":"0"}
+,
+{"name":"toilet_damaged","label":"3.7) Number of non-functional toilets?","repeate":"0"}
+,
+{"name":"wash_facilities","label":"3.8) Are their WASH facilities available ? If so what condition are they in?","repeate":"0"}
+,
+{"name":"comment_wash_facilities","label":"Comment","repeate":"0"}
+,
+{"name":"image_wash_facilities","label":"Take Photo","repeate":"0"}
+,
+{"name":"water_tanks","label":"3.9) Is there safe drinking water available on site ?","repeate":"0"}
+,
+{"name":"electricity_supply","label":"3.10) Is the school connected to a electricity supply ?","repeate":"0"}
+,
+{"name":"comment_electricity_supply","label":"Comment","repeate":"0"}
+,
+{"name":"image_electricity_supply","label":"Take Photo","repeate":"0"}
+,
+{"name":"backup_generator","label":"3.11) Does the school have back up power?","repeate":"0"}
+,
+{"name":"comment_backup_generator","label":"Comment","repeate":"0"}
+,
+{"name":"image_backup_generator","label":"Take Photo","repeate":"0"}
+,
+{"name":"exit_point","label":"3.12) How many exit points are there for people to evacuate the site on foot ?","repeate":"0"}
+,
+{"name":"comment_exit_point","label":"Comment","repeate":"0"}
+,
+{"name":"image_exit_point","label":"Take Photo","repeate":"0"}
+,
+{"name":"site_plan","label":"3.13) Site Plan","repeate":"0"}
+,
+{"name":"proximity_to_unsafe","label":"3.14) Is there proximity to unsafe structures, such as, perimeter walls, water towers, trees, generator and potentially damaging debris?","repeate":"0"}
+,
+{"name":"comment_proximity_to_unsafe","label":"Comment","repeate":"0"}
+,
+{"name":"image_proximity_to_unsafe","label":"Take Photo","repeate":"0"}
+]

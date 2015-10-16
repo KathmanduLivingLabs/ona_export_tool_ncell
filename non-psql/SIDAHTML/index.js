@@ -80,7 +80,7 @@ allKeys = Object.keys(schoolItem);
 									if(repeatedItem[insideKeys[j]].toString().toLowerCase().indexOf('jpg') !== -1) {
 										trHTML += '<tr><td colspan=2>' + schoolLabels[k].label + '</td></tr>';
 										trHTML += '<tr><td colspan=2 style="text-align: center;">' +
-															'<image src="../' + repeatedItem[insideKeys[j]].toString() + '" width="300" height="300" /></td></tr>';
+															'<image src="../../../' + repeatedItem[insideKeys[j]].toString() + '" width="300" height="300" /></td></tr>';
 									}
 									else {
 										if(schoolLabels[k].label === districtLabel) {
@@ -115,7 +115,7 @@ allKeys = Object.keys(schoolItem);
 				if(schoolItem[allKeys[i]].toString().toLowerCase().indexOf('jpg') !== -1) {
 					trHTML += '<tr><td colspan=2>' + labelItem.label + '</td></tr>';
 					trHTML += '<tr><td colspan=2 style="text-align: center;">' +
-										'<image src="../' + schoolItem[allKeys[i]].toString() + '" width="300" height="300" /></td></tr>';
+										'<image src="../../../' + schoolItem[allKeys[i]].toString() + '" width="300" height="300" /></td></tr>';
 				}
 				else {
 					if(labelItem.label === districtLabel) {

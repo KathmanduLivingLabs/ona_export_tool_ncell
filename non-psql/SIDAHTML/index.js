@@ -44,6 +44,8 @@ district_codes = JSON.parse(district_codes);
 var vdc_codes = fs.readFileSync('files/vdc_codes.json', 'utf8');
 vdc_codes = JSON.parse(vdc_codes);
 
+var schoolLabelUsed = [];
+
 var count = 0;
 
 var headerHTML = '<html><head><title></title>';
@@ -80,13 +82,15 @@ allKeys = Object.keys(schoolItem);
 									if(repeatedItem[insideKeys[j]].toString().toLowerCase().indexOf('jpg') !== -1) {
 										trHTML += '<tr><td colspan=2>' + schoolLabels[k].label + '</td></tr>';
 										trHTML += '<tr><td colspan=2 style="text-align: center;">' +
-															'<image src="../' + repeatedItem[insideKeys[j]].toString() + '" width="300" height="300" /></td></tr>';
+															'<image src="../../../' + repeatedItem[insideKeys[j]].toString() + '" width="300" height="300" /></td></tr>';
+										schoolLabelUsed.push(schoolLabels[k].label);
 									}
 									else {
 										if(schoolLabels[k].label === districtLabel) {
 											for(var a = 0; a < district_codes.length; a++) {
 												if(repeatedItem[insideKeys[j]] === district_codes[a].codes) {
 														trHTML += '<tr><td>' + schoolLabels[k].label + '</td><td>' + district_codes[a].name + '</td></tr>';
+														schoolLabelUsed.push(schoolLabels[k].label);
 												}
 											}
 
@@ -94,11 +98,13 @@ allKeys = Object.keys(schoolItem);
 											for(var a = 0; a < vdc_codes.length; a++) {
 												if(repeatedItem[insideKeys[j]] === vdc_codes[a].codes) {
 														trHTML += '<tr><td>' + schoolLabels[k].label + '</td><td>' + vdc_codes[a].name + '</td></tr>';
+														schoolLabelUsed.push(schoolLabels[k].label);
 												}
 											}
 
 										} else {
 											trHTML += '<tr><td>' + schoolLabels[k].label + '</td><td>' + repeatedItem[insideKeys[j]] + '</td></tr>';
+											schoolLabelUsed.push(schoolLabels[k].label);
 										}
 									}
 								}
@@ -115,13 +121,15 @@ allKeys = Object.keys(schoolItem);
 				if(schoolItem[allKeys[i]].toString().toLowerCase().indexOf('jpg') !== -1) {
 					trHTML += '<tr><td colspan=2>' + labelItem.label + '</td></tr>';
 					trHTML += '<tr><td colspan=2 style="text-align: center;">' +
-										'<image src="../' + schoolItem[allKeys[i]].toString() + '" width="300" height="300" /></td></tr>';
+										'<image src="../../../' + schoolItem[allKeys[i]].toString() + '" width="300" height="300" /></td></tr>';
+					schoolLabelUsed.push(labelItem.label);
 				}
 				else {
 					if(labelItem.label === districtLabel) {
 						for(var a = 0; a < district_codes.length; a++) {
 							if(schoolItem[allKeys[i]] === district_codes[a].codes) {
 								trHTML += '<tr><td>' + labelItem.label + '</td><td>' + district_codes[a].name + '</td></tr>';
+								schoolLabelUsed.push(labelItem.label);
 							}
 						}
 
@@ -129,16 +137,29 @@ allKeys = Object.keys(schoolItem);
 						for(var a = 0; a < vdc_codes.length; a++) {
 							if(schoolItem[allKeys[i]] === vdc_codes[a].codes) {
 								trHTML += '<tr><td>' + labelItem.label + '</td><td>' + vdc_codes[a].name + '</td></tr>';
+								schoolLabelUsed.push(labelItem.label);
 							}
 						}
 
 					} else
 							trHTML += '<tr><td>' + labelItem.label + '</td><td>' + schoolItem[allKeys[i]] + '</td></tr>';
+							schoolLabelUsed.push(labelItem.label);
 				}
 				break;
 			}
 		}
 	});
+
+
+
+	schoolLabels.map(function(item) {
+		if(schoolLabelUsed.indexOf(item.label) === -1) {
+			trHTML += '<tr style="background-color: red;"><td>' + item.label + '</td><td>N/A</td></tr>';
+		}
+	});
+
+
+
 	++count;
 	lastSubmissionTime = fs.readFileSync('files/last_submission_time.txt', 'utf8').trim();
 	lastSubmissionTime = new Date(lastSubmissionTime);

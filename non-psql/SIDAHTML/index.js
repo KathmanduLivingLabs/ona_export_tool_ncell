@@ -54,7 +54,7 @@ var trHTML = '';
 var footerHTML = '</table></body></html>';
 var styles = '<style>' + 
 							'table{width: 50%; table-layout: fixed}' + 
-							' th{background-color: lightgrey; text-align: left; border-width: 0px; height: 45px;' +
+							' th{background-color: lightgrey;-webkit-print-color-adjust: exact; text-align: left; border-width: 0px; height: 45px;' +
 							'padding: 3px 7px 2px 7px;} td{text-align: left; width: 20px;' + 
 							' word-wrap: break-word;border: 1px solid #BDBDBD;}' + 
 							'.contact-group-border-top{border-bottom: 2px solid black; border-top: 0px;' + 

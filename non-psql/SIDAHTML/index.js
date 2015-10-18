@@ -46,7 +46,7 @@ vdc_codes = JSON.parse(vdc_codes);
 
 var schoolLabelUsed = [];
 
-var count = 0;
+var count = false;
 
 var headerHTML = '<html><head><title></title>';
 var tableHTML = '<table><tr><th>Question</th><th>Response</th></tr>';
@@ -148,14 +148,8 @@ allKeys = Object.keys(schoolItem);
 				break;
 			}
 		}
-	});
-
-
-
-	schoolLabels.map(function(item) {
-		if(schoolLabelUsed.indexOf(item.label) === -1) {
-			trHTML += '<tr style="background-color: red;"><td>' + item.label + '</td><td>N/A</td></tr>';
-		}
+		if(trHTML.indexOf(labelItem.label) === -1)
+			trHTML += '<tr style="background-color: red;"><td>' + labelItem.label + '</td><td>N/A</td></tr>';
 	});
 
 

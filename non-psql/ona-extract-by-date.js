@@ -3,7 +3,7 @@ var fs = require('fs');
 var json2csv = require('json2csv');
 var dataFile = fs.readFileSync(process.argv[4]);
 dataFile=JSON.stringify(JSON.parse(dataFile));
-dataFile=dataFile.replace(/_version":"201509/g, '_version":"2015-09-');
+//dataFile=dataFile.replace(/_submission_time":"201509/g, '_submission_time":"2015-09-');
 var data = JSON.parse(dataFile);
 var filtered = [];
 var startDate = process.argv[2];
@@ -17,7 +17,8 @@ var output_filenameRoot = (function(name){
 var zipList = output_filenameRoot+".zip "+output_filenameRoot+".csv ";
 var headers = [];
 data.forEach(function(item, index){
-	if(item._version>=startDate && item._version<=endDate){
+var itemSubmissionDate = item._submission_time.split("T")[0];
+	if(itemSubmissionDate>=startDate && itemSubmissionDate<=endDate){
 		var attachments = [];
 		item._attachments.forEach(function(item_1, index_1){
 			var filename = JSON.stringify(item_1.filename).split("/");

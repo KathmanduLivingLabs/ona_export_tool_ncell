@@ -49,12 +49,12 @@ var schoolLabelUsed = [];
 var count = false;
 
 var headerHTML = '<html><head><title></title>';
-var tableHTML = '<table><tr><th>Question</th><th>Response</th></tr>';
+var tableHTML = '<div style="margin-left: 10%"><table><tr><th>Question</th><th>Response</th></tr>';
 var trHTML = '';
-var footerHTML = '</table></body></html>';
+var footerHTML = '</table></div></body></html>';
 var styles = '<style>' + 
-							'table{width: 50%; table-layout: fixed}' + 
-							' th{background-color: lightgrey; text-align: left; border-width: 0px; height: 45px;' +
+							'table{width: 80%; table-layout: fixed}' + 
+							' th{background-color: lightgrey; -webkit-print-color-adjust: exact; text-align: left; border-width: 0px; height: 45px;' +
 							'padding: 3px 7px 2px 7px;} td{text-align: left; width: 20px;' + 
 							' word-wrap: break-word;border: 1px solid #BDBDBD;}' + 
 							'.contact-group-border-top{border-bottom: 2px solid black; border-top: 0px;' + 
@@ -82,7 +82,7 @@ allKeys = Object.keys(schoolItem);
 									if(repeatedItem[insideKeys[j]].toString().toLowerCase().indexOf('jpg') !== -1) {
 										trHTML += '<tr><td colspan=2>' + schoolLabels[k].label + '</td></tr>';
 										trHTML += '<tr><td colspan=2 style="text-align: center;">' +
-															'<image src="../../../' + repeatedItem[insideKeys[j]].toString() + '" width="300" height="300" /></td></tr>';
+															'<image src="../../../' + repeatedItem[insideKeys[j]].toString().split(".")[0] + '-small.jpg" width="300" /></td></tr>';
 										schoolLabelUsed.push(schoolLabels[k].label);
 									}
 									else {
@@ -121,7 +121,7 @@ allKeys = Object.keys(schoolItem);
 				if(schoolItem[allKeys[i]].toString().toLowerCase().indexOf('jpg') !== -1) {
 					trHTML += '<tr><td colspan=2>' + labelItem.label + '</td></tr>';
 					trHTML += '<tr><td colspan=2 style="text-align: center;">' +
-										'<image src="../../../' + schoolItem[allKeys[i]].toString() + '" width="300" height="300" /></td></tr>';
+										'<image src="../../../' + schoolItem[allKeys[i]].toString().split(".")[0] + '-small.jpg" width="300" /></td></tr>';
 					schoolLabelUsed.push(labelItem.label);
 				}
 				else {
@@ -149,7 +149,7 @@ allKeys = Object.keys(schoolItem);
 			}
 		}
 		if(trHTML.indexOf(labelItem.label) === -1)
-			trHTML += '<tr style="background-color: red;"><td>' + labelItem.label + '</td><td>N/A</td></tr>';
+			trHTML += '<tr style="background-color: red; -webkit-print-color-adjust: exact;"><td>' + labelItem.label + '</td><td>N/A</td></tr>';
 	});
 
 

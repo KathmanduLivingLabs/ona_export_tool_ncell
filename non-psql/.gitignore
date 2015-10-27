@@ -2,3 +2,6 @@ node_modules
 *.jpg
 *.zip
 *.csv
+school.json
+ziplist.txt
+emis.txt

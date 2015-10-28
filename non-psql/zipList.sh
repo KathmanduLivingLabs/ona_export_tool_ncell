@@ -1,5 +1,5 @@
 #!/bin/bash
-zipList=$(./ona-extract-by-date.js $1 $2 $3)
+zipList=$(./ona-extract-from-csv-by-date.js $1 $2 $3)
 zip $zipList>dump
 #a="$(stat --printf="%s" ${zipList[0]})"
 IFS=' ' read -a filenames <<< "${zipList[0]}"

@@ -35,7 +35,7 @@ schoolLabelsGlobal = fs.readFileSync('files/' + process.argv[3], 'utf8');
 //schoolLabels = fs.readFileSync('school_label.json', 'utf8');
 schoolLabelsGlobal =  JSON.parse(schoolLabelsGlobal);
 
-branchingKeys = fs.readFileSync('files/' + process.argv[3]+".branchingKeys.json", "utf8");
+branchingKeys = fs.readFileSync('files/' + process.argv[3]+".branchingkeys.json", "utf8");
 branchingKeys = JSON.parse(branchingKeys);
 
 //first argument data file

@@ -99,7 +99,6 @@ branchingKeys.forEach(function(item, index){
 
 		//if(keyTail[keyTail.length-1] === item.key && schoolItem[schoolItemKey]===item["remove-if"]){
 		if(keyTail[keyTail.length-1] === item.key && schoolItem[schoolItemKey].toString().match && schoolItem[schoolItemKey].toString().match(new RegExp(item["remove-if"]))){
-			console.log(item);
 			item["label-index"].forEach(function(labelIndex, index_2){
 				schoolLabels[labelIndex] = {
 					"name": "remove",

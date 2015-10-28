@@ -1,22 +1,17 @@
 [
 	{
-		"key": "risk_of_flooding",
+		"key": "retrofitted_prior_earthquake",
 		"remove-if": "no",
-		"sub-keys": ["last_flood_event", "flood_height", "flood_mitigation_measures", "image_risk_of_flooding"]
+		"sub-keys": ["year_retrofitted", "retrofitting_intervention", "design_retrofitting_intervention"]
 	},
 	{
-		"key": "man_made_drainage",
-		"remove-if": "no",
-		"sub-keys": ["drainage_system_culverts_overflowed"]
+		"key": "restricted_area",
+		"remove-if": "all_accessible",
+		"sub-keys": ["certain_floor"]
 	},
 	{
-		"key": "landslide_risk",
+		"key": "more_than_one_structural_plan",
 		"remove-if": "no",
-		"sub-keys": ["landslide_history"]
-	},
-	{
-		"key": "number_pupils_staff",
-		"remove-if": "\\d*",
-		"sub-keys": ["number_pupils_staff_estimate"]
+		"sub-keys": ["no_of_pieces", "piece_code"]
 	}
 ]

@@ -1,0 +1,22 @@
+[
+	{
+		"key": "risk_of_flooding",
+		"remove-if": "no",
+		"sub-keys": ["last_flood_event", "flood_height", "flood_mitigation_measures", "image_risk_of_flooding"]
+	},
+	{
+		"key": "man_made_drainage",
+		"remove-if": "no",
+		"sub-keys": ["drainage_system_culverts_overflowed"]
+	},
+	{
+		"key": "landslide_risk",
+		"remove-if": "no",
+		"sub-keys": ["landslide_history"]
+	},
+	{
+		"key": "number_pupils_staff",
+		"remove-if": "\\d*",
+		"sub-keys": ["number_pupils_staff_estimate"]
+	}
+]

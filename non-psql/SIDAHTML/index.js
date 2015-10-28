@@ -6,6 +6,7 @@ var conversion = require("phantom-html-to-pdf")();
 
 var schoolData;
 var schoolLabels;
+var branchingKeys;
 var buildingData;
 var buildingElementsData;
 var outputFilePrefix;
@@ -30,9 +31,12 @@ if(process.argv[4].toLowerCase().trim() === 'school') {
 var IMAGE_URL = 'http://ona.io/api/v1/files/615342?filename=wbsida321/attachments/';
 
 //second argument label maps
-schoolLabels = fs.readFileSync('files/' + process.argv[3], 'utf8');
+schoolLabelsGlobal = fs.readFileSync('files/' + process.argv[3], 'utf8');
 //schoolLabels = fs.readFileSync('school_label.json', 'utf8');
-schoolLabels =  JSON.parse(schoolLabels);
+schoolLabelsGlobal =  JSON.parse(schoolLabelsGlobal);
+
+branchingKeys = fs.readFileSync('files/' + process.argv[3]+".branchingKeys.json", "utf8");
+branchingKeys = JSON.parse(branchingKeys);
 
 //first argument data file
 schoolData = fs.readFileSync('files/' + process.argv[2], 'utf8');
@@ -49,27 +53,70 @@ var schoolLabelUsed = [];
 var count = false;
 
 var headerHTML = '<html><head><title></title>';
-var tableHTML = '<div style="margin-left: 10%"><table><tr><th>Question</th><th>Response</th></tr>';
+var tableHTML = '<div style="margin-left: 0%"><table><tr><th>Question</th><th>Response</th></tr>';
 var trHTML = '';
 var footerHTML = '</table></div></body></html>';
 var styles = '<style>' + 
-							'table{width: 50%; table-layout: fixed}' + 
-							' th{background-color: lightgrey;-webkit-print-color-adjust: exact; text-align: left; border-width: 0px; height: 45px;' +
-							'table{width: 80%; table-layout: fixed}' + 
-							' th{background-color: lightgrey; -webkit-print-color-adjust: exact; text-align: left; border-width: 0px; height: 45px;' +
-							'padding: 3px 7px 2px 7px;} td{text-align: left; width: 20px;' + 
-							' word-wrap: break-word;border: 1px solid #BDBDBD;}' + 
-							'.contact-group-border-top{border-bottom: 2px solid black; border-top: 0px;' + 
-							' border-left: 0px; border-right: 0px; width: 1px}' +
-							'.contact-group-border-bottom{border-top: 2px solid black; border-bottom: 0px;' + 
-							' border-left: 0px; border-right: 0px; width: 1px}' +
-							'</style></head><body>'
+                                                        'table{width: 100%; table-layout: fixed}' + 
+                                                        ' th{background-color: lightgrey; -webkit-print-color-adjust: exact; text-align: left; border-width: 0px; height: 45px;' +
+                                                        'padding: 3px 7px 2px 7px;} td{text-align: left; width: 20px;' + 
+                                                        ' word-wrap: break-word;border: 1px solid #BDBDBD;}' + 
+                                                        '.contact-group-border-top{border-bottom: 2px solid black; border-top: 0px;' + 
+                                                        ' border-left: 0px; border-right: 0px; width: 1px}' +
+                                                        '.contact-group-border-bottom{border-top: 2px solid black; border-bottom: 0px;' + 
+                                                        ' border-left: 0px; border-right: 0px; width: 1px}' +
+                                                        '.remove{display: none;}' +
+                                                        '</style></head><body>'
+
 
 var lastSubmissionTime;
-schoolData.map(function(schoolItem) {
-//schoolItem = schoolData[0];
+schoolData.map(function(schoolItem, schoolIndex) {
+
 allKeys = Object.keys(schoolItem);
+
+var schoolLabels = JSON.parse(JSON.stringify(schoolLabelsGlobal));
+
+
+branchingKeys.forEach(function(item, index){
+	item["label-index"] = [];
+	schoolLabels.forEach(function(labelDef, index_1){
+		
+		item["sub-keys"].forEach(function(subKey, index_2){
+			
+			if(subKey === labelDef.name){
+				item["label-index"].push(index_1);
+			}
+		});
+
+
+		
+	});
+	
+	allKeys.forEach(function(schoolItemKey, index_1){
+		var keyTail = schoolItemKey.split("/");
+
+
+
+		//if(keyTail[keyTail.length-1] === item.key && schoolItem[schoolItemKey]===item["remove-if"]){
+		if(keyTail[keyTail.length-1] === item.key && schoolItem[schoolItemKey].toString().match && schoolItem[schoolItemKey].toString().match(new RegExp(item["remove-if"]))){
+			console.log(item);
+			item["label-index"].forEach(function(labelIndex, index_2){
+				schoolLabels[labelIndex] = {
+					"name": "remove",
+					"label": "remove",
+					"repeate": "remove"
+				};
+			});
+			//schoolLabels[item["label-index"]] = 0;
+		}
+	});
+});
+
+
+
+
 	schoolLabels.map(function(labelItem) {
+		
 		if(labelItem.repeate !== '0') {
 			for(var i = 0; i < allKeys.length; i++) {
 				if(allKeys[i].toLowerCase().trim() === labelItem.repeate.toLowerCase().trim()) {
@@ -82,8 +129,8 @@ allKeys = Object.keys(schoolItem);
 								var splitOfInsideKey = insideKeys[j].split('/');
 								if(splitOfInsideKey[splitOfInsideKey.length - 1].toLowerCase().trim() === schoolLabels[k].name.toLowerCase().trim()) {
 									if(repeatedItem[insideKeys[j]].toString().toLowerCase().indexOf('jpg') !== -1) {
-										trHTML += '<tr><td colspan=2>' + schoolLabels[k].label + '</td></tr>';
-										trHTML += '<tr><td colspan=2 style="text-align: center;">' +
+										trHTML += '<tr class="'+labelItem.name+'"><td colspan=2>' + schoolLabels[k].label + '</td></tr>';
+										trHTML += '<tr class="'+labelItem.name+'"><td colspan=2 style="text-align: center;">' +
 															'<image src="../../../' + repeatedItem[insideKeys[j]].toString().split(".")[0] + '-small.jpg" width="300" /></td></tr>';
 										schoolLabelUsed.push(schoolLabels[k].label);
 									}
@@ -91,7 +138,7 @@ allKeys = Object.keys(schoolItem);
 										if(schoolLabels[k].label === districtLabel) {
 											for(var a = 0; a < district_codes.length; a++) {
 												if(repeatedItem[insideKeys[j]] === district_codes[a].codes) {
-														trHTML += '<tr><td>' + schoolLabels[k].label + '</td><td>' + district_codes[a].name + '</td></tr>';
+														trHTML += '<tr class="'+labelItem.name+'"><td>' + schoolLabels[k].label + '</td><td>' + district_codes[a].name + '</td></tr>';
 														schoolLabelUsed.push(schoolLabels[k].label);
 												}
 											}
@@ -99,20 +146,20 @@ allKeys = Object.keys(schoolItem);
 										} else if(schoolLabels[k].label === vdcLabel) {
 											for(var a = 0; a < vdc_codes.length; a++) {
 												if(repeatedItem[insideKeys[j]] === vdc_codes[a].codes) {
-														trHTML += '<tr><td>' + schoolLabels[k].label + '</td><td>' + vdc_codes[a].name + '</td></tr>';
+														trHTML += '<tr class="'+labelItem.name+'"><td>' + schoolLabels[k].label + '</td><td>' + vdc_codes[a].name + '</td></tr>';
 														schoolLabelUsed.push(schoolLabels[k].label);
 												}
 											}
 
 										} else {
-											trHTML += '<tr><td>' + schoolLabels[k].label + '</td><td>' + repeatedItem[insideKeys[j]] + '</td></tr>';
+											trHTML += '<tr class="'+labelItem.name+'"><td>' + schoolLabels[k].label + '</td><td>' + repeatedItem[insideKeys[j]] + '</td></tr>';
 											schoolLabelUsed.push(schoolLabels[k].label);
 										}
 									}
 								}
 							}
 						}
-						trHTML += '<tr><td colspan=2 class="contact-group-border-bottom"></td></tr>';
+						trHTML += '<tr class="'+labelItem.name+'"><td colspan=2 class="contact-group-border-bottom"></td></tr>';
 					}
 				}
 			}
@@ -121,8 +168,8 @@ allKeys = Object.keys(schoolItem);
 			var splitLongName = allKeys[i].split('/');
 			if(splitLongName[splitLongName.length - 1].toLowerCase().trim() === labelItem.name.toLowerCase().trim()) {
 				if(schoolItem[allKeys[i]].toString().toLowerCase().indexOf('jpg') !== -1) {
-					trHTML += '<tr><td colspan=2>' + labelItem.label + '</td></tr>';
-					trHTML += '<tr><td colspan=2 style="text-align: center;">' +
+					trHTML += '<tr class="'+labelItem.name+'"><td colspan=2>' + labelItem.label + '</td></tr>';
+					trHTML += '<tr class="'+labelItem.name+'"><td colspan=2 style="text-align: center;">' +
 										'<image src="../../../' + schoolItem[allKeys[i]].toString().split(".")[0] + '-small.jpg" width="300" /></td></tr>';
 					schoolLabelUsed.push(labelItem.label);
 				}
@@ -138,20 +185,20 @@ allKeys = Object.keys(schoolItem);
 					} else if(labelItem.label === vdcLabel) {
 						for(var a = 0; a < vdc_codes.length; a++) {
 							if(schoolItem[allKeys[i]] === vdc_codes[a].codes) {
-								trHTML += '<tr><td>' + labelItem.label + '</td><td>' + vdc_codes[a].name + '</td></tr>';
+								trHTML += '<tr class="'+labelItem.name+'"><td>' + labelItem.label + '</td><td>' + vdc_codes[a].name + '</td></tr>';
 								schoolLabelUsed.push(labelItem.label);
 							}
 						}
 
 					} else
-							trHTML += '<tr><td>' + labelItem.label + '</td><td>' + schoolItem[allKeys[i]] + '</td></tr>';
+							trHTML += '<tr class="'+labelItem.name+'"><td>' + labelItem.label + '</td><td>' + schoolItem[allKeys[i]] + '</td></tr>';
 							schoolLabelUsed.push(labelItem.label);
 				}
 				break;
 			}
 		}
 		if(trHTML.indexOf(labelItem.label) === -1)
-			trHTML += '<tr style="background-color: red; -webkit-print-color-adjust: exact;"><td>' + labelItem.label + '</td><td>N/A</td></tr>';
+			trHTML += '<tr class="'+labelItem.name+'" style="background-color: red; -webkit-print-color-adjust: exact;"><td>' + labelItem.label + '</td><td>N/A</td></tr>';
 	});
 
 

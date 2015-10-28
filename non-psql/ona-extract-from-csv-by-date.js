@@ -97,7 +97,7 @@ data.forEach(function(item, index){
 	if(itemSubmissionDate>=startDate && itemSubmissionDate<=endDate){
 		filtered.push(item.join(","));
 		emis += ", "+item[emisColumn];
-        zipList += " " + item.join(";").match(/(\d)+.jpg/gi).join(" ");
+        zipList += " " + item.join(";").match(/(\d)+.jpg/gi).join(" ").replace(/.jpg/gi, "-large.jpg");
 	}
 }catch(e){
 	//console.log("error: empty line or submission date not found");

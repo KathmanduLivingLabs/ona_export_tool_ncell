@@ -24,7 +24,7 @@
 
 	header("Access-Control-Allow-Origin: *");
 
-	$dir = '/Users/aakashsigdel/KLL/ona-data-date-filtered-archives/non-psql/SIDAHTML/';
+	$dir = '/var/www/sida/ona-data-date-filtered-archives/non-psql/SIDAHTML/';
 	$scanned_directory_school = scandir($dir . 'output_school');
 	$scanned_directory_buildings = scandir($dir . 'output_buildings');
 	$scanned_directory_building_elements = scandir($dir . 'output_building_elements');

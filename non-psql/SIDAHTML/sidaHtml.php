@@ -1,5 +1,5 @@
 <?php
-	/*
+	
 	header("Access-Control-Allow-Origin: *");
 
 	$dir = '/var/www/sida/ona-data-date-filtered-archives/non-psql/SIDAHTML/';
@@ -20,7 +20,7 @@
 				echo $item . ',';
 			}
 	}
- */
+ /*
 
 	header("Access-Control-Allow-Origin: *");
 
@@ -85,5 +85,5 @@
 
 	$json = json_encode($output);
 	echo $json;
-
+*/
 ?>

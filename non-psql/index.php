@@ -8,9 +8,9 @@
 	if(!($emis && $group)){
 		echo exec('./ona-list-emis.sh');
 	}else{
-
-
-		if($group=='buildings'){
+		if($group=='schools'){
+			exec("./htmlgen.sh $emis $group");
+		}else if($group=='buildings'){
 			exec("./htmlgen.sh $emis $group");
 			
 			$data = file_get_contents('buildings.json');

@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/local/bin/node
 var fs = require('fs');
 var json2csv = require('json2csv');
 var dataFile = fs.readFileSync(process.argv[4]);

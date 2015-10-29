@@ -14,7 +14,7 @@ var jsonIndex;
 var districtLabel = 'District:';
 var vdcLabel = 'VDC / Municipality';
 
-if(process.argv[4].toLowerCase().trim() === 'school') {
+if(process.argv[4].toLowerCase().trim() === 'schools') {
 	outputFilePrefix = 'school';
 	jsonIndex = 'general_detail/emis/school_emis';
 	districtLabel = '1.1) District:';
@@ -214,8 +214,9 @@ branchingKeys.forEach(function(item, index){
 		fs.mkdirSync('output_' + outputFilePrefix + '/' +  outputFilePrefix + sub);
 		} catch(e) {
 		}
-		var outfile = 'output_' + outputFilePrefix + '/' + outputFilePrefix + sub + '/' + outputFilePrefix  + 
-				schoolItem[jsonIndex] + '.html';
+		/*var outfile = 'output_' + outputFilePrefix + '/' + outputFilePrefix + sub + '/' + outputFilePrefix  + 
+				schoolItem[jsonIndex] + '.html';*/
+		var outfile = "../output/"+schoolItem[jsonIndex]+".html";
 		fs.writeFileSync(outfile, headerHTML + styles + tableHTML + trHTML + footerHTML);
 	}
 	trHTML = '';

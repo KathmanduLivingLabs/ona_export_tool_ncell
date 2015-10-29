@@ -6,4 +6,4 @@ mkdir _temp
 output=$(./filter-data-by-emis.js $1 $2.json) 
 
 cd SIDAHTML
-node index.js ../output/$output $2_labels.json $2
+node index.js ../_temp/$output $2_labels.json $2

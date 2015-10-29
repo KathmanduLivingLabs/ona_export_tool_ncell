@@ -39,7 +39,8 @@ branchingKeys = fs.readFileSync('files/' + process.argv[3]+".branchingkeys.json"
 branchingKeys = JSON.parse(branchingKeys);
 
 //first argument data file
-schoolData = fs.readFileSync('files/' + process.argv[2], 'utf8');
+//schoolData = fs.readFileSync('files/' + process.argv[2], 'utf8');
+schoolData = fs.readFileSync(process.argv[2], 'utf8');
 //schoolData = fs.readFileSync('school.json', 'utf8');
 schoolData = JSON.parse(schoolData);
 

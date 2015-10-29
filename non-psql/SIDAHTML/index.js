@@ -204,22 +204,30 @@ branchingKeys.forEach(function(item, index){
 
 
 	++count;
+	//console.log(count);
 	lastSubmissionTime = fs.readFileSync('files/last_submission_time.txt', 'utf8').trim();
+	//console.log(lastSubmissionTime);
+	//console.log(headerHTML + styles + tableHTML + trHTML + footerHTML);
 	lastSubmissionTime = new Date(lastSubmissionTime);
 	var currentSubmissionTime = schoolItem["_submission_time"].split('T')[0];
 	var sub = schoolItem["_submission_time"].split('T')[0];
 	currentSubmissionTime = new Date(currentSubmissionTime);
-	if(currentSubmissionTime > lastSubmissionTime) {
+	/*if(currentSubmissionTime > lastSubmissionTime) {
 		lastSubmissionTime = currentSubmissionTime;
 		try{
 		fs.mkdirSync('output_' + outputFilePrefix + '/' +  outputFilePrefix + sub);
 		} catch(e) {
 		}
 		/*var outfile = 'output_' + outputFilePrefix + '/' + outputFilePrefix + sub + '/' + outputFilePrefix  + 
-				schoolItem[jsonIndex] + '.html';*/
+				schoolItem[jsonIndex] + '.html';
 		var outfile = "../output/"+schoolItem[jsonIndex]+".html";
+		console.log(outfile);
 		fs.writeFileSync(outfile, headerHTML + styles + tableHTML + trHTML + footerHTML);
-	}
+	}*/
+	var outfile = "../output/"+schoolItem[jsonIndex]+".html";
+	console.log(outfile);
+	fs.writeFileSync(outfile, headerHTML + styles + tableHTML + trHTML + footerHTML);
+
 	trHTML = '';
 	lastSubmissionTime = schoolItem["_submission_time"].split('T')[0];
 });

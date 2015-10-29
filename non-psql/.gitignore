@@ -11,3 +11,5 @@ buildingelement.json
 schools.json
 buildings.json
 building_elements.json
+output/
+_temp/

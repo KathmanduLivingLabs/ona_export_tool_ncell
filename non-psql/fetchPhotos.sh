@@ -9,10 +9,4 @@ array=$(cat filelist.txt | grep -o "[0-9]\{3,13\}.jpg")
 
 echo $array>arraylist.txt
 
-for i in "${array[@]}"
-do
-	aws s3 cp s3://onadata/wbsida321/attachments/$i ./
-	mogrify -resize 25% $i
-	rename 's/.jpg/-large.jpg/' *.jpg
-done
-
+php picfetch.php

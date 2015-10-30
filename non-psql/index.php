@@ -5,6 +5,21 @@
 	$emis = $_GET['emis'];
 	$group = $_GET['group'];
 
+	try{
+		$updateTime = file_get_contents(".updatetime"); 
+	}catch(Exception $e){
+		$updateTime = time();
+	} 
+
+	if(time()-$updateTime > 86400){
+		exec("./fetchPhotos.sh");
+		exec("./fetchData.sh");
+		$updateTime = time();
+		file_put_contents(".updatetime", $updateTime);
+	}
+
+	
+
 	if(!($emis && $group)){
 		echo exec('./ona-list-emis.sh');
 	}else{

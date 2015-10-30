@@ -1,4 +1,9 @@
 #!/bin/bash
-zipList=$(./ona-extract-from-csv-by-date.js $1 $2 $3)
-zip $zipList>dump
+{
+	zipList=$(./ona-extract-from-csv-by-date.js $1 $2 $3) && zip $zipList>dump
+}
+||
+{
+	zipList="no"
+}
 echo $zipList

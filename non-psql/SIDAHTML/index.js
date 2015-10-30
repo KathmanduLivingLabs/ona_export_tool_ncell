@@ -131,7 +131,7 @@ branchingKeys.forEach(function(item, index){
 									if(repeatedItem[insideKeys[j]].toString().toLowerCase().indexOf('jpg') !== -1) {
 										trHTML += '<tr class="'+labelItem.name+'"><td colspan=2>' + schoolLabels[k].label + '</td></tr>';
 										trHTML += '<tr class="'+labelItem.name+'"><td colspan=2 style="text-align: center;">' +
-															'<image src="../' + repeatedItem[insideKeys[j]].toString().split(".")[0] + '-small.jpg" width="300" /></td></tr>';
+															'<image src="../' + repeatedItem[insideKeys[j]].toString().split(".")[0] + '-large.jpg" width="300" /></td></tr>';
 										schoolLabelUsed.push(schoolLabels[k].label);
 									}
 									else {
@@ -170,7 +170,7 @@ branchingKeys.forEach(function(item, index){
 				if(schoolItem[allKeys[i]].toString().toLowerCase().indexOf('jpg') !== -1) {
 					trHTML += '<tr class="'+labelItem.name+'"><td colspan=2>' + labelItem.label + '</td></tr>';
 					trHTML += '<tr class="'+labelItem.name+'"><td colspan=2 style="text-align: center;">' +
-										'<image src="../' + schoolItem[allKeys[i]].toString().split(".")[0] + '-small.jpg" width="300" /></td></tr>';
+										'<image src="../' + schoolItem[allKeys[i]].toString().split(".")[0] + '-large.jpg" width="300" /></td></tr>';
 					schoolLabelUsed.push(labelItem.label);
 				}
 				else {

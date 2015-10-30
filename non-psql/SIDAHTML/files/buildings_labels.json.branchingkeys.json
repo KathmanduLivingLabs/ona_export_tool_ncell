@@ -13,5 +13,20 @@
 		"key": "more_than_one_structural_plan",
 		"remove-if": "no",
 		"sub-keys": ["no_of_pieces", "piece_code"]
+	},
+	{
+		"key": "building_less_thn_1m",
+		"remove-if": "no",
+		"sub-keys": ["comment_building_less_than_1m", "image_building_less_thn_1m", "smallest_gap", "image_smallest_gap"]
+	},
+	{
+		"key": "storey_more_than_1",
+		"remove-if": "no",
+		"sub-keys": ["geometry_elevation", "variation_in_storey", "mass_irregularity", "proportion_of_column_list", "wall_from_foundation_proportion"]
+	},
+	{
+		"key": "more_than_one_structural_plan",
+		"remove-if": "no",
+		"sub-keys": ["no_of_pieces", "num", "piece_code", "piece_reference"]
 	}
 ]

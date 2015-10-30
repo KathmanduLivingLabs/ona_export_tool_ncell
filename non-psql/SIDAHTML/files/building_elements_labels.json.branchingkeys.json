@@ -1,22 +1,12 @@
 [
 	{
-		"key": "risk_of_flooding",
-		"remove-if": "no",
-		"sub-keys": ["last_flood_event", "flood_height", "flood_mitigation_measures", "image_risk_of_flooding"]
+		"key": "roofing_structure",
+		"remove-if": "rc_slab",
+		"sub-keys": ["comment_roof_structure", "image_roof_structure", "roofing_material", "comment_roofing_material", "image_roofing_material", "roof_covering_tied", "roof_covering_tied_type", "comment_roof_covering_tied", "image_roof_covering_tied", "roof_structure_connection", "comment_roof_structure_connection", "image_roof_structure_connection"]
 	},
 	{
-		"key": "man_made_drainage",
+		"key": "parapets",
 		"remove-if": "no",
-		"sub-keys": ["drainage_system_culverts_overflowed"]
-	},
-	{
-		"key": "landslide_risk",
-		"remove-if": "no",
-		"sub-keys": ["landslide_history"]
-	},
-	{
-		"key": "number_pupils_staff",
-		"remove-if": "\\d*",
-		"sub-keys": ["number_pupils_staff_estimate"]
+		"sub-keys": ["comment_parapets", "image_parapets", "parapets_height", "parapets_thickness", "parapets_damage", "image_parapets_damage"]
 	}
 ]

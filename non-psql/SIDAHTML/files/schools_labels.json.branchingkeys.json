@@ -18,5 +18,10 @@
 		"key": "number_pupils_staff",
 		"remove-if": "\\d*",
 		"sub-keys": ["number_pupils_staff_estimate"]
+	},
+	{
+		"key": "number_of_tlc",
+		"remove-if": "0",
+		"sub-keys": ["funded", "ingo", "ngo", "int_donor"]
 	}
 ]

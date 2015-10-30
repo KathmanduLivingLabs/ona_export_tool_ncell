@@ -1,4 +1,4 @@
-x <- scan("arraylist.txt", what="", sep=" ")
+x <- scan("arraylist.src.txt", what="", sep=" ")
 f <- file("stdin")
 y <- scan(f, what="", sep="\n")
 on.exit(close(f))

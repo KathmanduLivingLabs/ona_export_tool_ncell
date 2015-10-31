@@ -13,7 +13,7 @@ foreach($arr as $k=>$i){
 	exec("./picfetch.sh ".$i);
 	if(!($k%500)) {
 		$timeelapsed = (time()-$starttime)/60;
-		echo $k."/".$t." files downloaded..Time elapsed: ". $timeelapsed." minutes..\n";
+		echo $k."/".$total." files downloaded..Time elapsed: ". $timeelapsed." minutes..\n";
 	}
 }
 

@@ -5,7 +5,7 @@ $arr = explode(" ", $arr);
 
 $total = count($arr);
 
-echo "Files to download = ".$t;
+echo "Files to download = ".$total+"\n";
 
 $starttime = time();
 

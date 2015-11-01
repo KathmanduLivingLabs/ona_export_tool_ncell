@@ -107,7 +107,7 @@ data.forEach(function(item, index){
 });
 
 
-fs.writeFileSync(output_filenameRoot+".csv", filtered.join("\n"));
+fs.writeFileSync(output_filenameRoot+"_records_"+filtered.length+"_pictures_"+(zipList.split(" ").length-2)+".csv", filtered.join("\n"));
 fs.writeFileSync("emis.txt", emis);
 
 console.log(zipList);

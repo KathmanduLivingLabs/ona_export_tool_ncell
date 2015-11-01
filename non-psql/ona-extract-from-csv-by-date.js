@@ -1,17 +1,12 @@
 #!/usr/local/bin/node
+
 var fs = require('fs');
-var json2csv = require('json2csv');
 var dataFile = fs.readFileSync(process.argv[4], "utf8");
 
 var startDate = process.argv[2];
 var endDate = process.argv[3];
-var output_filenameRoot = (function(name){
-	var prefix = name.split(".");
-	prefix.pop();
-	prefix.join(".");
-	return prefix;
-}(process.argv[4]))+"_"+startDate.replace(/-/g,"_")+"_"+endDate.replace(/-/g,"_");
-var zipList = output_filenameRoot+".zip "+output_filenameRoot+".csv ";
+
+var zipList = "";
 
 
 // This will parse a delimited string into an array of
@@ -98,7 +93,9 @@ data.forEach(function(item, index){
 		filtered.push(item.join(","));
 		emis += ", "+item[emisColumn];
         zipList += " " + item.join(";").match(/(\d)+.jpg/gi).join(" ").replace(/.jpg/gi, "-large.jpg");
-	}
+	}else{
+        data[index]=null;
+    }
 }catch(e){
 	//console.log("error: empty line or submission date not found");
 	//console.log(item);
@@ -106,8 +103,18 @@ data.forEach(function(item, index){
 
 });
 
+data=null;
 
-fs.writeFileSync(output_filenameRoot+"_records_"+filtered.length+"_pictures_"+(zipList.split(" ").length-2)+".csv", filtered.join("\n"));
+var output_filenameRoot = (function(name){
+    var prefix = name.split(".");
+    prefix.pop();
+    prefix.join(".");
+    return prefix;
+}(process.argv[4]))+"_"+startDate.replace(/-/g,"_")+"_"+endDate.replace(/-/g,"_")+"_records_"+filtered.length+"_pictures_"+(zipList.split(" ").length-2);
+
+zipList = output_filenameRoot+".zip "+output_filenameRoot+".csv "+zipList;
+
+fs.writeFileSync(+".csv", filtered.join("\n"));
 fs.writeFileSync("emis.txt", emis);
 
 console.log(zipList);

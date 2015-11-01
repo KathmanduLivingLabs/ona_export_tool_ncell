@@ -114,7 +114,7 @@ var output_filenameRoot = (function(name){
 
 zipList = output_filenameRoot+".zip "+output_filenameRoot+".csv "+zipList;
 
-fs.writeFileSync(+".csv", filtered.join("\n"));
+fs.writeFileSync(output_filenameRoot+".csv", filtered.join("\n"));
 fs.writeFileSync("emis.txt", emis);
 
 console.log(zipList);

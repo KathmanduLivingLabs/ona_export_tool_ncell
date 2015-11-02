@@ -45,7 +45,7 @@
 			//$genDoc = array_merge($matches);
 			//echo join(",", $matches2[0]);
 
-			$genDocList = explode(",",preg_replace('/.html/ui', "", exec("ls output/ | grep $emis | grep html  | cut -d, -f2- | paste -sd,")));
+			$genDocList = explode(",",preg_replace('/.html/ui', "", exec("ls output/ | grep $emis | grep html | cut -d, -f2- | paste -sd,")));
 			asort($genDocList);
 			$baseFileName = array_pop($genDocList);
 			array_unshift($genDocList, $baseFileName);
@@ -58,7 +58,7 @@
 			foreach($genDocList as $docName){
 
 				//exec("html-pdf output/$docName.html output/$docName.pdf");
-				$numPages += intval(exec('xvfb-run --server-args="-screen 0, 1366x768x24" wkhtmltopdf output/$docName.html _temp/$docName.pdf; pdfinfo _temp/$docName.pdf | grep Pages | awk "{print $2}";'));
+				$numPages += intval(exec('cd output; xvfb-run --server-args="-screen 0, 1366x768x24" wkhtmltopdf $docName.html $docName.pdf; pdfinfo $docName.pdf | grep Pages | awk "{print $2}";'));
 				echo $docName;
 				//EMIS250050003.html
 				//php -r 'echo exec("xvfb-run --server-args=\"-screen 0, 1366x768x24\" wkhtmltopdf output/EMIS210490003-C.html _temp/EMIS210490003-C.pdf");'
@@ -70,15 +70,15 @@
 
 			$tocml .= "</body></html>";
 
-			file_put_contents("_temp/$tocFileName.html", $tocml);
+			file_put_contents("output/$tocFileName.html", $tocml);
 			//exec("html-pdf _temp/$tocFileName.html _temp/$tocFileName.pdf");
-			exec('xvfb-run --server-args="-screen 0, 1366x768x24" wkhtmltopdf _temp/$tocFileName.html _temp/$tocFileName.pdf');
+			exec('xvfb-run --server-args="-screen 0, 1366x768x24" wkhtmltopdf output/$tocFileName.html output/$tocFileName.pdf');
 
 			$genDocList = $tocFileName.".pdf ".implode(".pdf ", $genDocList).".pdf $emis-compiled.pdf";
-			exec("cd _temp; pdfunite $genDocList;");
+			exec("cd output; pdfunite $genDocList;");
 			header('Content-Type: application/binary');
 			header('Content-Disposition: attachment');
-			echo file_get_contents("_temp/$emis-compiled.pdf");
+			echo file_get_contents("output/$emis-compiled.pdf");
 			//exec("rm _temp/$emis*");
 		}
 

@@ -77,8 +77,8 @@
 
 			$genDocList = $tocFileName.".pdf ".implode(".pdf ", $genDocList).".pdf $emis-compiled.pdf";
 			exec("cd _temp; pdfunite $genDocList;");
-			header('Content-Type: application/binary');
-			header('Content-Disposition: attachment');
+			header("Content-Type: application/binary");
+			header("Content-Disposition: attachment; filename=$emis-compiled.pdf");
 			echo file_get_contents("_temp/$emis-compiled.pdf");
 			//exec("rm _temp/$emis*");
 		}

@@ -60,7 +60,7 @@
 				//exec("html-pdf output/$docName.html output/$docName.pdf");
 				exec('xvfb-run --server-args="-screen 0, 1366x768x24" wkhtmltopdf output/$docName.html _temp/$docName.pdf');
 
-				$numPages += intval(exec("pdfinfo output/$docName.pdf | grep Pages | awk '{print $2}'"));
+				$numPages += intval(exec("pdfinfo _temp/$docName.pdf | grep Pages | awk '{print $2}'"));
 
 				$tocml .= "<div><h4>".str_replace(".html.pdf", "", $docName)."</h4>  ................  <h4>".$numPages."</h4></div>";
 			}
@@ -76,7 +76,7 @@
 			header('Content-Type: application/binary');
 			header('Content-Disposition: attachment');
 			echo file_get_contents("_temp/$emis-compiled.pdf");
-			exec("rm _temp/$emis*");
+			//exec("rm _temp/$emis*");
 		}
 
 ?>

@@ -79,7 +79,7 @@
 			exec("cd _temp; pdfunite $genDocList;");
 			header('Content-Type: application/binary');
 			header('Content-Disposition: attachment');
-			echo file_get_contents("output/$emis-compiled.pdf");
+			echo file_get_contents("_temp/$emis-compiled.pdf");
 			//exec("rm _temp/$emis*");
 		}
 

@@ -55,11 +55,12 @@
 
 			$numPages = 1;
 
+			var_dump($genDocList);
+
 			foreach($genDocList as $docName){
 
 				//exec("html-pdf output/$docName.html output/$docName.pdf");
 				$numPages += intval(exec('cd output; xvfb-run --server-args="-screen 0, 1366x768x24" wkhtmltopdf $docName.html $docName.pdf; pdfinfo $docName.pdf | grep Pages | awk "{print $2}";'));
-				echo $docName;
 				//EMIS250050003.html
 				//php -r 'echo exec("xvfb-run --server-args=\"-screen 0, 1366x768x24\" wkhtmltopdf output/EMIS210490003-C.html _temp/EMIS210490003-C.pdf");'
 

@@ -47,8 +47,7 @@
 
 			$genDocList = explode(",",preg_replace('/.html/ui', "", exec("ls output/ | grep $emis | grep html | cut -d, -f2- | paste -sd,")));
 			asort($genDocList);
-			$baseFileName = array_pop($genDocList);
-			array_unshift($genDocList, $baseFileName);
+			$baseFileName = $genDocList[0];
 
 			$tocml = "<html><head></head><body><style>h4{display: inline-block; margin-left: 20px;}</style><h1>Table of Contents</h1>";
 			$tocFileName = $baseFileName."-toc";

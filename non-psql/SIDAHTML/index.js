@@ -225,7 +225,7 @@ branchingKeys.forEach(function(item, index){
 		fs.writeFileSync(outfile, headerHTML + styles + tableHTML + trHTML + footerHTML);
 	}*/
 	var outfile = "../output/"+((process.argv[4].toLowerCase().trim() === 'building_elements')?schoolItem[jsonIndex].replace(/EMIS\d\d/gi,'EMIS').replace(/-/g,'_'):schoolItem[jsonIndex].replace(/-/g,'_'))+".html";
-	console.log(outfile);
+	console.log(outfile+"\n");
 	fs.writeFileSync(outfile, headerHTML + styles + tableHTML + trHTML + footerHTML);
 
 	trHTML = '';

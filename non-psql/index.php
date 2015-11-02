@@ -45,10 +45,10 @@
 			//$genDoc = array_merge($matches);
 			//echo join(",", $matches2[0]);
 
-			$genDocList = explode(",",preg_replace(/.html/giu, "", exec("ls output/ | grep $emis*.html | cut -d, -f2- | paste -sd,")));
+			$genDocList = explode(",",preg_replace('/.html/ui', "", exec("ls output/ | grep $emis*.html | cut -d, -f2- | paste -sd,")));
 			asort($genDocList);
 			$baseFileName = array_pop($genDocList);
-			array_unshift($genDocList, $baseFileNamebase);
+			array_unshift($genDocList, $baseFileName);
 
 			$tocml = "<html><head></head><body><style></style><h1>Table of Contents</h1>";
 			$tocFileName = $baseFileName."-toc";
@@ -73,5 +73,5 @@
 			header('Content-Disposition: attachment');
 			echo file_get_contents("output/$emis-compiled.pdf");
 		}
-	}
+
 ?>

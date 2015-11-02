@@ -60,7 +60,7 @@
 			foreach($genDocList as $docName){
 
 				//exec("html-pdf output/$docName.html output/$docName.pdf");
-				$numPages += intval(exec('cd output; xvfb-run --server-args="-screen 0, 1366x768x24" wkhtmltopdf $docName.html $docName.pdf; pdfinfo $docName.pdf | grep Pages | awk "{print $2}";'));
+				$numPages += intval(exec('xvfb-run --server-args="-screen 0, 1366x768x24" wkhtmltopdf output/'.$docName.'.html _temp/'.$docName.'.pdf; pdfinfo _temp/'.$docName'.pdf | grep Pages | awk "{print $2}";'));
 				//EMIS250050003.html
 				//php -r 'echo exec("xvfb-run --server-args=\"-screen 0, 1366x768x24\" wkhtmltopdf output/EMIS210490003-C.html _temp/EMIS210490003-C.pdf");'
 
@@ -71,12 +71,12 @@
 
 			$tocml .= "</body></html>";
 
-			file_put_contents("output/$tocFileName.html", $tocml);
+			file_put_contents("_temp/$tocFileName.html", $tocml);
 			//exec("html-pdf _temp/$tocFileName.html _temp/$tocFileName.pdf");
-			exec('xvfb-run --server-args="-screen 0, 1366x768x24" wkhtmltopdf output/$tocFileName.html output/$tocFileName.pdf');
+			exec('xvfb-run --server-args="-screen 0, 1366x768x24" wkhtmltopdf _temp/'.$tocFileName.'.html _temp/'.$tocFileName.'.pdf');
 
 			$genDocList = $tocFileName.".pdf ".implode(".pdf ", $genDocList).".pdf $emis-compiled.pdf";
-			exec("cd output; pdfunite $genDocList;");
+			exec("cd _temp; pdfunite $genDocList;");
 			header('Content-Type: application/binary');
 			header('Content-Disposition: attachment');
 			echo file_get_contents("output/$emis-compiled.pdf");

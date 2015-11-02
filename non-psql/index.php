@@ -3,7 +3,7 @@
 	header('Content-Type: text/plain');
 
 	$emis = $_GET['emis'];
-	$group = $_GET['group'];
+	//$group = $_GET['group'];
 
 	try{
 		$updateTime = file_get_contents(".updatetime"); 
@@ -64,14 +64,14 @@
 
 				//$numPages += intval(exec("pdfinfo _temp/$docName.pdf | grep Pages | awk '{print $2}'"));
 
-				$tocml .= "<div><h4>".str_replace(".html.pdf", "", $docName)."</h4>  ................  <h4>".$numPages."</h4></div>";
+				$tocml .= "<div><h4>".str_replace(".pdf", "", $docName)."</h4>  ................  <h4>".$numPages."</h4></div>";
 			}
 
 			$tocml .= "</body></html>";
 
 			file_put_contents("_temp/$tocFileName.html", $tocml);
 			//exec("html-pdf _temp/$tocFileName.html _temp/$tocFileName.pdf");
-			exec('xvfb-run --server-args="-screen 0, 1366x768x24" wkhtmltopdf _temp/$tocFileName.html _temp/$tocFileName');
+			exec('xvfb-run --server-args="-screen 0, 1366x768x24" wkhtmltopdf _temp/$tocFileName.html _temp/$tocFileName.pdf');
 
 			$genDocList = $tocFileName.".pdf ".implode(".pdf ", $genDocList).".pdf $emis-compiled.pdf";
 			exec("cd _temp; pdfunite $genDocList;");

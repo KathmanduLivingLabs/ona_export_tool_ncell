@@ -2,3 +2,6 @@
 init
 non-psql/init
 node_modules/
+*.log
+*.txt
+*dump

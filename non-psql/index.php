@@ -45,7 +45,7 @@
 			//$genDoc = array_merge($matches);
 			//echo join(",", $matches2[0]);
 
-			$genDocList = explode(",",str_replace(/.html/gi, "", exec("ls output/ | grep $emis*.html | cut -d, -f2- | paste -sd,")));
+			$genDocList = explode(",",preg_replace(/.html/giu, "", exec("ls output/ | grep $emis*.html | cut -d, -f2- | paste -sd,")));
 			asort($genDocList);
 			$baseFileName = array_pop($genDocList);
 			array_unshift($genDocList, $baseFileNamebase);

@@ -59,7 +59,7 @@
 
 				//exec("html-pdf output/$docName.html output/$docName.pdf");
 				$numPages += intval(exec('xvfb-run --server-args="-screen 0, 1366x768x24" wkhtmltopdf output/$docName.html _temp/$docName.pdf; pdfinfo _temp/$docName.pdf | grep Pages | awk "{print $2}";'));
-				exec("echo $docName;");
+				echo $docName;
 				//EMIS250050003.html
 				//php -r 'echo exec("xvfb-run --server-args=\"-screen 0, 1366x768x24\" wkhtmltopdf output/EMIS210490003-C.html _temp/EMIS210490003-C.pdf");'
 

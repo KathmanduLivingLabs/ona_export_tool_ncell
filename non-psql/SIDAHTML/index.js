@@ -84,7 +84,7 @@ branchingKeys.forEach(function(item, index){
 		
 		item["sub-keys"].forEach(function(subKey, index_2){
 			
-			if(labelDef.name.match(new RegExp(subkey, "gi"))){
+			if(labelDef.name.match(new RegExp(subKey, "gi"))){
 				item["label-index"].push(index_1);
 			}
 		});

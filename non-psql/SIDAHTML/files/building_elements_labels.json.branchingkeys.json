@@ -8,5 +8,25 @@
 		"key": "parapets",
 		"remove-if": "no",
 		"sub-keys": ["comment_parapets", "image_parapets", "parapets_height", "parapets_thickness", "parapets_damage", "image_parapets_damage"]
+	},
+	{
+		"key": "structural_typology",
+		"remove-if": "1",
+		"sub-keys": ["two_or_more_line_concrete_frame", "walls_storey_height_rc_frame", "wall_panel_length_rc_frame", "infill_wall_material", "comment_infill_wall_material", "image_infill_wall_material","exterior_infill_wall_thickness","comment_exterior_infill_wall_thickness","interior_infill_wall_thickness","comment_interior_infill_wall_thickness","construction_sequence","comment_construction_sequence","image_construction_sequence","external_masonry_offset","offset_wall","masonry_offset_wall_thickness_rc_frame","masonry_offset_wall_height_rc_frame","comment_wall_masonry_offset_height_rc_frame","image_masonry_offset_wall_height_rc_frame","column_size","comment_column_size","image_column_size","short_direction","long_direction","comment_beam_span","image_beam_span","depth_long_direction","breadth_long_direction","effective_height_unrestrained","comment_effective_height_unrestrained","image_effective_height_unrestrained","short_column_damage_list","frame_damage","beam_column_joint_damage","comment_beam_column_joint_damage","image_beam_column_joint_damage","rc_column_damage","comment_rc_column_damage","image_rc_column_damage","rc_beam_damage","comment_rc_beam_damage","image_rc_beam_damage","infill_wall_damage","infill_panel_out_of_plane","comment_infill_panel_out_of_plane","image_infill_panel_out_of_plane","cracking_evidence_rc_frame","comment_cracking_evidence_rc_frame","image_cracking_evidence_rc_frame","extent_of_cracking_rc_frame","comment_extent_of_cracking_rc_frame","image_extent_of_cracking_rc_frame","diagonal_cracking_rc_frame","comment_diagonal_cracking_rc_frame","image_diagonal_cracking_rc_frame","extent_of_diagonal_cracking_rc_frame","comment_extent_of_diagonal_cracking_rc_frame","image_extent_of_diagonal_cracking_rc_frame","perimeter_cracking","comment_perimeter_cracking","image_perimeter_cracking","general_damage","general_condition","comment_general_condition","image_general_condition","retrofitted_evidence_rc_frame","comment_retrofitted_evidence_rc_frame","image_retrofitted_evidence_rc_frame","construction_quality_rc_frame","structural_defect_rc_frame","overall_quality_rc_frame","steel_frame","rc_frame"]
+	},
+	{
+		"key": "structural_typology",
+		"remove-if": "2",
+		"sub-keys": ["masonry_wall", "stone_wall", "_wall_panel","_wall_height","stone","steel_frame"]
+	},
+	{
+		"key": "structural_typology",
+		"remove-if": "3",
+		"sub-keys": ["masonry_wall", "stone_wall", "_wall_panel","_wall_height","stone","rc_frame"]
+	},
+	{
+		"key": "parapets",
+		"remove-if": "no",
+		"sub-keys": ["comment_parapets", "image_parapets", "parapets_height", "parapets_thickness", "parapets_damage", "image_parapets_damage"]
 	}
 ]

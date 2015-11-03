@@ -1,13 +1,9 @@
 [
 {"name":"surveyor_id","label":"Surveyor ID","repeate":"0"}
 ,
-{"name":"piece_assessment","label":"5) Piece Assessment","repeate":"0"}
-,
 {"name":"district","label":"District:","repeate":"0"}
 ,
 {"name":"vdc","label":"VDC / Municipality","repeate":"0"}
-,
-{"name":"building_peice_code","label":"building_peice_code","repeate":"0"}
 ,
 {"name":"school_code","label":"EMIS School Code","repeate":"0"}
 ,
@@ -25,6 +21,16 @@
 ,
 {"name":"plan_image","label":"5.2) Upload plan image","repeate":"0"}
 ,
+{"name":"foundation","label":"Foundations","repeate":"0"}
+,
+{"name":"foundation_type","label":"6.1) Foundation Type","repeate":"0"}
+,
+{"name":"comment_foundation_type","label":"Comment","repeate":"0"}
+,
+{"name":"image_foundation_type","label":"Take photo","repeate":"0"}
+,
+{"name":"damage_foundation","label":"6.3) Damage / Deterioration to Foundation due to","repeate":"0"}
+,
 {"name":"no_of_stories","label":"5.3) No of Stories","repeate":"0"}
 ,
 {"name":"stories","label":"stories","repeate":"0"}
@@ -35,19 +41,7 @@
 ,
 {"name":"structural_typology","label":"5.4.Storey - Structural Category","repeate":"0"}
 ,
-{"name":"building_element","label":"6) Building Elements (Storey)","repeate":"0"}
-,
-{"name":"foundation","label":"Foundations","repeate":"0"}
-,
-{"name":"foundation_type","label":"6.1) Foundation Type","repeate":"0"}
-,
-{"name":"comment_foundation_type","label":"Comment","repeate":"0"}
-,
-{"name":"image_foundation_type","label":"Take photo","repeate":"0"}
-,
 {"name":"continuous_lintel_beam","label":"6.2) Is there a continuous plinth beam ?","repeate":"0"}
-,
-{"name":"damage_foundation","label":"6.3) Damage / Deterioration to Foundation due to","repeate":"0"}
 ,
 {"name":"floors","label":"Floors","repeate":"0"}
 ,

@@ -33,15 +33,11 @@
 ,
 {"name":"storey","label":"storey","repeate":"0"}
 ,
-{"name":"structural_typology_1st_floor","label":"5.4.$Storey - Structural Category","repeate":"0"}
-,
 {"name":"structural_typology","label":"5.4.Storey - Structural Category","repeate":"0"}
 ,
 {"name":"building_element","label":"6) Building Elements (Storey)","repeate":"0"}
 ,
 {"name":"foundation","label":"Foundations","repeate":"0"}
-,
-{"name":"foundation_1","label":"foundation_1","repeate":"0"}
 ,
 {"name":"foundation_type","label":"6.1) Foundation Type","repeate":"0"}
 ,
@@ -57,15 +53,11 @@
 ,
 {"name":"floor_structure","label":"6.4) What is the floor structure ?","repeate":"0"}
 ,
-{"name":"floors_1","label":"floors_1","repeate":"0"}
-,
 {"name":"floor_structure_connected","label":"6.5) How is the floor structure connected to the wall/frame ?","repeate":"0"}
 ,
 {"name":"comment_floor_structure_connected","label":"Comment","repeate":"0"}
 ,
 {"name":"image_floor_structure_connected","label":"Take photo","repeate":"0"}
-,
-{"name":"floors_2","label":"floors_2","repeate":"0"}
 ,
 {"name":"floor_condition","label":"6.6) Condition of Floor","repeate":"0"}
 ,
@@ -75,25 +67,17 @@
 ,
 {"name":"roof","label":"Roof","repeate":"0"}
 ,
-{"name":"roof_1","label":"roof_1","repeate":"0"}
-,
 {"name":"roof_shape","label":"6.7) What is the shape of the roof?","repeate":"0"}
 ,
 {"name":"comment_roof_shape","label":"Comment","repeate":"0"}
 ,
 {"name":"image_roof_shape","label":"Take photo","repeate":"0"}
 ,
-{"name":"roof_2","label":"roof_2","repeate":"0"}
-,
 {"name":"roofing_structure","label":"6.8) What is the roofing structure?","repeate":"0"}
 ,
 {"name":"comment_roof_structure","label":"Comment","repeate":"0"}
 ,
 {"name":"image_roof_structure","label":"Take photo","repeate":"0"}
-,
-{"name":"roof_3","label":"roof_3","repeate":"0"}
-,
-{"name":"roof_3a","label":"roof_3a","repeate":"0"}
 ,
 {"name":"roofing_material","label":"6.8.1) If not reinforced concrete slab what is the roofing material?","repeate":"0"}
 ,
@@ -103,15 +87,11 @@
 ,
 {"name":"roof_covering_tied","label":"6.8.2) Is the roof covering adequately tied to the roof structure to resist wind uplift.","repeate":"0"}
 ,
-{"name":"roof_3b","label":"roof_3b","repeate":"0"}
-,
 {"name":"roof_covering_tied_type","label":"If yes:","repeate":"0"}
 ,
 {"name":"comment_roof_covering_tied","label":"Comment","repeate":"0"}
 ,
 {"name":"image_roof_covering_tied","label":"Take photo","repeate":"0"}
-,
-{"name":"roof_3c","label":"roof_3c","repeate":"0"}
 ,
 {"name":"roof_structure_connection","label":"6.8.3) How is the Roof structure connected to the wall / frame?","repeate":"0"}
 ,
@@ -119,15 +99,11 @@
 ,
 {"name":"image_roof_structure_connection","label":"Take photo","repeate":"0"}
 ,
-{"name":"roof_4","label":"roof_4","repeate":"0"}
-,
 {"name":"roof_condition","label":"6.9) Condition of Roof","repeate":"0"}
 ,
 {"name":"comment_roof_condition","label":"Comment","repeate":"0"}
 ,
 {"name":"image_roof_condition","label":"Take photo","repeate":"0"}
-,
-{"name":"roof_5","label":"roof_5","repeate":"0"}
 ,
 {"name":"gable_wall_damage_roof","label":"6.10) Gable walls damage","repeate":"0"}
 ,
@@ -135,29 +111,21 @@
 ,
 {"name":"image_gable_wall_damage_roof","label":"Take photo","repeate":"0"}
 ,
-{"name":"roof_6","label":"roof_6","repeate":"0"}
-,
 {"name":"parapets","label":"6.11) Are there any parapets ?","repeate":"0"}
 ,
 {"name":"comment_parapets","label":"Comment","repeate":"0"}
 ,
 {"name":"image_parapets","label":"Take photo","repeate":"0"}
 ,
-{"name":"roof_7","label":"roof_7","repeate":"0"}
-,
 {"name":"parapets_height","label":"6.11.1) What is the parapet height ?","repeate":"0"}
 ,
 {"name":"parapets_thickness","label":"6.11.2) What is the parapet thickness ?","repeate":"0"}
-,
-{"name":"roof_7a","label":"roof_7a","repeate":"0"}
 ,
 {"name":"parapets_damage","label":"6.11.3) Are the parapets damaged?","repeate":"0"}
 ,
 {"name":"image_parapets_damage","label":"Take photo","repeate":"0"}
 ,
 {"name":"pendiments","label":"6.12) Are there any pediments ?","repeate":"0"}
-,
-{"name":"roof_8","label":"roof_8","repeate":"0"}
 ,
 {"name":"pendiments_damage","label":"6.12.1) Are the pediments damaged ?","repeate":"0"}
 ,
@@ -169,15 +137,11 @@
 ,
 {"name":"masonry_wall_type","label":"7.1) Masonry wall type confirmed","repeate":"0"}
 ,
-{"name":"wall_1","label":"wall_1","repeate":"0"}
-,
 {"name":"stone_type","label":"7.2) If stone what Type of stone","repeate":"0"}
 ,
 {"name":"comment_stone_type","label":"Comment","repeate":"0"}
 ,
 {"name":"image_stone_type","label":"Take photo","repeate":"0"}
-,
-{"name":"wall_2","label":"wall_2","repeate":"0"}
 ,
 {"name":"wall_panel_principal_direction","label":"7.3) Does the building have at least two lines of load bearing wall in each direction?","repeate":"0"}
 ,
@@ -185,15 +149,11 @@
 ,
 {"name":"image_wall_panel_principal_direction","label":"Take photo","repeate":"0"}
 ,
-{"name":"wall_3","label":"wall_3","repeate":"0"}
-,
 {"name":"wall_thickness","label":"7.4) Wall thickness","repeate":"0"}
 ,
 {"name":"comment_stone_type","label":"Comment","repeate":"0"}
 ,
 {"name":"image_stone_type","label":"Take photo","repeate":"0"}
-,
-{"name":"wall_4","label":"wall_4","repeate":"0"}
 ,
 {"name":"wall_panel_length","label":"7.5) Wall panel length (m)","repeate":"0"}
 ,
@@ -201,23 +161,17 @@
 ,
 {"name":"image_wall_panel_length","label":"Take photo","repeate":"0"}
 ,
-{"name":"wall_5","label":"wall_5","repeate":"0"}
-,
 {"name":"wall_height","label":"7.6) Wall height","repeate":"0"}
 ,
 {"name":"comment_wall_height","label":"Comment","repeate":"0"}
 ,
 {"name":"image_wall_height","label":"Take photo","repeate":"0"}
 ,
-{"name":"wall_6","label":"wall_6","repeate":"0"}
-,
 {"name":"width_opening_single_storey","label":"7.7) For Single Storey blocks - Combined width of the openings on a wall between two consecutive cross-walls less than 35% of total wall length","repeate":"0"}
 ,
 {"name":"comment_width_opening_single_storey","label":"Comment","repeate":"0"}
 ,
 {"name":"image_width_opening_single_storey","label":"Take photo","repeate":"0"}
-,
-{"name":"wall_7","label":"wall_7","repeate":"0"}
 ,
 {"name":"width_opening_multiple_storey","label":"7.8) For multi-storey - Combined width of the openings on a wall between two consecutive cross-walls less than 25% of total wall length","repeate":"0"}
 ,
@@ -227,15 +181,11 @@
 ,
 {"name":"wall_damage","label":"Wall Damage / Deterioration to wall structure","repeate":"0"}
 ,
-{"name":"wall_damage_1","label":"wall_damage_1","repeate":"0"}
-,
 {"name":"wall_collapsed","label":"7.9) Collapsed wall","repeate":"0"}
 ,
 {"name":"comment_wall_collapsed","label":"Comment","repeate":"0"}
 ,
 {"name":"image_wall_collapsed","label":"Take photo","repeate":"0"}
-,
-{"name":"wall_damage_2","label":"wall_damage_2","repeate":"0"}
 ,
 {"name":"corner_separation","label":"7.10) Gable walls damage - Total or partial wall collapse?","repeate":"0"}
 ,
@@ -243,15 +193,11 @@
 ,
 {"name":"image_corner_separation","label":"Take photo","repeate":"0"}
 ,
-{"name":"wall_damage_3","label":"wall_damage_3","repeate":"0"}
-,
 {"name":"corner_separation","label":"7.11) Corner separation","repeate":"0"}
 ,
 {"name":"comment_corner_separation","label":"Comment","repeate":"0"}
 ,
 {"name":"image_corner_separation","label":"Take photo","repeate":"0"}
-,
-{"name":"wall_damage_4","label":"wall_damage_4","repeate":"0"}
 ,
 {"name":"cracking_evidence","label":"7.12) Evidence of cracking around openings","repeate":"0"}
 ,
@@ -259,15 +205,11 @@
 ,
 {"name":"image_cracking_evidence","label":"Take photo","repeate":"0"}
 ,
-{"name":"wall_damage_5","label":"wall_damage_5","repeate":"0"}
-,
 {"name":"extent_of_cracking","label":"7.12.1) Extent of cracking typically around openings","repeate":"0"}
 ,
 {"name":"comment_extent_of_cracking","label":"Comment","repeate":"0"}
 ,
 {"name":"image_extent_of_cracking","label":"Take photo","repeate":"0"}
-,
-{"name":"wall_damage_6","label":"wall_damage_6","repeate":"0"}
 ,
 {"name":"diagonal_cracking","label":"7.13) In-plane failure of masonry walls - Is there evidence of diagonal cracking of walls or cracking of bed-joints","repeate":"0"}
 ,
@@ -275,15 +217,11 @@
 ,
 {"name":"image_diagonal_cracking","label":"Take photo","repeate":"0"}
 ,
-{"name":"wall_damage_7","label":"wall_damage_7","repeate":"0"}
-,
 {"name":"extent_of_in_plane_wall_damage","label":"7.13.1) Extent of in-plane wall damage","repeate":"0"}
 ,
 {"name":"comment_extent_of_in_plane_wall_damage","label":"Comment","repeate":"0"}
 ,
 {"name":"image_extent_of_in_plane_wall_damage","label":"Take photo","repeate":"0"}
-,
-{"name":"wall_damage_8","label":"wall_damage_8","repeate":"0"}
 ,
 {"name":"out_plane_failure","label":"7.14) Out of plane failure – collapse and partial collapse","repeate":"0"}
 ,
@@ -291,15 +229,11 @@
 ,
 {"name":"image_out_plane_failure","label":"Take photo","repeate":"0"}
 ,
-{"name":"wall_damage_10","label":"wall_damage_10","repeate":"0"}
-,
 {"name":"wall_delamination","label":"7.15) Delamination of walls","repeate":"0"}
 ,
 {"name":"comment_wall_delamination","label":"Comment","repeate":"0"}
 ,
 {"name":"image_wall_delamination","label":"Take photo","repeate":"0"}
-,
-{"name":"wall_damage_11","label":"wall_damage_11","repeate":"0"}
 ,
 {"name":"masonry_deteriorated","label":"7.16) Is the masonry deteriorated?","repeate":"0"}
 ,
@@ -309,15 +243,11 @@
 ,
 {"name":"seismic","label":"Seismic","repeate":"0"}
 ,
-{"name":"seismic_1","label":"seismic_1","repeate":"0"}
-,
 {"name":"seismic_enhancement","label":"7.17) Have seismic enhancements have been included in the original construction?","repeate":"0"}
 ,
 {"name":"comment_seismic_enhancement","label":"Comment","repeate":"0"}
 ,
 {"name":"image_seismic_enhancement","label":"Take photo","repeate":"0"}
-,
-{"name":"seismic_2","label":"seismic_2","repeate":"0"}
 ,
 {"name":"retrofitted","label":"7.18) Is there any evidence that the school has been retrofitted in the past?","repeate":"0"}
 ,
@@ -343,27 +273,19 @@
 ,
 {"name":"wall_panel_length_rc_frame","label":"8.3) Wall panel length (m)","repeate":"0"}
 ,
-{"name":"walls_rc_frame_1","label":"walls_rc_frame_1","repeate":"0"}
-,
 {"name":"infill_wall_material","label":"8.4) Infill wall material","repeate":"0"}
 ,
 {"name":"comment_infill_wall_material","label":"Comment","repeate":"0"}
 ,
 {"name":"image_infill_wall_material","label":"Take photo","repeate":"0"}
 ,
-{"name":"walls_rc_frame_2","label":"walls_rc_frame_2","repeate":"0"}
-,
 {"name":"exterior_infill_wall_thickness","label":"8.5) Typical Exterior infill walls thickness (cm)","repeate":"0"}
 ,
 {"name":"comment_exterior_infill_wall_thickness","label":"Comment","repeate":"0"}
 ,
-{"name":"walls_rc_frame_3","label":"walls_rc_frame_3","repeate":"0"}
-,
 {"name":"interior_infill_wall_thickness","label":"8.6) Typical Interior infill walls thickness (cm)","repeate":"0"}
 ,
 {"name":"comment_interior_infill_wall_thickness","label":"Comment","repeate":"0"}
-,
-{"name":"walls_rc_frame_4","label":"walls_rc_frame_4","repeate":"0"}
 ,
 {"name":"construction_sequence","label":"8.7) What was the sequence of construction for the concrete frame and infill walls?","repeate":"0"}
 ,
@@ -377,8 +299,6 @@
 ,
 {"name":"masonry_offset_wall_thickness_rc_frame","label":"8.8.1) Wall thickness","repeate":"0"}
 ,
-{"name":"walls_rc_frame_5","label":"walls_rc_frame_5","repeate":"0"}
-,
 {"name":"masonry_offset_wall_height_rc_frame","label":"8.8.2) Wall height","repeate":"0"}
 ,
 {"name":"comment_wall_masonry_offset_height_rc_frame","label":"Comment","repeate":"0"}
@@ -387,15 +307,11 @@
 ,
 {"name":"frame","label":"Frame","repeate":"0"}
 ,
-{"name":"frame_1","label":"frame_1","repeate":"0"}
-,
 {"name":"column_size","label":"8.9) Column sizes","repeate":"0"}
 ,
 {"name":"comment_column_size","label":"Comment","repeate":"0"}
 ,
 {"name":"image_column_size","label":"Take photo","repeate":"0"}
-,
-{"name":"Frame_2","label":"Frame_2","repeate":"0"}
 ,
 {"name":"short_direction","label":"Short direction","repeate":"0"}
 ,
@@ -405,13 +321,9 @@
 ,
 {"name":"image_beam_span","label":"Take photo","repeate":"0"}
 ,
-{"name":"Frame_3","label":"Frame_3","repeate":"0"}
-,
 {"name":"depth_long_direction","label":"D","repeate":"0"}
 ,
 {"name":"breadth_long_direction","label":"B","repeate":"0"}
-,
-{"name":"frame_4","label":"frame_4","repeate":"0"}
 ,
 {"name":"effective_height_unrestrained","label":"8.12)Short Columns: Is the effective height of columns unrestrained by infill wall or parapets less than 5 times the dimension of the column or 50% of the nominal height of typical columns in that storey.","repeate":"0"}
 ,
@@ -423,23 +335,17 @@
 ,
 {"name":"frame_damage","label":"frame_damage","repeate":"0"}
 ,
-{"name":"frame_damage_1","label":"frame_damage_1","repeate":"0"}
-,
 {"name":"beam_column_joint_damage","label":"8.14)Beam-column joint damage","repeate":"0"}
 ,
 {"name":"comment_beam_column_joint_damage","label":"Comment","repeate":"0"}
 ,
 {"name":"image_beam_column_joint_damage","label":"Take photo","repeate":"0"}
 ,
-{"name":"frame_damage_2","label":"frame_damage_2","repeate":"0"}
-,
 {"name":"rc_column_damage","label":"8.15) RC Column Damage","repeate":"0"}
 ,
 {"name":"comment_rc_column_damage","label":"Comment","repeate":"0"}
 ,
 {"name":"image_rc_column_damage","label":"Take photo","repeate":"0"}
-,
-{"name":"frame_damage_3","label":"frame_damage_3","repeate":"0"}
 ,
 {"name":"rc_beam_damage","label":"8.16) RC Beam Damage","repeate":"0"}
 ,
@@ -449,15 +355,11 @@
 ,
 {"name":"infill_wall_damage","label":"Infill wall Damage / Deterioration","repeate":"0"}
 ,
-{"name":"infill_wall_damage_1","label":"infill_wall_damage_1","repeate":"0"}
-,
 {"name":"infill_panel_out_of_plane","label":"8.17) Infill panel has completely failed out-of-plane","repeate":"0"}
 ,
 {"name":"comment_infill_panel_out_of_plane","label":"Comment","repeate":"0"}
 ,
 {"name":"image_infill_panel_out_of_plane","label":"Take photo","repeate":"0"}
-,
-{"name":"infill_wall_damage_2","label":"infill_wall_damage_2","repeate":"0"}
 ,
 {"name":"cracking_evidence_rc_frame","label":"8.18) Evidence of cracking around openings","repeate":"0"}
 ,
@@ -465,15 +367,11 @@
 ,
 {"name":"image_cracking_evidence_rc_frame","label":"Take photo","repeate":"0"}
 ,
-{"name":"infill_wall_damage_3","label":"infill_wall_damage_3","repeate":"0"}
-,
 {"name":"extent_of_cracking_rc_frame","label":"8.18.1) Extent of cracking typically around openings","repeate":"0"}
 ,
 {"name":"comment_extent_of_cracking_rc_frame","label":"Comment","repeate":"0"}
 ,
 {"name":"image_extent_of_cracking_rc_frame","label":"Take photo","repeate":"0"}
-,
-{"name":"infill_wall_damage_4","label":"infill_wall_damage_4","repeate":"0"}
 ,
 {"name":"diagonal_cracking_rc_frame","label":"8.19) In-plane failure of masonry walls - Is there evidence of diagonal cracking of infill walls or cracking of bed-joints","repeate":"0"}
 ,
@@ -481,15 +379,11 @@
 ,
 {"name":"image_diagonal_cracking_rc_frame","label":"Take photo","repeate":"0"}
 ,
-{"name":"infill_wall_damage_5","label":"infill_wall_damage_5","repeate":"0"}
-,
 {"name":"extent_of_diagonal_cracking_rc_frame","label":"8.19.1) Extent of cracking typically around openings","repeate":"0"}
 ,
 {"name":"comment_extent_of_diagonal_cracking_rc_frame","label":"Comment","repeate":"0"}
 ,
 {"name":"image_extent_of_diagonal_cracking_rc_frame","label":"Take photo","repeate":"0"}
-,
-{"name":"infill_wall_damage_6","label":"infill_wall_damage_6","repeate":"0"}
 ,
 {"name":"perimeter_cracking","label":"8.20) Cracking at perimeter of panel of Infill walls (may possibly include hairline diagonal cracks)","repeate":"0"}
 ,
@@ -507,8 +401,6 @@
 ,
 {"name":"seismic_rc_frame","label":"Seismic","repeate":"0"}
 ,
-{"name":"seismic_rc_frame_1","label":"seismic_rc_frame_1","repeate":"0"}
-,
 {"name":"retrofitted_evidence_rc_frame","label":"8.22) Is there any evidence that the school has been retrofitted in the past?","repeate":"0"}
 ,
 {"name":"comment_retrofitted_evidence_rc_frame","label":"Comment","repeate":"0"}
@@ -525,15 +417,11 @@
 ,
 {"name":"infill_walls","label":"Infill Walls","repeate":"0"}
 ,
-{"name":"infill_walls_1","label":"infill_walls_1","repeate":"0"}
-,
 {"name":"masonry_built","label":"9.1) Is the masonry wall built in line with the steel frame or offset from the frame","repeate":"0"}
 ,
 {"name":"comment_masonry_built","label":"Comment","repeate":"0"}
 ,
 {"name":"masonry_wall_type_steel_frame","label":"9.2) Masonry wall type confirmed","repeate":"0"}
-,
-{"name":"infill_walls_2","label":"infill_walls_2","repeate":"0"}
 ,
 {"name":"stone_type_steel_frame","label":"9.3) If stone what type of stone","repeate":"0"}
 ,
@@ -541,15 +429,11 @@
 ,
 {"name":"image_stone_type_steel_frame","label":"Take photo","repeate":"0"}
 ,
-{"name":"infill_walls_3","label":"infill_walls_3","repeate":"0"}
-,
 {"name":"wall_thickness_steel_frame","label":"9.4) Walls thickness","repeate":"0"}
 ,
 {"name":"comment_wall_thickness_steel_frame","label":"Comment","repeate":"0"}
 ,
 {"name":"image_wall_thickness_steel_frame","label":"Take photo","repeate":"0"}
-,
-{"name":"infill_walls_4","label":"infill_walls_4","repeate":"0"}
 ,
 {"name":"wall_panel_length_steel_frame","label":"9.5) Walls panel length (m)","repeate":"0"}
 ,
@@ -557,15 +441,11 @@
 ,
 {"name":"image_wall_panel_length_steel_frame","label":"Take photo","repeate":"0"}
 ,
-{"name":"infill_walls_5","label":"infill_walls_5","repeate":"0"}
-,
 {"name":"wall_height_steel_frame","label":"9.6) Wall height","repeate":"0"}
 ,
 {"name":"comment_wall_height_steel_frame","label":"Comment","repeate":"0"}
 ,
 {"name":"image_wall_height_steel_frame","label":"Take photo","repeate":"0"}
-,
-{"name":"infill_walls_6","label":"infill_walls_6","repeate":"0"}
 ,
 {"name":"combined_width","label":"9.7)Is combined width of the openings on a wall\n between two consecutive cross-walls less than 35% of total wall length","repeate":"0"}
 ,
@@ -583,15 +463,11 @@
 ,
 {"name":"wall_damage_steel_frame","label":"Walls Damage / Deterioration to Wall Structure","repeate":"0"}
 ,
-{"name":"wall_damage_steel_frame_1","label":"wall_damage_steel_frame_1","repeate":"0"}
-,
 {"name":"wall_collapsed_steel_frame","label":"9.9) Collapsed wall - Have any of the walls completely collapsed?","repeate":"0"}
 ,
 {"name":"comment_wall_collapsed_steel_frame","label":"Comment","repeate":"0"}
 ,
 {"name":"image_wall_collapsed_steel_frame","label":"Take photo","repeate":"0"}
-,
-{"name":"wall_damage_steel_frame_2","label":"wall_damage_steel_frame_2","repeate":"0"}
 ,
 {"name":"cracking_evidence_steel_frame","label":"9.10) Evidence of cracking around openings ?","repeate":"0"}
 ,
@@ -599,15 +475,11 @@
 ,
 {"name":"image_cracking_evidence_steel_frame","label":"Take photo","repeate":"0"}
 ,
-{"name":"wall_damage_steel_frame_3","label":"wall_damage_steel_frame_3","repeate":"0"}
-,
 {"name":"diagonal_cracking_steel_frame","label":"9.11) IN-plane failure of masonry walls - Is there evidence of diagonal or bed joint cracking","repeate":"0"}
 ,
 {"name":"comment_diagonal_cracking_steel_frame","label":"Comment","repeate":"0"}
 ,
 {"name":"image_diagonal_cracking_steel_frame","label":"Take photo","repeate":"0"}
-,
-{"name":"wall_damage_steel_frame_4","label":"wall_damage_steel_frame_4","repeate":"0"}
 ,
 {"name":"corner_separation_steel_frame","label":"9.12) Corner separation","repeate":"0"}
 ,
@@ -615,15 +487,11 @@
 ,
 {"name":"image_corner_separation_steel_frame","label":"Take photo","repeate":"0"}
 ,
-{"name":"wall_damage_steel_frame_5","label":"wall_damage_steel_frame_5","repeate":"0"}
-,
 {"name":"out_plane_failure_steel_frame","label":"9.13) Out of plane failure - collapse or partial collapse","repeate":"0"}
 ,
 {"name":"comment_out_plane_failure_steel_frame","label":"Comment","repeate":"0"}
 ,
 {"name":"image_out_plane_failure_steel_frame","label":"Take photo","repeate":"0"}
-,
-{"name":"wall_damage_steel_frame_6","label":"wall_damage_steel_frame_6","repeate":"0"}
 ,
 {"name":"wall_delamination_steel_frame","label":"9.14) Delamination of walls","repeate":"0"}
 ,
@@ -631,15 +499,11 @@
 ,
 {"name":"image_wall_delamination_steel_frame","label":"Take photo","repeate":"0"}
 ,
-{"name":"wall_damage_steel_frame_7","label":"wall_damage_steel_frame_7","repeate":"0"}
-,
 {"name":"gable_wall_damage_steel_frame","label":"9.15) Gable walls damage","repeate":"0"}
 ,
 {"name":"comment_gable_wall_damage_steel_frame","label":"Comment","repeate":"0"}
 ,
 {"name":"image_gable_wall_damage_steel_frame","label":"Take photo","repeate":"0"}
-,
-{"name":"wall_damage_steel_frame_8","label":"wall_damage_steel_frame_8","repeate":"0"}
 ,
 {"name":"masonry_deteriorated_steel_frame","label":"9.16) Is the masonry deteriorated ?","repeate":"0"}
 ,
@@ -651,15 +515,11 @@
 ,
 {"name":"seismic_steel_frame","label":"Seismic","repeate":"0"}
 ,
-{"name":"seismic_steel_frame_1","label":"seismic_steel_frame_1","repeate":"0"}
-,
 {"name":"seismic_enhancement_steel_frame","label":"9.18) Have seismic enhancements have been included in the original construction?","repeate":"0"}
 ,
 {"name":"comment_seismic_enhancement_steel_frame","label":"Comment","repeate":"0"}
 ,
 {"name":"image_seismic_enhancement_steel_frame","label":"Take photo","repeate":"0"}
-,
-{"name":"seismic_steel_frame_2","label":"seismic_steel_frame_2","repeate":"0"}
 ,
 {"name":"retrofitted_evidence_steel_frame","label":"9.19) Has the education facility been retrofitted?","repeate":"0"}
 ,

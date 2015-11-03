@@ -1,219 +1,93 @@
 [
-{"name":"surveyor_id","label":"Surveyor ID","repeate":"0"}
-,
-{"name":"building_assessment","label":"4) Building Assessment General - Perimeter walk around","repeate":"0"}
-,
-{"name":"general_building_info","label":"General Building Info","repeate":"0"}
-,
-{"name":"general_building_info_1","label":"general_building_info_1","repeate":"0"}
-,
-{"name":"district","label":"District:","repeate":"0"}
-,
-{"name":"vdc","label":"VDC / Municipality","repeate":"0"}
-,
-{"name":"building_code","label":"building_code","repeate":"0"}
-,
-{"name":"school_code","label":"EMIS School Code","repeate":"0"}
-,
-{"name":"building_ref","label":"4.1) Block Reference","repeate":"0"}
-,
-{"name":"building_ref_no","label":"building_ref_no","repeate":"0"}
-,
-{"name":"verification","label":"verification","repeate":"0"}
-,
-{"name":"save_name","label":"save_name","repeate":"0"}
-,
-{"name":"verified","label":"Please verify the Building Reference No.","repeate":"0"}
-,
-{"name":"image_building","label":"Take photo of front elevation","repeate":"0"}
-,
-{"name":"gps_coordinates","label":"GPS Coordinates","repeate":"0"}
-,
-{"name":"general_building_info_2","label":"general_building_info_2","repeate":"0"}
-,
-{"name":"initial_condition_state","label":"4.2) Initial Assessment of Condition State of Block","repeate":"0"}
-,
-{"name":"comment_initial_condition_state","label":"Comment","repeate":"0"}
-,
-{"name":"image_initial_condition","label":"Take photo","repeate":"0"}
-,
-{"name":"block_level","label":"4.3) School Block - grades","repeate":"0"}
-,
-{"name":"num_pupils","label":"4.4) Number of pupils using Block pre-earthquake","repeate":"0"}
-,
-{"name":"general_building_info_3","label":"general_building_info_3","repeate":"0"}
-,
-{"name":"note","label":"4.5) Number of Rooms in Block","repeate":"0"}
-,
-{"name":"classrooms","label":"Classrooms","repeate":"0"}
-,
-{"name":"library","label":"Library","repeate":"0"}
-,
-{"name":"hall","label":"Hall","repeate":"0"}
-,
-{"name":"computer_room","label":"Computer rooms","repeate":"0"}
-,
-{"name":"office","label":"Office","repeate":"0"}
-,
-{"name":"canteen","label":"Canteen","repeate":"0"}
-,
-{"name":"lab","label":"Lab","repeate":"0"}
-,
-{"name":"other","label":"Other","repeate":"0"}
-,
-{"name":"input_info","label":"4.6) Input Information","repeate":"0"}
-,
-{"name":"input_info_1","label":"input_info_1","repeate":"0"}
-,
-{"name":"drawing","label":"Take photographs of drawings if possible","repeate":"0"}
-,
-{"name":"drawing_info","label":"Provide details of information and who holds the information","repeate":"0"}
-,
-{"name":"hazard_data","label":"Take photographs of hazard data if possible","repeate":"0"}
-,
-{"name":"hazard_data_info","label":"Provide details of information and who holds the information","repeate":"0"}
-,
-{"name":"reports","label":"Take photographs of reports if possible","repeate":"0"}
-,
-{"name":"reports_info","label":"Provide details of information and who holds the information","repeate":"0"}
-,
-{"name":"previous_assessment","label":"Take photographs of previous assessment if possible","repeate":"0"}
-,
-{"name":"previous_assessment_info","label":"Provide details of information and who holds the information","repeate":"0"}
-,
-{"name":"retrofit_designs","label":"Take photographs of drawings if possible","repeate":"0"}
-,
-{"name":"retrofit_designs_info","label":"Provide details of information and who holds the information","repeate":"0"}
-,
-{"name":"general_building_info_4","label":"general_building_info_4","repeate":"0"}
-,
-{"name":"tag_colour","label":"4.7) Tag Colour","repeate":"0"}
-,
-{"name":"comment_tag_colour","label":"Comment","repeate":"0"}
-,
-{"name":"image_tag_colour","label":"Take Photo","repeate":"0"}
-,
-{"name":"general_building_info_5","label":"general_building_info_5","repeate":"0"}
-,
-{"name":"construction_initiation","label":"4.8) Year of Construction Initiation  (BS)","repeate":"0"}
-,
-{"name":"construction_completion","label":"4.9) Year of Construction Completion (BS)","repeate":"0"}
-,
-{"name":"comment_construction","label":"Comment","repeate":"0"}
-,
-{"name":"primary_funder","label":"4.10) Primary Funders","repeate":"0"}
-,
-{"name":"building_constructed","label":"4.11) Building Constructed by?","repeate":"0"}
-,
-{"name":"general_building_info_6","label":"general_building_info_6","repeate":"0"}
-,
-{"name":"history_of_addition","label":"4.12) History of additions or modifications to original building","repeate":"0"}
-,
-{"name":"comment_history_of_addition","label":"Comment","repeate":"0"}
-,
-{"name":"general_building_info_7","label":"general_building_info_7","repeate":"0"}
-,
-{"name":"retrofitted_prior_earthquake","label":"4.13) Has the school building block been retrofitted prior to the earthquake?","repeate":"0"}
-,
-{"name":"comment_retrofitted_prior_earthquake","label":"Comment","repeate":"0"}
-,
-{"name":"retrofitted","label":"retrofitted","repeate":"0"}
-,
-{"name":"year_retrofitted","label":"4.13.1) If retrofitted, what year was this undertaken?","repeate":"0"}
-,
-{"name":"retrofitting_intervention","label":"4.13.2) What was the retrofitting intervention ?","repeate":"0"}
-,
-{"name":"design_retrofitting_intervention","label":"4.13.3) Who designed the retrofitting intervention","repeate":"0"}
-,
-{"name":"general_building_info_8","label":"general_building_info_8","repeate":"0"}
-,
-{"name":"building_less_thn_1m","label":"4.14) Are there buildings less than 1 meter away?","repeate":"0"}
-,
-{"name":"comment_building_less_than_1m","label":"Comment","repeate":"0"}
-,
-{"name":"image_building_less_thn_1m","label":"Take photo","repeate":"0"}
-,
-{"name":"general_building_info_9","label":"general_building_info_9","repeate":"0"}
-,
-{"name":"smallest_gap","label":"4.14.1) What is the smallest gap between this school block and adjacent buildings ?","repeate":"0"}
-,
-{"name":"image_smallest_gap","label":"Take photo","repeate":"0"}
-,
-{"name":"general_building_info_10","label":"general_building_info_10","repeate":"0"}
-,
-{"name":"damage_non_structural_component","label":"4.15) Non-structural component damage","repeate":"0"}
-,
-{"name":"comment_damage_non_structural_component","label":"Comment","repeate":"0"}
-,
-{"name":"image_damage_non_structural_component","label":"Take photo","repeate":"0"}
-,
-{"name":"damage","label":"Damage","repeate":"0"}
-,
-{"name":"damage_1","label":"damage_1","repeate":"0"}
-,
-{"name":"out_of_plumb","label":"4.16) Is the building noticeably out of plumb ?","repeate":"0"}
-,
-{"name":"comment_out_of_plumb","label":"Comment","repeate":"0"}
-,
-{"name":"image_comment_out_of_plumb","label":"Take photo","repeate":"0"}
-,
-{"name":"damage_2","label":"damage_2","repeate":"0"}
-,
-{"name":"safe_to_enter","label":"4.17) Has the building been judged safe to enter?","repeate":"0"}
-,
-{"name":"comment_safe_to_enter","label":"Comment","repeate":"0"}
-,
-{"name":"restricted_area","label":"4.18) Note if access was restricted to the following ares:","repeate":"0"}
-,
-{"name":"certain_floor","label":"Certain floors inaccessible","repeate":"0"}
-,
-{"name":"general_building_assessment","label":"general_building_assessment","repeate":"0"}
-,
-{"name":"general_building_assessment_1","label":"general_building_assessment_1","repeate":"0"}
-,
-{"name":"plan_characteristics","label":"4.19) Plan characteristics","repeate":"0"}
-,
-{"name":"image_plan_characteristics","label":"Take photo","repeate":"0"}
-,
-{"name":"storey_more_than_1","label":"4.20) Is the building more than 1 storey ?","repeate":"0"}
-,
-{"name":"general_building_assessment_2","label":"general_building_assessment_2","repeate":"0"}
-,
-{"name":"geometry_elevation","label":"4.20.1) Geometry of elevation","repeate":"0"}
-,
-{"name":"variation_in_storey","label":"4.20.2) Variation in storey height","repeate":"0"}
-,
-{"name":"mass_irregularity","label":"4.20.3) Mass irregularity","repeate":"0"}
-,
-{"name":"proportion_of_column_list","label":"4.20.4) Proportion of columns that continue from foundation to roof","repeate":"0"}
-,
-{"name":"wall_from_foundation_proportion","label":"4.20.5) Proportion of walls that continue from foundation to roof","repeate":"0"}
-,
-{"name":"foundation_regularity","label":"4.21) Foundation Regularity","repeate":"0"}
-,
-{"name":"more_than_one_structural_plan","label":"4.22) Is there more than one structural plan?","repeate":"0"}
-,
-{"name":"general_building_assessment_3","label":"general_building_assessment_3","repeate":"0"}
-,
-{"name":"no_of_pieces","label":"Number of building block pieces with more than one structural typology:","repeate":"0"}
-,
-{"name":"general_building_assessment_4","label":"general_building_assessment_4","repeate":"building_assessment/general_building_assessment/general_building_assessment_3/general_building_assessment_4"}
-,
-{"name":"num","label":"num","repeate":"0"}
-,
-{"name":"piece_code","label":"4.23) Piece reference","repeate":"0"}
-,
-{"name":"piece_reference","label":"piece_reference","repeate":"0"}
-,
-{"name":"general_building_assessment_5","label":"general_building_assessment_5","repeate":"0"}
-,
-{"name":"sketch_plan","label":"4.24) Sketch Plan","repeate":"0"}
-,
-{"name":"comment_sketch_plan","label":"Comment","repeate":"0"}
-,
-{"name":"general_building_assessment_6","label":"general_building_assessment_6","repeate":"0"}
-,
-{"name":"sketch_elevation","label":"4.25) Sketch Elevation","repeate":"0"}
-,
+{"name":"surveyor_id","label":"Surveyor ID","repeate":"0"},
+{"name":"building_assessment","label":"4) Building Assessment General - Perimeter walk around","repeate":"0"},
+{"name":"district","label":"District:","repeate":"0"},
+{"name":"vdc","label":"VDC / Municipality","repeate":"0"},
+{"name":"building_code","label":"building_code","repeate":"0"},
+{"name":"school_code","label":"EMIS School Code","repeate":"0"},
+{"name":"building_ref","label":"4.1) Block Reference","repeate":"0"},
+{"name":"building_ref_no","label":"building_ref_no","repeate":"0"},
+{"name":"verification","label":"verification","repeate":"0"},
+{"name":"save_name","label":"save_name","repeate":"0"},
+{"name":"verified","label":"Please verify the Building Reference No.","repeate":"0"},
+{"name":"image_building","label":"Take photo of front elevation","repeate":"0"},
+{"name":"gps_coordinates","label":"GPS Coordinates","repeate":"0"},
+{"name":"initial_condition_state","label":"4.2) Initial Assessment of Condition State of Block","repeate":"0"},
+{"name":"comment_initial_condition_state","label":"Comment","repeate":"0"},
+{"name":"image_initial_condition","label":"Take photo","repeate":"0"},
+{"name":"block_level","label":"4.3) School Block - grades","repeate":"0"},
+{"name":"num_pupils","label":"4.4) Number of pupils using Block pre-earthquake","repeate":"0"},
+{"name":"note","label":"4.5) Number of Rooms in Block","repeate":"0"},
+{"name":"classrooms","label":"Classrooms","repeate":"0"},
+{"name":"library","label":"Library","repeate":"0"},
+{"name":"hall","label":"Hall","repeate":"0"},
+{"name":"computer_room","label":"Computer rooms","repeate":"0"},
+{"name":"office","label":"Office","repeate":"0"},
+{"name":"canteen","label":"Canteen","repeate":"0"},
+{"name":"lab","label":"Lab","repeate":"0"},
+{"name":"other","label":"Other","repeate":"0"},
+{"name":"input_info","label":"4.6) Input Information","repeate":"0"},
+{"name":"input_info_1","label":"input_info_1","repeate":"0"},
+{"name":"drawing","label":"Take photographs of drawings if possible","repeate":"0"},
+{"name":"drawing_info","label":"Provide details of information and who holds the information","repeate":"0"},
+{"name":"hazard_data","label":"Take photographs of hazard data if possible","repeate":"0"},
+{"name":"hazard_data_info","label":"Provide details of information and who holds the information","repeate":"0"},
+{"name":"reports","label":"Take photographs of reports if possible","repeate":"0"},
+{"name":"reports_info","label":"Provide details of information and who holds the information","repeate":"0"},
+{"name":"previous_assessment","label":"Take photographs of previous assessment if possible","repeate":"0"},
+{"name":"previous_assessment_info","label":"Provide details of information and who holds the information","repeate":"0"},
+{"name":"retrofit_designs","label":"Take photographs of drawings if possible","repeate":"0"},
+{"name":"retrofit_designs_info","label":"Provide details of information and who holds the information","repeate":"0"},
+{"name":"tag_colour","label":"4.7) Tag Colour","repeate":"0"},
+{"name":"comment_tag_colour","label":"Comment","repeate":"0"},
+{"name":"image_tag_colour","label":"Take Photo","repeate":"0"},
+{"name":"construction_initiation","label":"4.8) Year of Construction Initiation  (BS)","repeate":"0"},
+{"name":"construction_completion","label":"4.9) Year of Construction Completion (BS)","repeate":"0"},
+{"name":"comment_construction","label":"Comment","repeate":"0"},
+{"name":"primary_funder","label":"4.10) Primary Funders","repeate":"0"},
+{"name":"building_constructed","label":"4.11) Building Constructed by?","repeate":"0"},
+{"name":"history_of_addition","label":"4.12) History of additions or modifications to original building","repeate":"0"},
+{"name":"comment_history_of_addition","label":"Comment","repeate":"0"},
+{"name":"retrofitted_prior_earthquake","label":"4.13) Has the school building block been retrofitted prior to the earthquake?","repeate":"0"},
+{"name":"comment_retrofitted_prior_earthquake","label":"Comment","repeate":"0"},
+{"name":"retrofitted","label":"retrofitted","repeate":"0"},
+{"name":"year_retrofitted","label":"4.13.1) If retrofitted, what year was this undertaken?","repeate":"0"},
+{"name":"retrofitting_intervention","label":"4.13.2) What was the retrofitting intervention ?","repeate":"0"},
+{"name":"design_retrofitting_intervention","label":"4.13.3) Who designed the retrofitting intervention","repeate":"0"},
+{"name":"building_less_thn_1m","label":"4.14) Are there buildings less than 1 meter away?","repeate":"0"},
+{"name":"comment_building_less_than_1m","label":"Comment","repeate":"0"},
+{"name":"image_building_less_thn_1m","label":"Take photo","repeate":"0"},
+{"name":"smallest_gap","label":"4.14.1) What is the smallest gap between this school block and adjacent buildings ?","repeate":"0"},
+{"name":"image_smallest_gap","label":"Take photo","repeate":"0"},
+{"name":"damage_non_structural_component","label":"4.15) Non-structural component damage","repeate":"0"},
+{"name":"comment_damage_non_structural_component","label":"Comment","repeate":"0"},
+{"name":"image_damage_non_structural_component","label":"Take photo","repeate":"0"},
+{"name":"damage","label":"Damage","repeate":"0"},
+{"name":"damage_1","label":"damage_1","repeate":"0"},
+{"name":"out_of_plumb","label":"4.16) Is the building noticeably out of plumb ?","repeate":"0"},
+{"name":"comment_out_of_plumb","label":"Comment","repeate":"0"},
+{"name":"image_comment_out_of_plumb","label":"Take photo","repeate":"0"},
+{"name":"damage_2","label":"damage_2","repeate":"0"},
+{"name":"safe_to_enter","label":"4.17) Has the building been judged safe to enter?","repeate":"0"},
+{"name":"comment_safe_to_enter","label":"Comment","repeate":"0"},
+{"name":"restricted_area","label":"4.18) Note if access was restricted to the following ares:","repeate":"0"},
+{"name":"certain_floor","label":"Certain floors inaccessible","repeate":"0"},
+{"name":"plan_characteristics","label":"4.19) Plan characteristics","repeate":"0"},
+{"name":"image_plan_characteristics","label":"Take photo","repeate":"0"},
+{"name":"storey_more_than_1","label":"4.20) Is the building more than 1 storey ?","repeate":"0"},
+{"name":"geometry_elevation","label":"4.20.1) Geometry of elevation","repeate":"0"},
+{"name":"variation_in_storey","label":"4.20.2) Variation in storey height","repeate":"0"},
+{"name":"mass_irregularity","label":"4.20.3) Mass irregularity","repeate":"0"},
+{"name":"proportion_of_column_list","label":"4.20.4) Proportion of columns that continue from foundation to roof","repeate":"0"},
+{"name":"wall_from_foundation_proportion","label":"4.20.5) Proportion of walls that continue from foundation to roof","repeate":"0"},
+{"name":"foundation_regularity","label":"4.21) Foundation Regularity","repeate":"0"},
+{"name":"more_than_one_structural_plan","label":"4.22) Is there more than one structural plan?","repeate":"0"},
+{"name":"no_of_pieces","label":"Number of building block pieces with more than one structural typology:","repeate":"0"},
+{"name":"num","label":"num","repeate":"0"},
+{"name":"piece_code","label":"4.23) Piece reference","repeate":"0"},
+{"name":"piece_reference","label":"piece_reference","repeate":"0"},
+{"name":"sketch_plan","label":"4.24) Sketch Plan","repeate":"0"},
+{"name":"comment_sketch_plan","label":"Comment","repeate":"0"},
+{"name":"sketch_elevation","label":"4.25) Sketch Elevation","repeate":"0"},
 {"name":"comment_sketch_elevation","label":"Comment","repeate":"0"}
 ]

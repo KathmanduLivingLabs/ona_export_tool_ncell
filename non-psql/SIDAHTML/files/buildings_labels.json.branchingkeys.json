@@ -28,5 +28,10 @@
 		"key": "more_than_one_structural_plan",
 		"remove-if": "no",
 		"sub-keys": ["no_of_pieces", "num", "piece_code", "piece_reference"]
+	},
+	{
+		"key": "input_info",
+		"remove-if": "no",
+		"sub-keys": ["drawing", "drawing_info", "hazard_data", "hazard_data_info","reports","reports_info","previous_assessment","previous_assessment_info","retrofit_designs","retrofit_designs_info"]
 	}
 ]

@@ -1,4 +1,5 @@
 [
+{"name":"school_emis","label":"School EMIS","repeate":"0"},
 {"name":"surveyor_id","label":"Surveyor ID","repeate":"0"}
 ,
 {"name":"district","label":"1.1) District:","repeate":"0"}
@@ -49,13 +50,9 @@
 ,
 {"name":"contact_photo","label":"1.15.5) Photo of Contact","repeate":"0"}
 ,
-{"name":"exposure","label":"2) Exposure","repeate":"0"}
-,
 {"name":"distance_river","label":"2.3) Distance of site away from river /body of water ?","repeate":"0"}
 ,
 {"name":"comment_distance_river","label":"Comment","repeate":"0"}
-,
-{"name":"flooding","label":"Flooding","repeate":"0"}
 ,
 {"name":"risk_of_flooding","label":"2.4) Is the site at risk of flooding?","repeate":"0"}
 ,
@@ -91,8 +88,6 @@
 ,
 {"name":"image_drainage_system_culverts_overflowed","label":"Take Photo","repeate":"0"}
 ,
-{"name":"landslide","label":"Landslide","repeate":"0"}
-,
 {"name":"landslide_risk","label":"2.6) Is there a landslide risk ?","repeate":"0"}
 ,
 {"name":"image_landslide_risk","label":"Take Photo","repeate":"0"}
@@ -101,8 +96,6 @@
 ,
 {"name":"comment_landslide_history","label":"Comment","repeate":"0"}
 ,
-{"name":"topography","label":"Topography","repeate":"0"}
-,
 {"name":"general_terrain","label":"2.7) What is the general terrain of surrounding area?","repeate":"0"}
 ,
 {"name":"general_topography","label":"2.8) What is the general topography of the School campus?","repeate":"0"}
@@ -110,8 +103,6 @@
 {"name":"comment_general_topography","label":"Comment","repeate":"0"}
 ,
 {"name":"image_general_topography","label":"Take Photo","repeate":"0"}
-,
-{"name":"surroundings","label":"Surroundings","repeate":"0"}
 ,
 {"name":"approx_distance_to_road","label":"2.9) Approximate Distance to main road from entrance to school /campus.","repeate":"0"}
 ,
@@ -124,8 +115,6 @@
 {"name":"linear_feature","label":"2.11) Are there any linear features or vertical offsets on the site, which could indicate an active fault / landslide risk ?","repeate":"0"}
 ,
 {"name":"image_linear_feature","label":"Take Photo","repeate":"0"}
-,
-{"name":"physical_planning","label":"3) Physical Planning","repeate":"0"}
 ,
 {"name":"number_of_buildings","label":"3.1) Number of School Buildings (Blocks) on school campus","repeate":"0"}
 ,
@@ -140,8 +129,6 @@
 {"name":"ngo","label":"Specify NGO","repeate":"0"}
 ,
 {"name":"int_donor","label":"Specify International Donor","repeate":"0"}
-,
-{"name":"local_donor","label":"Specify Local Donor","repeate":"0"}
 ,
 {"name":"owns_land","label":"3.3) Who owns school campus land ?","repeate":"0"}
 ,

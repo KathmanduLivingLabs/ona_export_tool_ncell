@@ -60,8 +60,6 @@
 ,
 {"name":"image_risk_of_flooding","label":"Take Photo","repeate":"0"}
 ,
-{"name":"flooding_risk","label":"Flooding","repeate":"0"}
-,
 {"name":"last_flood_event","label":"2.4.1) If yes, is there a history of flooding when was Last flood event (year - BS)","repeate":"0"}
 ,
 {"name":"flood_height","label":"2.4.2) If there is a flooding risk what is Maximum historical flood height (metres)","repeate":"0"}

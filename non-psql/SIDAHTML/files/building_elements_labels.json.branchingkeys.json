@@ -23,10 +23,5 @@
 		"key": "structural_typology",
 		"remove-if": "3",
 		"sub-keys": ["masonry_wall", "stone_wall", "_wall_panel","_wall_height","stone","rc_frame"]
-	},
-	{
-		"key": "parapets",
-		"remove-if": "no",
-		"sub-keys": ["comment_parapets", "image_parapets", "parapets_height", "parapets_thickness", "parapets_damage", "image_parapets_damage"]
 	}
 ]

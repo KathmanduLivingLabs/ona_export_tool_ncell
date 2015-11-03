@@ -23,5 +23,10 @@
 		"key": "number_of_tlc",
 		"remove-if": "0",
 		"sub-keys": ["funded", "ingo", "ngo", "int_donor"]
+	},
+	{
+		"key": "funded",
+		"remove-if": "local_donor",
+		"sub-keys": ["funded", "ingo", "ngo", "int_donor"]
 	}
 ]

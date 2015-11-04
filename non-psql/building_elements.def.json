@@ -11,7 +11,7 @@
 	"piece_assessment/plan_image": "Plan Image",
 	"piece_assessment/storey_structural_typology":
 	[
-		{"label":"Structural Typology of $1 floor"},
+		{"label":"Structural Typology of $1 storey"},
 		{"building_element/foundation/continuous_lintel_beam": "Continous lintel beam"},
 		{"building_element/foundation/damage_foundation": "Foundation Damage"},
 		{"building_element/foundation/foundation_1/foundation_type": "Foundation Type"},
@@ -21,7 +21,7 @@
 		{"building_element/floors/floors_1/floor_condition":"Floor Condition", "position":[2]},
 		{"building_element/floors/floors_1/image_floor_condition":"Photo of Floor Condition", "position":[2]},
 		{"structural_typology":"Structural Typology","position":[1]},
-		[
+		[[
 			{"rc_frame/construction_quality_rc_frame/overall_quality_rc_frame":"Overall Quality of RC Frame"},
 			{"rc_frame/frame/Frame_2/image_beam_span":"Photo of Beam Span"},
 			{"rc_frame/frame/Frame_2/long_direction":"Long Direction Length"},
@@ -50,8 +50,7 @@
 			{"rc_frame/walls_rc_frame/walls_rc_frame_3/interior_infill_wall_thickness":"Interior Infill Wall Thickness"},
 			{"rc_frame/walls_rc_frame/walls_rc_frame_4/construction_sequence":"Construction Sequence"},
 			{"rc_frame/walls_rc_frame/walls_rc_frame_4/image_construction_sequence":"Photo of Construction Sequence"},
-			{"rc_frame/walls_rc_frame/walls_storey_height_rc_frame":"Wall storey height RC Frame"},
-			{}
+			{"rc_frame/walls_rc_frame/walls_storey_height_rc_frame":"Wall storey height RC Frame"}
 		],[
 			{"load_bearing/construction_quality_load_bearing/overall_quality_load_bearing":"Overall Quality"},
 			{"load_bearing/seismic/seismic_1/seismic_enhancement":"Seismic Enhancement"},
@@ -102,23 +101,25 @@
             {"steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_6/wall_delamination_steel_frame":"Wall delamination"},
             {"steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_7/gable_wall_damage_steel_frame":"Gable wall damage"},
             {"steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_8/masonry_deteriorated_steel_frame":"Masonry deteriorated"}
-		],
-		{"building_element/roof/pendiments":"Roof Pendiments"},
-		{"building_element/roof/roof_1/roof_shape":"Roof Shape"},
-		{"building_element/roof/roof_1/image_roof_shape":"Photo of Roof Shape"},
-		{"building_element/roof/roof_2/comment_roof_structure":"Comment Roof Structure"},
-		{"building_element/roof/roof_2/image_roof_structure":"Image of Roof Structure"},
-		{"building_element/roof/roof_2/roofing_structure":"Roofing Structure"},
-		{"building_element/roof/roof_3/roof_3a/image_roofing_material":"Photo of Roofing Material"},
-		{"building_element/roof/roof_3/roof_3a/roofing_material":"Roofing Material"},
-		{"building_element/roof/roof_3/roof_3c/image_roof_structure_connection":"Photo of Roof Structure Connection"},
-		{"roof/roof_3/roof_3c/roof_structure_connection":"Roof Structure Connection"},
-		{"building_element/roof/roof_3/roof_covering_tied":"Is the roof structure tied?"},
-		{"building_element/roof/roof_4/image_roof_condition":"Photo of Roof Condition"},
-		{"building_element/roof/roof_4/roof_condition":"Roof Condition"},
-		{"building_element/roof/roof_5/gable_wall_damage_roof":"Gable Wall Damage"},
-		{"building_element/roof/roof_6/comment_parapets":"Comment on Parapets"},
-		{"building_element/roof/roof_6/image_parapets":"Photo of Parapets"},
-		{"building_element/roof/roof_6/parapets":"Parapets"}
+		]],
+		
+		{"building_element/roof/pendiments":"Roof Pendiments","position":[-1]},
+		{"building_element/roof/roof_1/roof_shape":"Roof Shape","position":[-1]},
+		{"building_element/roof/roof_1/image_roof_shape":"Photo of Roof Shape","position":[-1]},
+		{"building_element/roof/roof_2/comment_roof_structure":"Comment Roof Structure","position":[-1]},
+		{"building_element/roof/roof_2/image_roof_structure":"Image of Roof Structure","position":[-1]},
+		{"building_element/roof/roof_2/roofing_structure":"Roofing Structure","position":[-1]},
+		{"building_element/roof/roof_3/roof_3a/image_roofing_material":"Photo of Roofing Material","position":[-1]},
+		{"building_element/roof/roof_3/roof_3a/roofing_material":"Roofing Material","position":[-1]},
+		{"building_element/roof/roof_3/roof_3c/image_roof_structure_connection":"Photo of Roof Structure Connection","position":[-1]},
+		{"roof/roof_3/roof_3c/roof_structure_connection":"Roof Structure Connection","position":[-1]},
+		{"building_element/roof/roof_3/roof_covering_tied":"Is the roof structure tied?","position":[-1]},
+		{"building_element/roof/roof_4/image_roof_condition":"Photo of Roof Condition","position":[-1]},
+		{"building_element/roof/roof_4/roof_condition":"Roof Condition","position":[-1]},
+		{"building_element/roof/roof_5/gable_wall_damage_roof":"Gable Wall Damage","position":[-1]},
+		{"building_element/roof/roof_6/comment_parapets":"Comment on Parapets","position":[-1]},
+		{"building_element/roof/roof_6/image_parapets":"Photo of Parapets","position":[-1]},
+		{"building_element/roof/roof_6/parapets":"Parapets","position":[-1]}
+	
 	]
 }

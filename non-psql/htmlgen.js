@@ -20,6 +20,8 @@ _.map(data, function(item, index) {
 	var pagetitle = function() {
 		if (emis.match(/EMIS[0-9]+-[a-z]+-[0-9]+/gi)) {
 			return "Building Element " + emis;
+		}else{
+			return "Building" + emis;
 		}
 	}();
 

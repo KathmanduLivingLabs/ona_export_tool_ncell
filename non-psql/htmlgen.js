@@ -74,7 +74,12 @@ _.map(data, function(item, index) {
 		//container.append($(tableRow).html());
 	});
 
-	fs.writeFileSync("output/"+emis+".html", page.html());
+	var tempEmis = emis; 
+	if (emis.match(/EMIS[0-9]+-[a-z]+-[0-9]+/gi)) {
+			tempEmis = emis.replace(/EMIS[0-9][0-9]/, "EMIS");
+		}
+
+	fs.writeFileSync("output/"+tempEmis+".html", page.html());
 
 
 });

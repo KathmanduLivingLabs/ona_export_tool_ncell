@@ -25,7 +25,7 @@
 	}else{
 		$genDocList = array("$emis.pdf");
 		//if($group=='schools'){
-			exec("./htmlgen.sh $emis schools");
+			exec("./htmlgen2.sh $emis schools");
 		//}else if($group=='buildings'){
 			exec("./htmlgen.sh $emis buildings");
 			

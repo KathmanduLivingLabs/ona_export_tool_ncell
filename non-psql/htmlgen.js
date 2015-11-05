@@ -48,9 +48,9 @@ _.map(data, function(item, index) {
 
 		var key = Object.keys(item_1)[0];
 
-		var tableRow = $("<div class='table-row'></div>").addClass(key);
-		tableRow.append($("<div class='key'></div>").text(item_1[key][0] + ""));
-		tableRow.append($("<div class='value'></div>").text(unescape(item_1[key][1])) + "");
+		var tableRow = $("<tr class='table-row'></tr>").addClass(key);
+		tableRow.append($("<td class='key'></td>").text(item_1[key][0] + ""));
+		tableRow.append($("<td class='value'></td>").text(unescape(item_1[key][1])) + "");
 		if(unescape(item_1[key][1])==="undefined"){
 			tableRow.find(".value").text("n/a");
 			tableRow.addClass("undefined");

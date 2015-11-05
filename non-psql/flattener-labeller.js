@@ -23,10 +23,14 @@ var output = _.map(data, function(dataItem, dataIndex){
 	var ithFlattened = [];
 	_.map(def, function(defItem, defIndex){
 		if(typeof defItem === "string"){
+			if(defIndex==="section-break"){
+				ithFlattened.push([defItem]);
+			}else{
 			ithFlattened.push(eval({
 				//[defIndex]: [defItem, escape(dataItem[defIndex])==="undefined"?"na":escape(dataItem[defIndex])]
 				[defIndex]: [defItem, escape(dataItem[defIndex])]
 			}));
+		}
 		}else if(defItem && defItem.push){
 			_.map(dataItem[defIndex], function(gDataItem_1, gDataIndex_1){
 				_.map(defItem, function(gDefItem_1, gDefIndex_1){

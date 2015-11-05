@@ -16,11 +16,13 @@
 	font-size: 1.2em;
 	font-family: "Verdana";
 	padding: 0px 8px;
+	display: table-row;
 }
 
 
 .key, .value{
 	display: inline-block;
+	display: table-cell;
 	outline: #cccccc thin solid;
 	width: 40%;
 	padding: 0px 8px;
@@ -33,10 +35,15 @@
 }
 
 .section-name{
-	background-color: #ececec;
+	/*background-color: #ececec;*/
 	padding: 0px 8px;
 	margin-left: -2px;
 	/*width: 97%;*/
+	display: block;
+	width: 197.8%;
+	font-weight: 600;
+	line-height: 2.4em;
+	margin-top: 20px;
 }
 
 img{
@@ -47,6 +54,7 @@ img{
 
 .has-photo .value, .has-photo .key{
 	display: block;
+	display: table-cell;
 	width: 81.26%;
 }
 .has-photo .value{

@@ -37,7 +37,7 @@
 			//$genDoc = array_merge($matches);
 		//}else{
 			//$emis = preg_replace('/(EMIS)(\\d{2})/', "$1$2$2", $emis);
-			exec("./htmlgen.sh ".preg_replace('/(EMIS)(\\d{2})/', "$1$2$2", $emis)." building_elements");
+			exec("./htmlgen2.sh ".preg_replace('/(EMIS)(\\d{2})/', "$1$2$2", $emis)." building_elements");
 
 			//$data = file_get_contents('building_elements.json');
 			//echo $data;

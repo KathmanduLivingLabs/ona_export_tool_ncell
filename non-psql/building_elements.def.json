@@ -57,7 +57,7 @@
 			{"load_bearing/seismic/seismic_2/retrofitted":"Retrofitted"},
 			{"load_bearing/wall/masonry_wall_type":"Masonry Wall Type"},
 			{"load_bearing/wall/wall_2/image_wall_panel_principal_direction":"Photo of Wall Panel Principal Direction"},
-			{"load_bearing/wall/wall_2/wall_panel_principal_direction": "yes"},
+			{"load_bearing/wall/wall_2/wall_panel_principal_direction": "Principal Direction"},
             {"load_bearing/wall/wall_3/image_stone_type":"Photo of Stone Type"},
             {"load_bearing/wall/wall_3/wall_thickness":"Wall Thickness"},
             {"load_bearing/wall/wall_4/image_wall_panel_length":"Photo of Wall Panel Length"},

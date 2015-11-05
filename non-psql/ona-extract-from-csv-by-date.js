@@ -110,7 +110,7 @@ var output_filenameRoot = (function(name){
     prefix.pop();
     prefix.join(".");
     return prefix;
-}(process.argv[4]))+"_"+startDate.replace(/-/g,"_")+"_"+endDate.replace(/-/g,"_")+"_records_"+filtered.length+"_pictures_"+(zipList.split(" ").length-2);
+}(process.argv[4]))+"_"+startDate.replace(/-/g,"_")+"_"+endDate.replace(/-/g,"_")+"_records_"+(filtered.length-1)+"_pictures_"+(zipList.split(" ").length-2);
 
 zipList = output_filenameRoot+".zip "+output_filenameRoot+".csv "+zipList;
 

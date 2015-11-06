@@ -40,7 +40,7 @@
 			$tocml = "<html><head></head><body><style>h4{display: inline-block; margin-left: 20px;}</style><h1>Table of Contents</h1>";
 			$tocFileName = $baseFileName."-toc";
 
-			$contents = "";
+			$contents = "<div class='pagebreak' style='page-break-after: always;'></div>";
 
 			$numPages = 2;
 
@@ -50,7 +50,7 @@
 				//exec("html-pdf output/$docName.html output/$docName.pdf");
 				exec('xvfb-run --server-args="-screen 0, 1366x768x24" wkhtmltopdf output/'.$docName.'.html _temp/'.$docName.'.pdf');
 
-				$contents .=file_get_contents($docName);
+				$contents .=file_get_contents("output/$docName.html")."<div class='pagebreak' style='page-break-after: always;'></div>";
 				//EMIS250050003.html
 				//php -r 'echo exec("xvfb-run --server-args=\"-screen 0, 1366x768x24\" --header-left=\"[webpage]\" --header-right=\"[page]/[toPage]\" --top 2cm --header-line wkhtmltopdf output/EMIS210490003-C.html _temp/EMIS210490003-C.pdf");'
 				$tocml .= "<div><h4>".preg_replace('/_/', '-', str_replace(".pdf", "", $docName))."</h4>  ................  <h4>".$numPages."</h4></div>";

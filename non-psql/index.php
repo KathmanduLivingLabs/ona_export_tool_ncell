@@ -27,7 +27,7 @@
 		//if($group=='schools'){
 			exec("./htmlgen2.sh $emis schools");
 		//}else if($group=='buildings'){
-			exec("./htmlgen.sh $emis buildings");
+			exec("./htmlgen2.sh $emis buildings");
 			
 			//$data = file_get_contents('buildings.json');
 			//echo $emis;

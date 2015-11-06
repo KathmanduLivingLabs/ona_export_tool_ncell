@@ -8,7 +8,7 @@
 
 	
 
-	if(!($emis)){
+	if(!($emis) || !preg_match('/EMIS[0-9]+/', $emis)){
 		echo "No record selected.";
 	}else{
 		$genDocList = array("$emis.pdf");
@@ -42,19 +42,19 @@
 
 			$contents = "<div class='pagebreak' style='page-break-after: always; margin: 4em 0em; border-bottom: #999999 thin solid;'></div>";
 
-			$numPages = 2;
+			//$numPages = 2;
 
 			//var_dump($genDocList);
 
 			foreach($genDocList as $docName){
 				//exec("html-pdf output/$docName.html output/$docName.pdf");
-				exec('xvfb-run --server-args="-screen 0, 1366x768x24" wkhtmltopdf output/'.$docName.'.html _temp/'.$docName.'.pdf');
+				//exec('xvfb-run --server-args="-screen 0, 1366x768x24" wkhtmltopdf output/'.$docName.'.html _temp/'.$docName.'.pdf');
 
 				$contents .=file_get_contents("output/$docName.html")."<div class='pagebreak' style='page-break-after: always;'></div>";
 				//EMIS250050003.html
 				//php -r 'echo exec("xvfb-run --server-args=\"-screen 0, 1366x768x24\" --header-left=\"[webpage]\" --header-right=\"[page]/[toPage]\" --top 2cm --header-line wkhtmltopdf output/EMIS210490003-C.html _temp/EMIS210490003-C.pdf");'
-				$tocml .= "<div class='toc'><h4>".preg_replace('/_/', '-', str_replace(".pdf", "", $docName))."</h4>  ................  <h4>".$numPages."</h4></div>";
-				$numPages += intval(exec("pdfinfo _temp/$docName.pdf | grep Pages | awk '{print $2}'"));
+				$tocml .= "<div class='toc'><h4>".preg_replace('/_/', '-', str_replace(".pdf", "", $docName))."</h4></div>";//."</h4>  ................  <h4>".$numPages."</h4></div>";
+				//$numPages += intval(exec("pdfinfo _temp/$docName.pdf | grep Pages | awk '{print $2}'"));
 			}
 
 			$tocml .= $contents."</body></html>";

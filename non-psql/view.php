@@ -59,7 +59,7 @@
 
 			$tocml .= $contents."</body></html>";
 
-			echo preg_replace('/..\/([0-9].*-large.jpg)/ui','$1',$tocml);
+			echo $tocml;
 
 			//file_put_contents("_temp/$tocFileName.html", $tocml);
 			//exec("html-pdf _temp/$tocFileName.html _temp/$tocFileName.pdf");

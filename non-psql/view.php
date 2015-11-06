@@ -1,6 +1,6 @@
 <?php
 	header("Access-Control-Allow-Origin: *");
-	header('Content-Type: text/plain');
+	//header('Content-Type: text/plain');
 
 	$emis = $_GET['emis'];
 	//$group = $_GET['group'];
@@ -44,7 +44,7 @@
 
 			$numPages = 2;
 
-			var_dump($genDocList);
+			//var_dump($genDocList);
 
 			foreach($genDocList as $docName){
 				//exec("html-pdf output/$docName.html output/$docName.pdf");

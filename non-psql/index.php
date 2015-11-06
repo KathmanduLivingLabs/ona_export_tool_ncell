@@ -49,16 +49,17 @@
 			asort($genDocList);
 			$baseFileName = $genDocList[0];
 
-			$tocml = "<html><head></head><body><style>h4{display: inline-block; margin-left: 20px;}</style><h1>Table of Contents</h1>";
+			$tocml = "<html><head><title>$emis Compiled</title></head><body><style>h4{display: inline-block; margin-left: 20px;}</style><h1>Table of Contents</h1>";
 			$tocFileName = $baseFileName."-toc";
 
 			$numPages = 2;
 
-			var_dump($genDocList);
+			//var_dump($genDocList);
 
 			foreach($genDocList as $docName){
 				//exec("html-pdf output/$docName.html output/$docName.pdf");
-				exec('xvfb-run --server-args="-screen 0, 1366x768x24" wkhtmltopdf output/'.$docName.'.html _temp/'.$docName.'.pdf');
+				//exec('xvfb-run --server-args="-screen 0, 1366x768x24" wkhtmltopdf output/'.$docName.'.html _temp/'.$docName.'.pdf');
+				exec('wkhtmltopdf output/'.$docName.'.html _temp/'.$docName.'.pdf');
 				//EMIS250050003.html
 				//php -r 'echo exec("xvfb-run --server-args=\"-screen 0, 1366x768x24\" --header-left=\"[webpage]\" --header-right=\"[page]/[toPage]\" --top 2cm --header-line wkhtmltopdf output/EMIS210490003-C.html _temp/EMIS210490003-C.pdf");'
 				$tocml .= "<div><h4>".preg_replace('/_/', '-', str_replace(".pdf", "", $docName))."</h4>  ................  <h4>".$numPages."</h4></div>";
@@ -69,7 +70,7 @@
 
 			file_put_contents("_temp/$tocFileName.html", $tocml);
 			//exec("html-pdf _temp/$tocFileName.html _temp/$tocFileName.pdf");
-			exec('xvfb-run --server-args="-screen 0, 1366x768x24" wkhtmltopdf _temp/'.$tocFileName.'.html _temp/'.$tocFileName.'.pdf');
+			exec('wkhtmltopdf _temp/'.$tocFileName.'.html _temp/'.$tocFileName.'.pdf');
 
 			$genDocList = $tocFileName.".pdf ".implode(".pdf ", $genDocList).".pdf $emis-compiled.pdf";
 			exec("cd _temp; pdfunite $genDocList;");

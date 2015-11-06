@@ -61,8 +61,7 @@ _.map(data, function(item, index) {
 
 		if(unescape(item_1[key][1]).match(".jpg")){
 			tableRow.find(".value").append($("<img/>").attr({
-				src: unescape(item_1[key][1]).split(".")[0]+"-large.jpg"
-				//src: "../"+unescape(item_1[key][1]).split(".")[0]+"-large.jpg"
+				src: "../"+unescape(item_1[key][1]).split(".")[0]+"-large.jpg"
 			}));
 			tableRow.addClass("has-photo");
 		}

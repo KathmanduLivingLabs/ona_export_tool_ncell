@@ -3,13 +3,14 @@
 	header('Content-Type: text/plain');
 
 	$emis = $_GET['emis'];
+	$query = $_GET['query'];
 	//$group = $_GET['group'];
 
-	try{
+	if($query=='gettimestamp'){
 		$updateTime = file_get_contents(".updatetime"); 
-	}catch(Exception $e){
-		$updateTime = time();
-	} 
+		echo time()-$updateTime;
+		exit();
+	}
 
 	if(time()-$updateTime > 86400){
 		exec("./fetchPhotos.sh");
@@ -17,6 +18,8 @@
 		$updateTime = time();
 		file_put_contents(".updatetime", $updateTime);
 	}
+
+
 
 	
 

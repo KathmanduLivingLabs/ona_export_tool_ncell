@@ -1,46 +1,56 @@
 #!/bin/bash
 
-touch schools.json
+touch schools_temp.json
 
-while [ $(stat --printf="%s" schools.json) -eq 0 ]
+while [ $(stat --printf="%s" schools_temp.json) -eq 0 ]
 do
-	curl -X GET -u "wbsida321:KrS93r8Ttei63xN4ZB6rt0xLy" https://api.ona.io/api/v1/data/68589.json >schools.json
+	curl -X GET -u "wbsida321:KrS93r8Ttei63xN4ZB6rt0xLy" https://api.ona.io/api/v1/data/68589.json >schools_temp.json
 done
 
-touch buildings.json
+touch buildings_temp.json
 
-while [ $(stat --printf="%s" buildings.json) -eq 0 ]
+while [ $(stat --printf="%s" buildings_temp.json) -eq 0 ]
 do
-	curl -X GET -u "wbsida321:KrS93r8Ttei63xN4ZB6rt0xLy" https://api.ona.io/api/v1/data/68590.json >buildings.json
+	curl -X GET -u "wbsida321:KrS93r8Ttei63xN4ZB6rt0xLy" https://api.ona.io/api/v1/data/68590.json >buildings_temp.json
 done
 
-touch building_elements.json
+touch building_elements_temp.json
 
-while [ $(stat --printf="%s" building_elements.json) -eq 0 ]
+while [ $(stat --printf="%s" building_elements_temp.json) -eq 0 ]
 do
-	curl -X GET -u "wbsida321:KrS93r8Ttei63xN4ZB6rt0xLy" https://api.ona.io/api/v1/data/80364.json >building_elements.json
+	curl -X GET -u "wbsida321:KrS93r8Ttei63xN4ZB6rt0xLy" https://api.ona.io/api/v1/data/80364.json >building_elements_temp.json
 done
 
-touch school.csv
+touch school_temp.csv
 
-while [ $(stat --printf="%s" school.csv) -eq 0 ]
+while [ $(stat --printf="%s" school_temp.csv) -eq 0 ]
 do
-	curl -X GET -u "wbsida321:KrS93r8Ttei63xN4ZB6rt0xLy" https://api.ona.io/api/v1/data/68589.csv >school.csv
+	curl -X GET -u "wbsida321:KrS93r8Ttei63xN4ZB6rt0xLy" https://api.ona.io/api/v1/data/68589.csv >school_temp.csv
 done
 
-touch building.csv
+touch building_temp.csv
 
 while [ $(stat --printf="%s" building.csv) -eq 0 ]
 do
-	curl -X GET -u "wbsida321:KrS93r8Ttei63xN4ZB6rt0xLy" https://api.ona.io/api/v1/data/68590.csv >building.csv
+	curl -X GET -u "wbsida321:KrS93r8Ttei63xN4ZB6rt0xLy" https://api.ona.io/api/v1/data/68590.csv >building_temp.csv
 done
 
-touch buildingelement.csv
+touch buildingelement_temp.csv
 
 while [ $(stat --printf="%s" buildingelement.csv) -eq 0 ]
 do
-	curl -X GET -u "wbsida321:KrS93r8Ttei63xN4ZB6rt0xLy" https://api.ona.io/api/v1/data/80364.csv >buildingelement.csv
+	curl -X GET -u "wbsida321:KrS93r8Ttei63xN4ZB6rt0xLy" https://api.ona.io/api/v1/data/80364.csv >buildingelement_temp.csv
 done
+
+mv schools_temp.json schools.json
+mv buildings_temp.json buildings.json
+mv building_elements_temp.json building_elements.json
+
+mv school_temp.csv school.csv
+mv building_temp.csv building.csv
+mv buildingelement_temp.csv buildingelement.csv
+
+date +%s >.updatetime
 
 #curl -X GET -u "wbsida321:KrS93r8Ttei63xN4ZB6rt0xLy" https://api.ona.io/api/v1/data/68589.json >schools.json
 #curl -X GET -u "wbsida321:KrS93r8Ttei63xN4ZB6rt0xLy" https://api.ona.io/api/v1/data/68590.json >buildings.json

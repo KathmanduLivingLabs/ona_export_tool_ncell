@@ -12,12 +12,6 @@
 		exit();
 	}
 
-	if(time()-$updateTime > 86400){
-		exec("./fetchPhotos.sh");
-		exec("./fetchData.sh");
-		$updateTime = time();
-		file_put_contents(".updatetime", $updateTime);
-	}
 
 
 

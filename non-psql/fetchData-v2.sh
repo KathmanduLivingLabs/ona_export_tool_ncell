@@ -30,14 +30,14 @@ done
 
 touch building_temp.csv
 
-while [ $(stat --printf="%s" building.csv) -eq 0 ]
+while [ $(stat --printf="%s" building_temp.csv) -eq 0 ]
 do
 	curl -X GET -u "wbsida321:KrS93r8Ttei63xN4ZB6rt0xLy" https://api.ona.io/api/v1/data/68590.csv >building_temp.csv
 done
 
 touch buildingelement_temp.csv
 
-while [ $(stat --printf="%s" buildingelement.csv) -eq 0 ]
+while [ $(stat --printf="%s" buildingelement_temp.csv) -eq 0 ]
 do
 	curl -X GET -u "wbsida321:KrS93r8Ttei63xN4ZB6rt0xLy" https://api.ona.io/api/v1/data/80364.csv >buildingelement_temp.csv
 done

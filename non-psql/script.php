@@ -7,6 +7,20 @@ $tableName = $_GET['tablename'];
 $tableIDs = file_get_contents("tableIDs.json");
 $tableIDs = json_decode($tableIDs, true);
 
+
+$clientAddr = $_SERVER['REMOTE_ADDR'];
+
+
+if(preg_match("/\d+\.\d+\.\d+\.\d+/",$clientAddr, $result) && strlen(file_get_contents($clientAddr))){
+
+        //echo "true";
+}else{
+        echo "no";
+exit();
+}
+
+
+
 //&& preg_match("/(\d{4})-(\d{2})-(\d{2})/", $enddate, $results)
 if(preg_match("/(\d{4})-(\d{2})-(\d{2})/", $startDate, $results) 
 	&& preg_match("/(\d{4})-(\d{2})-(\d{2})/", $endDate, $results2) && $tableIDs[$tableName]){

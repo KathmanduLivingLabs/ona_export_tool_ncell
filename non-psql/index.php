@@ -13,6 +13,17 @@
 	}
 
 
+$clientAddr = $_SERVER['REMOTE_ADDR'];
+
+	if(preg_match("/\d+\.\d+\.\d+\.\d+/",$clientAddr, $result) && strlen(file_get_contents($clientAddr))){
+
+        //echo "true";
+}else{
+        echo "no";
+exit();
+}
+
+
 
 
 	

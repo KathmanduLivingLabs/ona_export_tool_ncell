@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cat ../pass.txt
+cat ../../pass.txt
 

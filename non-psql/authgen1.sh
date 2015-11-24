@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cat ../user.txt
+cat ../../user.txt
 

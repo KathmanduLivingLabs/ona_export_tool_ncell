@@ -4,6 +4,8 @@ var $ = require('cheerio').load('');
 
 var data = fs.readFileSync(process.argv[2], "utf-8");
 
+var ignoreList = fs.readFileSync("ignorelist.lst", "utf-8");
+
 
 
 data = JSON.parse(data);
@@ -50,6 +52,10 @@ _.map(data, function(item, index) {
 		}
 
 		var key = Object.keys(item_1)[0];
+
+		if(unescape(item_1[key][1])==="undefined" && ignoreList.match(key)){
+			return;
+		}
 
 		var tableRow = $("<div class='table-row'></div>").addClass(key);
 		tableRow.append($("<div class='key'></div>").text(item_1[key][0] + ""));

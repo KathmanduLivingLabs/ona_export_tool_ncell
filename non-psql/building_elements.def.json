@@ -249,7 +249,7 @@
           "rc_frame/infill_wall_damage/infill_wall_damage_5/comment_extent_of_diagonal_cracking_rc_frame": "Comment"
         },
         {
-          "rc_frame/infill_wall_damage/infill_wall_damage_5/comment_extent_of_diagonal_cracking_rc_frame": "Take photo"
+          "rc_frame/infill_wall_damage/infill_wall_damage_5/image_extent_of_diagonal_cracking_rc_frame": "Take photo"
         },
         {
           "rc_frame/infill_wall_damage/infill_wall_damage_6/perimeter_cracking": "8.20) Cracking at perimeter of panel of Infill walls (may possibly include hairline diagonal cracks)"

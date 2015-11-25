@@ -5,7 +5,7 @@
 
 #aws s3 ls s3://onadata/wbsida321/attachments/ > filelist.txt
 
-#s3cmd ls s3://onadata/wbsida321/attachments/ > filelist.txt
+s3cmd ls s3://onadata/wbsida321/attachments/ > filelist.txt
 
 array=$(cat filelist.txt | grep -o "[0-9]\{3,13\}.jpg")
 

@@ -50,6 +50,8 @@ mv school_temp.csv school.csv
 mv building_temp.csv building.csv
 mv buildingelement_temp.csv buildingelement.csv
 
+./fetchPhotos.sh
+
 date +%s >.updatetime
 
 #curl -X GET -u "wbsida321:KrS93r8Ttei63xN4ZB6rt0xLy" https://api.ona.io/api/v1/data/68589.json >schools.json

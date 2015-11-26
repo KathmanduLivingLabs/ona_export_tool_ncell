@@ -12,7 +12,7 @@ data = JSON.parse(data);
 
 var mergedHTML = '';
 var tempEmis;
-var indicatorMsges = (data.length-1) ? '_has_multiple_entries_'+data.length : '';
+var indicatorMsges = (data.length-1) ? ' has duplicate EMIS entries ('+data.length+')' : '';
 
 
 //page.find("#page-title").append($("<h1></h1>").text(pagetitle));
@@ -25,9 +25,11 @@ _.map(data, function(item, index) {
 	}();
 	var pagetitle = function() {
 		if (emis.match(/EMIS[0-9]+-[a-z]+-[0-9]+/gi)) {
-			return "Building Element: " + emis;
+			return "Building Element: " + emis.replace(/EMIS\d\d(.*)/, "EMIS$1") + indicatorMsges;
+		}else if(emis.match(/EMIS[0-9]+-[a-z]+/gi)){
+			return "Building: " + emis + indicatorMsges;
 		}else{
-			return "School: " + emis;
+			return "School: " + emis + indicatorMsges;
 		}
 	}();
 

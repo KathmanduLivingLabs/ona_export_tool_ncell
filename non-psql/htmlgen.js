@@ -12,6 +12,7 @@ data = JSON.parse(data);
 
 var mergedHTML = '';
 var tempEmis;
+var indicatorMsges = data.length ? '_has_multiple_entries_'+data.length : '';
 
 
 //page.find("#page-title").append($("<h1></h1>").text(pagetitle));
@@ -97,7 +98,7 @@ _.map(data, function(item, index) {
 
 });
 
-fs.writeFileSync("output/"+tempEmis+".html", mergedHTML);
+fs.writeFileSync("output/"+tempEmis+indicatorMsges+".html", mergedHTML);
 
 
 

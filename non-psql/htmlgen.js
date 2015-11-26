@@ -10,6 +10,9 @@ var ignoreList = fs.readFileSync("ignorelist.lst", "utf-8");
 
 data = JSON.parse(data);
 
+var mergedHTML = '';
+var tempEmis;
+
 
 //page.find("#page-title").append($("<h1></h1>").text(pagetitle));
 
@@ -84,12 +87,28 @@ _.map(data, function(item, index) {
 		//container.append($(tableRow).html());
 	});
 
-	var tempEmis = emis; 
+	tempEmis = emis; 
 	if (emis.match(/EMIS[0-9]+-[a-z]+-[0-9]+/gi)) {
 			tempEmis = emis.replace(/EMIS[0-9][0-9]/, "EMIS");
 		}
 
-	fs.writeFileSync("output/"+tempEmis+".html", page.html());
+	mergedHTML += page.html();
 
 
 });
+
+fs.writeFileSync("output/"+tempEmis+".html", mergedHTML);
+
+
+
+
+
+
+
+
+
+
+
+
+
+

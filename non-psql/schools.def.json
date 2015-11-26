@@ -1,7 +1,9 @@
 {
 
 	"general_detail/emis/school_emis": "Reference",
-	"surveyor": "Surveyor ID",
+	"surveyor_id": "Surveyor ID",
+	"_id": "Submission ID",
+	"_submission_time": "Submission Time",
 	"section-break":"1) General School Details",
 	"general_detail/genral_detail0/district": "1.1) District",
 	"general_detail/genral_detail0/vdc": "1.2) VDC",

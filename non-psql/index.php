@@ -30,7 +30,7 @@ exit();
 
 	if(!($emis)){
 		echo exec('./ona-list-emis.sh');
-	}else{
+	}elseif(preg_match("/EMIS\d+/", $emis, $tmp)){
 		$genDocList = array("$emis.pdf");
 		//if($group=='schools'){
 			exec("./htmlgen2.sh $emis schools");

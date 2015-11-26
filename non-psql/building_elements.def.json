@@ -1,6 +1,8 @@
 {
   "piece_assessment/building_peice_code/piece_reference": "Reference",
   "surveyor_id": "Surveyor ID",
+  "_id": "Submission ID",
+  "_submission_time": "Submission Time",
   "piece_assessment/district": "District",
   "piece_assessment/vdc": "VDC / Municipality",
   "piece_assessment/building_peice_code/school_code": "EMIS School Code",

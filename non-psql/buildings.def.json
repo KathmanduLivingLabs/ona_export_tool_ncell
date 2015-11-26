@@ -1,6 +1,8 @@
 {
   "building_assessment/general_building_info/general_building_info_1/building_code/building_ref_no":"Reference",
   "surveyor_id": "Surveyor ID",
+  "_id": "Submission ID",
+  "_submission_time": "Submission Time",
   "building_assessment/general_building_info/general_building_info_1/district": "District",
   "building_assessment/general_building_info/general_building_info_1/vdc": "VDC/Municipality",
   "building_assessment/general_building_info/general_building_info_1/building_code/school_code": "EMIS School Code",

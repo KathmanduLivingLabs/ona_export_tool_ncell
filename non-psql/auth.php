@@ -6,8 +6,13 @@ header('Content-Type: text/plain');
 $authString1 = $_POST['auth1'];
 $authString2 = $_POST['auth2'];
 
-$validAuth1 = exec("./authgen1.sh");
-$validAuth2 = exec("./authgen2.sh");
+if(preg_match("/\W/", $authString1, $c)){
+	echo "false";
+	exit();
+}
+
+$validAuth1 = exec("./authgen1.sh $authString1");
+$validAuth2 = exec("./authgen2.sh $validAuth1");
 
 $authString2Calc = exec("echo $authString2 | openssl enc -base64 -d | openssl enc -aes-256-cbc -k $validAuth2 -d");
 

@@ -6,6 +6,7 @@ var data = fs.readFileSync(process.argv[3], "utf8");
 //dataFile=dataFile.replace(/_submission_time":"201509/g, '_submission_time":"2015-09-');
 var data = JSON.parse(data);
 var filtered = [];
+//var filteredInnerArray = [];
 var emis = process.argv[2];
 
 
@@ -17,13 +18,48 @@ glob("./_temp/*_"+outputFileName, function(err, fileList) {
 	outputFileName = fileList.length + "_" + outputFileName;
 
 	data.forEach(function(item, index) {
-		if (JSON.stringify(item).match(new RegExp(process.argv[2], "i"))) {
-			filtered.push(item);
+		var fileNameList = [];
+		if (JSON.stringify(item).match(new RegExp(process.argv[2]+"-\w+-\d", "i"))) {
+			if(filtered.length){
+			filtered.forEach(item_1, index_1){
+				if (JSON.stringify(item_1).match(JSON.stringify(item).match(new RegExp(process.argv[2]+"-\w+-\d+", "i"))[0])){
+					filtered[index_1].push(item);
+				}
+			}
+		}else{
+			filtered.push([item]);
+		}
+
+		fileNameList.push(JSON.stringify(item).match(new RegExp(process.argv[2]+"-\w+-\d+", "i"))[0]);
+
+		}else if(JSON.stringify(item).match(new RegExp(process.argv[2]+"-\w+", "i"))){
+
+			if(filtered.length){
+			filtered.forEach(item_1, index_1){
+				if (JSON.stringify(item_1).match(JSON.stringify(item).match(new RegExp(process.argv[2]+"-\w+", "i"))[0])){
+					filtered[index_1].push(item);
+				}
+			}
+		}else{
+			filtered.push([item]);
+		}
+
+		fileNameList.push(JSON.stringify(item).match(new RegExp(process.argv[2]+"-\w+", "i"))[0]);
+
+		}else if(JSON.stringify(item).match(new RegExp(process.argv[2], "i"))){
+			filtered.push([item]);
+			fileNameList.push(JSON.stringify(item).match(new RegExp(process.argv[2], "i"))[0]);
 		}
 	});
 
-	fs.writeFileSync("./_temp/"+outputFileName, JSON.stringify(filtered));
+	
 
-	console.log(outputFileName);
+	filtered.forEach(function(item, index){
+		fs.writeFileSync("./_temp/"+fileNameList[index]+, JSON.stringify(item));
+	});
+
+	//fs.writeFileSync("./_temp/"+outputFileName, JSON.stringify(filtered));
+
+	console.log(fileNameList.join(" "));
 
 });

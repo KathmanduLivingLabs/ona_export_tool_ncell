@@ -3,13 +3,11 @@
 mkdir output
 mkdir _temp
 
-output=$(./filter-data-by-emis.js $1 $2.json)
+read -r -a output <<< $(./filter-data-by-emis.js $1 $2.json)
 
-
-flattened=$(node flattener-labeller.js _temp/$output $2.def.json)
-
-cat _temp/$output >_temp/backup.json
-
-echo $flattened >_temp/$output
-
-node htmlgen.js _temp/$output $2 $1
+for filename in ${outputp[@]}
+do
+	flattened=$(node flattener-labeller.js _temp/$filename $2.def.json)
+	echo $flattened >_temp/$filename
+	node htmlgen.js _temp/$filename $2 $1
+done

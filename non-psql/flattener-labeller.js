@@ -48,7 +48,7 @@ var output = _.map(data, function(dataItem, dataIndex){
 						
 						if((gDataIndex_1) && !gDefItem_1["position"]) return;
 						//if(gDefItem_1["position"] && (gDefItem_1["position"] > (gDataIndex_1))) console.log((gDataIndex_1)+","+gDefItem_1["position"]);
-						if(gDefItem_1["position"] && gDefItem_1["position"][0] > gDataIndex_1) return;
+						if(gDefItem_1["position"] && gDefItem_1["position"][0] > gDataIndex_1+1) return;
 						if(gDefItem_1["position"] && gDefItem_1["position"][0]<0 && ((dataItem[defIndex].length+gDefItem_1["position"][0])>gDataIndex_1)) return;
 						ithFlattened.push({
 							//[gDefItemKey_1]: [gDefItem_1[gDefItemKey_1], escape(gDataItem_1[defIndex+"/"+gDefItemKey_1])==="undefined" ? "na" :escape(gDataItem_1[defIndex+"/"+gDefItemKey_1])]

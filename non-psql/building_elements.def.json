@@ -292,7 +292,7 @@
       ],
       [
         {
-          "load_bearing/wall/masonry_wall_type": "Masonry Wall Type"
+          "load_bearing/wall/masonry_wall_type": "7.1) Masonry Wall Type"
         },
         {
           "load_bearing/wall/masonry_wall_type_other": "Specify other."
@@ -424,7 +424,7 @@
           "load_bearing/wall_damage/wall_damage_7/image_extent_of_in_plane_wall_damage": "Take photo"
         },
         {
-          "load_bearing/wall_damage/wall_damage_8/out_plane_failure": "Out-of-plane Failure"
+          "load_bearing/wall_damage/wall_damage_8/out_plane_failure": "7.14) Out-of-plane Failure"
         },
         {
           "load_bearing/wall_damage/wall_damage_8/comment_out_plane_failure": "Comment"
@@ -704,7 +704,7 @@
       ]
     },
     {
-      "building_element/roof/roof_3/roof_3a/roofing_material": "Roofing Material",
+      "building_element/roof/roof_3/roof_3a/roofing_material": "6.8.1) Roofing Material",
       "position": [
         -1
       ]
@@ -794,7 +794,7 @@
       ]
     },
     {
-      "building_element/roof/roof_6/parapets": "Parapets",
+      "building_element/roof/roof_6/parapets": "6.11) Are there any parapets?",
       "position": [
         -1
       ]

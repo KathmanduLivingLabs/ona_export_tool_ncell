@@ -60,7 +60,7 @@
   "building_assessment/general_building_info/general_building_info_10/damage_non_structural_component_other": "4.16) Non-structural component damage",
   "building_assessment/general_building_info/general_building_info_10/comment_damage_non_structural_component": "Comment",
   "building_assessment/general_building_info/general_building_info_10/image_damage_non_structural_component": "Photo",
-  "building_assessment/damage/damage_1/out_of_plumb": "4.16) Is the building noriceably out of plumb?",
+  "building_assessment/damage/damage_1/out_of_plumb": "4.16) Is the building noticeably out of plumb?",
   "building_assessment/damage/damage_1/comment_out_of_plumb": "Comment",
   "building_assessment/damage/damage_1/image_comment_out_of_plumb": "Photo",
   "building_assessment/damage/damage_2/safe_to_enter": "4.17) Has the building been judged safe to enter?",

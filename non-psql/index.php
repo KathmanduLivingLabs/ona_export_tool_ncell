@@ -80,7 +80,7 @@ function tocSort($a, $b) {
 				exec('wkhtmltopdf output/'.$docName.'.html _temp/'.$docName.'.pdf');
 				//EMIS250050003.html
 				//php -r 'echo exec("xvfb-run --server-args=\"-screen 0, 1366x768x24\" --header-left=\"[webpage]\" --header-right=\"[page]/[toPage]\" --top 2cm --header-line wkhtmltopdf output/EMIS210490003-C.html _temp/EMIS210490003-C.pdf");'
-				$tocml .= "<div><h4>".preg_replace('-has-([0-9]+)-(.+)-(.+)-(.+)'," has $1 $2 $3 $4",preg_replace('/_/', '-', str_replace(".pdf", "", $docName)))."</h4>  ................  <h4>".$numPages."</h4></div>";
+				$tocml .= "<div><h4>".preg_replace('/-has-([0-9]+)-(.+)-(.+)-(.+)/ui'," has $1 $2 $3 $4",preg_replace('/_/', '-', str_replace(".pdf", "", $docName)))."</h4>  ................  <h4>".$numPages."</h4></div>";
 				$numPages += intval(exec("pdfinfo _temp/$docName.pdf | grep Pages | awk '{print $2}'"));
 			}
 

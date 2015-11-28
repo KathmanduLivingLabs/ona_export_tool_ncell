@@ -24,13 +24,16 @@ glob("./_temp/*_" + outputFileName, function(err, fileList) {
 				filtered.forEach(function(item_1, index_1) {
 					if (JSON.stringify(item_1).match(JSON.stringify(item).match(new RegExp(process.argv[2] + "-[a-z]+-[0-9]+", "i"))[0])) {
 						filtered[index_1].push(item);
+					}else{
+						fileNameList.push(JSON.stringify(item).match(new RegExp(process.argv[2] + "-[a-z]+-[0-9]+", "i"))[0] + ".json");
 					}
 				});
 			} else {
 				filtered.push([item]);
+				fileNameList.push(JSON.stringify(item).match(new RegExp(process.argv[2] + "-[a-z]+-[0-9]+", "i"))[0] + ".json");
 			}
 
-			fileNameList.push(JSON.stringify(item).match(new RegExp(process.argv[2] + "-[a-z]+-[0-9]+", "i"))[0] + ".json");
+			
 
 		} else if (JSON.stringify(item).match(new RegExp(process.argv[2] + "-[a-z]+", "i"))) {
 
@@ -38,17 +41,21 @@ glob("./_temp/*_" + outputFileName, function(err, fileList) {
 				filtered.forEach(function(item_1, index_1) {
 					if (JSON.stringify(item_1).match(JSON.stringify(item).match(new RegExp(process.argv[2] + "-[a-z]+", "i"))[0])) {
 						filtered[index_1].push(item);
+					}else{
+						fileNameList.push(JSON.stringify(item).match(new RegExp(process.argv[2] + "-[a-z]+", "i"))[0] + ".json");
 					}
 				});
 			} else {
 				filtered.push([item]);
+				fileNameList.push(JSON.stringify(item).match(new RegExp(process.argv[2] + "-[a-z]+", "i"))[0] + ".json");
 			}
 
-			fileNameList.push(JSON.stringify(item).match(new RegExp(process.argv[2] + "-[a-z]+", "i"))[0] + ".json");
+			
 
 		} else if (JSON.stringify(item).match(new RegExp(process.argv[2], "i"))) {
 			filtered.push([item]);
-			fileNameList.push(JSON.stringify(item).match(new RegExp(process.argv[2], "i"))[0] + ".json");
+			var emisnum = JSON.stringify(item).match(new RegExp(process.argv[2], "i"))[0];
+			if(!(fileNameList.indexOf(emisnum)+1)) fileNameList.push( + ".json");
 		}
 	});
 

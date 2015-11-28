@@ -6,8 +6,8 @@
 	//$group = $_GET['group'];
 
 	function tocSort($a, $b) {
-		$a = preg_replace('/-has.*/ui', '', $a);
-		$b = preg_replace('/-has.*/ui', '', $b);
+		$a = preg_replace('/.has.*/ui', '', $a);
+		$b = preg_replace('/.has.*/ui', '', $b);
 	    if ($a == $b) {
 	        return 0;
 	    }

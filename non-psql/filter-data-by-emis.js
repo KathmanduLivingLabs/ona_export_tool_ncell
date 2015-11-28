@@ -61,11 +61,12 @@ glob("./_temp/*_" + outputFileName, function(err, fileList) {
 			
 
 		} else if (JSON.stringify(item).match(new RegExp(process.argv[2], "i"))) {
-			if(!filtered.length){
-				var emisnum = JSON.stringify(item).match(new RegExp(process.argv[2], "i"))[0];
-			 	fileNameList.push(emisnum+ ".json");
+			if(filtered.length){
+				
 			 	filtered[0].push(item);
 			}else{
+				var emisnum = JSON.stringify(item).match(new RegExp(process.argv[2], "i"))[0];
+			 	fileNameList.push(emisnum+ ".json");
 			filtered.push([item]);
 		}
 			

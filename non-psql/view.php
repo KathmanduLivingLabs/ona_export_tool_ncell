@@ -11,9 +11,7 @@
 	    if ($a == $b) {
 	        return 0;
 	    }
-	    if(){
-	    	return ($a < $b) ? -1 : 1;
-	    }
+	    return ($a < $b) ? -1 : 1;
 	}
 
 

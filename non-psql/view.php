@@ -5,6 +5,17 @@
 	$emis = $_GET['emis'];
 	//$group = $_GET['group'];
 
+	function tocSort($a, $b) {
+		$a = preg_replace('/-has.*/ui', '', $a);
+		$b = preg_replace('/-has.*/ui', '', $b);
+	    if ($a == $b) {
+	        return 0;
+	    }
+	    if(){
+	    	return ($a < $b) ? -1 : 1;
+	    }
+	}
+
 
 	
 
@@ -34,7 +45,7 @@
 			//echo join(",", $matches2[0]);
 
 			$genDocList = explode(",",preg_replace('/.html/ui', "", exec("ls output/ | grep $emis | grep html | cut -d, -f2- | paste -sd,")));
-			asort($genDocList);
+			usort($genDocList, "tocSort");
 			$baseFileName = $genDocList[0];
 
 			$tocml = "<html><head></head><body><style>h4{display: inline-block; margin-left: 20px;}</style><h1>Table of Contents</h1>";

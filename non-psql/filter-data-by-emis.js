@@ -29,6 +29,7 @@ glob("./_temp/*_" + outputFileName, function(err, fileList) {
 					}
 				});
 				if(!duplicateFlag){
+						filtered.push([item]);
 						fileNameList.push(JSON.stringify(item).match(new RegExp(process.argv[2] + "-[a-z]+-[0-9]+", "i"))[0] + ".json");
 					}
 			} else {
@@ -51,6 +52,7 @@ glob("./_temp/*_" + outputFileName, function(err, fileList) {
 					
 				});
 				if(!duplicateFlag){
+					filtered.push([item]);
 						fileNameList.push(JSON.stringify(item).match(new RegExp(process.argv[2] + "-[a-z]+", "i"))[0] + ".json");
 					}
 			} else {

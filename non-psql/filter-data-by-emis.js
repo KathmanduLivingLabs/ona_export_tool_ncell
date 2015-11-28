@@ -61,9 +61,15 @@ glob("./_temp/*_" + outputFileName, function(err, fileList) {
 			
 
 		} else if (JSON.stringify(item).match(new RegExp(process.argv[2], "i"))) {
+			if(!filtered.length){
+				var emisnum = JSON.stringify(item).match(new RegExp(process.argv[2], "i"))[0];
+			 	fileNameList.push(emisnum+ ".json");
+			 	filtered[0].push(item);
+			}else{
 			filtered.push([item]);
-			var emisnum = JSON.stringify(item).match(new RegExp(process.argv[2], "i"))[0];
-			if(!(fileNameList.indexOf(emisnum)+1)) fileNameList.push(emisnum+ ".json");
+		}
+			
+			
 		}
 	});
 

@@ -25,10 +25,10 @@ exit();
 //&& preg_match("/(\d{4})-(\d{2})-(\d{2})/", $enddate, $results)
 if(preg_match("/(\d{4})-(\d{2})-(\d{2})/", $startDate, $results) 
 	&& preg_match("/(\d{4})-(\d{2})-(\d{2})/", $endDate, $results2) && $tableIDs[$tableName] && $query=='csvonly'){
-	echo explode(" ", exec('./ona-get-data-and-run-extractor.sh '.$startDate.' '.$endDate.' '.$tableName.' '.$tableIDs[$tableName]))[0];
+	echo explode(" ", exec('./ona-get-data-and-run-extractor-csvonly.sh '.$startDate.' '.$endDate.' '.$tableName.' '.$tableIDs[$tableName]))[0];
 }elseif(preg_match("/(\d{4})-(\d{2})-(\d{2})/", $startDate, $results) 
 	&& preg_match("/(\d{4})-(\d{2})-(\d{2})/", $endDate, $results2) && $tableIDs[$tableName]){
-		echo explode(" ", exec('./ona-get-data-and-run-extractor-csvonly.sh '.$startDate.' '.$endDate.' '.$tableName.' '.$tableIDs[$tableName]))[0];
+		echo explode(" ", exec('./ona-get-data-and-run-extractor.sh '.$startDate.' '.$endDate.' '.$tableName.' '.$tableIDs[$tableName]))[0];
 	}else{
 	echo "no";
 }

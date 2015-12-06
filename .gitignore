@@ -5,3 +5,4 @@ node_modules/
 *.log
 *.txt
 *dump
+non-psql/dump

@@ -80,12 +80,24 @@
   "building_assessment/general_building_assessment/general_building_assessment_3/general_building_assessment_4_count": "Number of building block pieces with more than one structural typology",
   "building_assessment/general_building_assessment/general_building_assessment_3/general_building_assessment_4": 
   [
-      
           {"label":"$1 block piece structural typology"},
-          {"building_assessment/general_building_assessment/general_building_assessment_3/general_building_assessment_4/piece_code": "4.23)Piece reference", "position": [1]},
-          {"building_assessment/general_building_assessment/general_building_assessment_5/sketch_plan": "4.24) Sketch Plan", "position": [1]},
-          {"building_assessment/general_building_assessment/general_building_assessment_6/comment_sketch_plan": "Comment", "position": [1]},
-          {"building_assessment/general_building_assessment/general_building_assessment_6/sketch_elevation": "4.25) Sketch Elevation", "position": [1]},
-          {"building_assessment/general_building_assessment/general_building_assessment_6/comment_sketch_elevation": "Comment", "position": [1]}
-  ]
+          {"piece_code": "4.23)Piece reference", "position": [1]},
+          {"piece_reference": "4.23)Piece reference", "position": [1]}
+  ],
+  "building_assessment/general_building_assessment/general_building_assessment_5/sketch_plan": "4.24) Sketch Plan",
+  "building_assessment/general_building_assessment/general_building_assessment_6/comment_sketch_plan": "Comment",
+  "building_assessment/general_building_assessment/general_building_assessment_6/sketch_elevation": "4.25) Sketch Elevation",
+  "building_assessment/general_building_assessment/general_building_assessment_6/comment_sketch_elevation": "Comment"
 }
+
+
+
+
+
+
+
+
+
+
+
+

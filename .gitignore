@@ -3,9 +3,12 @@
 *.txt
 dump
 *.jpg
-*.json
-!package.json
+school.json
+schools.json
+buildings.json
+building_elements.json
 *.csv
 *.zip
 _temp/
 output/
+node_modules/

@@ -1,1 +1,0 @@
-./datewise-csv.js $sida_db_user $sida_db_pass 2015-10-04 2015-10-05

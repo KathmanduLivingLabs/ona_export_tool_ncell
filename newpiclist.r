@@ -1,0 +1,7 @@
+x <- scan("arraylist.src.txt", what="", sep=" ")
+f <- file("stdin")
+y <- scan(f, what="", sep="\n")
+on.exit(close(f))
+z <- setdiff(x,y)
+output <- paste(z, collapse=' ')
+cat(output[1], sep=' ')

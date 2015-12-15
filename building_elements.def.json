@@ -1,0 +1,860 @@
+{
+  "piece_assessment/building_peice_code/piece_reference": "Reference",
+  "surveyor_id": "Surveyor ID",
+  "_id": "Submission ID",
+  "_submission_time": "Submission Time",
+  "piece_assessment/district": "District",
+  "piece_assessment/vdc": "VDC / Municipality",
+  "piece_assessment/building_peice_code/school_code": "EMIS School Code",
+  "piece_assessment/building_peice_code/building_code": "Block Reference",
+  "piece_assessment/building_peice_code/piece_code": "5.1) Piece Reference",
+  "piece_assessment/plan_image": "5.2) Upload plan image",
+  "piece_assessment/no_of_stories": "5.3) No of Stories",
+  "piece_assessment/storey_structural_typology": [
+    {
+      "label": "Structural Typology of $1 storey"
+    },
+    {
+      "building_element/foundation/foundation_1/foundation_type": "6.1) Foundation Type"
+    },
+    {
+      "building_element/foundation/foundation_1/foundation_type/comment_foundation_type": "Comment"
+    },
+    {
+      "building_element/foundation/foundation_1/foundation_type/image_foundation_type": "Take Photo"
+    },
+    {
+      "building_element/foundation/continuous_lintel_beam": "6.2) Is there a continuous plinth beam ?"
+    },
+    {
+      "building_element/foundation/damage_foundation": "6.3) Damage / Deterioration to Foundation due to"
+    },
+    {
+      "building_element/floors/floor_structure": "6.4) What is the floor structure ?",
+      "position": [
+        2
+      ]
+    },
+    {
+      "building_element/floors/floor_structure_other": "Specify other.",
+      "position": [
+        2
+      ]
+    },
+    {
+      "building_element/floors/floors_1/floor_structure_connected": "6.5) How is the floor structure connected to the wall/frame ?",
+      "position": [
+        2
+      ]
+    },
+    {
+      "building_element/floors/floors_1/floor_structure_connected_other": "Specify other.",
+      "position": [
+        2
+      ]
+    },
+    {
+      "building_element/floors/floors_1/comment_floor_structure_connected": "Comment",
+      "position": [
+        2
+      ]
+    },
+    {
+      "building_element/floors/floors_1/image_floor_structure_connected": "Take photo",
+      "position": [
+        2
+      ]
+    },
+    {
+      "building_element/floors/floors_1/floor_condition": "6.6) Condition of Floor",
+      "position": [
+        2
+      ]
+    },
+    {
+      "building_element/floors/floors_1/image_floor_condition": "Take photo",
+      "position": [
+        2
+      ]
+    },
+    {
+      "structural_typology_1st_floor": "6.7) Structural Typology"
+    },
+    {
+      "structural_typology": "6.7) Structural Typology",
+      "position": [
+        2
+      ]
+    },
+    [
+      [
+        {
+          "rc_frame/redundancy/two_or_more_line_concrete_frame": "8.1) Does the structure have two or more lines of concrete frame with infill?"
+        },
+        {
+          "rc_frame/walls_rc_frame/walls_storey_height_rc_frame": "8.2) Storey height (in m floor to floor)"
+        },
+        {
+          "rc_frame/walls_rc_frame/wall_panel_length_rc_frame": "8.3) Wall panel length (m)"
+        },
+        {
+          "rc_frame/walls_rc_frame/walls_rc_frame_1/infill_wall_material": "8.4) Infill wall material"
+        },
+        {
+          "rc_frame/walls_rc_frame/walls_rc_frame_1/infill_wall_material_other": "Specify other"
+        },
+        {
+          "rc_frame/walls_rc_frame/walls_rc_frame_1/comment_infill_wall_material": "Comment"
+        },
+        {
+          "rc_frame/walls_rc_frame/walls_rc_frame_1/image_infill_wall_material": "Take photo"
+        },
+        {
+          "rc_frame/walls_rc_frame/walls_rc_frame_2/exterior_infill_wall_thickness": "8.5) Typical Exterior infill walls thickness (in cm)"
+        },
+        {
+          "rc_frame/walls_rc_frame/walls_rc_frame_2/comment_exterior_infill_wall_thickness": "Comment"
+        },
+        {
+          "rc_frame/walls_rc_frame/walls_rc_frame_3/interior_infill_wall_thickness": "8.6) Typical Interior infill walls thickness (in cm)"
+        },
+        {
+          "rc_frame/walls_rc_frame/walls_rc_frame_3/comment_interior_infill_wall_thickness": "Comment"
+        },
+        {
+          "rc_frame/walls_rc_frame/walls_rc_frame_4/construction_sequence": "8.7) What was the sequence of construction for the concrete frame and infill walls?"
+        },
+        {
+          "rc_frame/walls_rc_frame/walls_rc_frame_4/comment_construction_sequence": "Comment"
+        },
+        {
+          "rc_frame/walls_rc_frame/walls_rc_frame_4/image_construction_sequence": "Take photo"
+        },
+        {
+          "rc_frame/walls_rc_frame/external_masonry_offset": "8.8) Is there any exterior masonry wall offset from frame?"
+        },
+        {
+          "rc_frame/walls_rc_frame/offset_wall/masonry_offset_wall_thickness_rc_frame": "8.8.1) Wall thickness (in cm)"
+        },
+        {
+          "rc_frame/walls_rc_frame/offset_wall/walls_rc_frame_5/masonry_offset_wall_height_rc_frame": "8.8.2) Wall height (in m)"
+        },
+        {
+          "rc_frame/walls_rc_frame/offset_wall/walls_rc_frame_5/comment_masonry_offset_wall_height_rc_frame": "Comment"
+        },
+        {
+          "rc_frame/walls_rc_frame/offset_wall/walls_rc_frame_5/image_masonry_offset_wall_height_rc_frame": "Take photo"
+        },
+        {
+          "rc_frame/frame/frame_1/column_size": "Column Size"
+        },
+        {
+          "rc_frame/frame/frame_1/comment_column_size": "Comment"
+        },
+        {
+          "rc_frame/frame/frame_1/image_column_size": "Take photo"
+        },
+        {
+          "rc_frame/frame/Frame_2/short_direction": "Typical Beam Spans/Short Direction (in m)"
+        },
+        {
+          "rc_frame/frame/Frame_2/long_direction": "Typical Beam Spans/Long Direction (in m)"
+        },
+        {
+          "rc_frame/frame/Frame_2/comment_beam_span": "Comment"
+        },
+        {
+          "rc_frame/frame/Frame_2/image_beam_span": "Take photo"
+        },
+        {
+          "rc_frame/frame/Frame_3/depth_long_direction": "Typical RC Beam Size/Long Direction Depth (D) in mm"
+        },
+        {
+          "rc_frame/frame/Frame_3/breadth_long_direction": "Typical RC Beam Size/Long Direction Breadth (B) in mm"
+        },
+        {
+          "rc_frame/frame/frame_4/effective_height_unrestrained": "8.12)Short Columns: Is the effective height of columns unrestrained by infill wall or parapets less than 5 times the dimension of the column or 50% of the nominal height of typical columns in that storey?"
+        },
+        {
+          "rc_frame/frame/frame_4/comment_effective_height_unrestrained": "Comment"
+        },
+        {
+          "rc_frame/frame/frame_4/image_effective_height_unrestrained": "Take photo"
+        },
+        {
+          "rc_frame/frame/short_column_damage_list": "8.13) If Short Column damge:"
+        },
+        {
+          "rc_frame/frame_damage/frame_damage_1/beam_column_joint_damage": "8.14)Beam-column joint damage"
+        },
+        {
+          "rc_frame/frame_damage/frame_damage_1/comment_beam_column_joint_damage": "Comment"
+        },
+        {
+          "rc_frame/frame_damage/frame_damage_1/image_beam_column_joint_damage": "Take image"
+        },
+        {
+          "rc_frame/frame_damage/frame_damage_2/rc_column_damage": "8.15) RC Column Damage"
+        },
+        {
+          "rc_frame/frame_damage/frame_damage_2/comment_rc_column_damage": "Comment"
+        },
+        {
+          "rc_frame/frame_damage/frame_damage_2/image_rc_column_damage": "Take photo"
+        },
+        {
+          "rc_frame/frame_damage/frame_damage_3/rc_beam_damage": "8.16) RC Beam Damage"
+        },
+        {
+          "rc_frame/frame_damage/frame_damage_3/comment_rc_beam_damage": "Comment"
+        },
+        {
+          "rc_frame/frame_damage/frame_damage_3/image_rc_beam_damage": "Take photo"
+        },
+        {
+          "rc_frame/infill_wall_damage/infill_wall_damage_1/infill_panel_out_of_plane": "8.17) Infill panel has completely failed out-of-plane"
+        },
+        {
+          "rc_frame/infill_wall_damage/infill_wall_damage_1/comment_infill_panel_out_of_plane": "Comment"
+        },
+        {
+          "rc_frame/infill_wall_damage/infill_wall_damage_1/image_infill_panel_out_of_plane": "Take photo"
+        },
+        {
+          "rc_frame/infill_wall_damage/infill_wall_damage_2/cracking_evidence_rc_frame": "8.18) Evidence of cracking around openings"
+        },
+        {
+          "rc_frame/infill_wall_damage/infill_wall_damage_2/comment_cracking_evidence_rc_frame": "Comment"
+        },
+        {
+          "rc_frame/infill_wall_damage/infill_wall_damage_2/image_cracking_evidence_rc_frame": "Take photo"
+        },
+        {
+          "rc_frame/infill_wall_damage/infill_wall_damage_3/extent_of_cracking_rc_frame": "8.18.1) Extent of cracking typically around openings"
+        },
+        {
+          "rc_frame/infill_wall_damage/infill_wall_damage_3/comment_extent_of_cracking_rc_frame": "Comment"
+        },
+        {
+          "rc_frame/infill_wall_damage/infill_wall_damage_3/image_extent_of_cracking_rc_frame": "Take photo"
+        },
+        {
+          "rc_frame/infill_wall_damage/infill_wall_damage_4/diagonal_cracking_rc_frame": "8.19) In-plane failure of masonry walls - Is there evidence of diagonal cracking of infill walls or cracking of bed-joints?"
+        },
+        {
+          "rc_frame/infill_wall_damage/comment_infill_wall_damage_4/diagonal_cracking_rc_frame": "Comment"
+        },
+        {
+          "rc_frame/infill_wall_damage/image_infill_wall_damage_4/diagonal_cracking_rc_frame": "Take photo"
+        },
+        {
+          "rc_frame/infill_wall_damage/infill_wall_damage_5/extent_of_diagonal_cracking_rc_frame": "8.19.1) Extent of cracking typically around openings"
+        },
+        {
+          "rc_frame/infill_wall_damage/infill_wall_damage_5/comment_extent_of_diagonal_cracking_rc_frame": "Comment"
+        },
+        {
+          "rc_frame/infill_wall_damage/infill_wall_damage_5/image_extent_of_diagonal_cracking_rc_frame": "Take photo"
+        },
+        {
+          "rc_frame/infill_wall_damage/infill_wall_damage_6/perimeter_cracking": "8.20) Cracking at perimeter of panel of Infill walls (may possibly include hairline diagonal cracks)"
+        },
+        {
+          "rc_frame/infill_wall_damage/infill_wall_damage_6/comment_perimeter_cracking": "Comment"
+        },
+        {
+          "rc_frame/infill_wall_damage/infill_wall_damage_6/image_perimeter_cracking": "Take photo"
+        },
+        {
+          "rc_frame/general_damage/general_condition": "8.21) General condition of the frame and infill walls"
+        },
+        {
+          "rc_frame/general_damage/comment_general_condition": "Comment"
+        },
+        {
+          "rc_frame/general_damage/image_general_condition": "Take photo"
+        },
+        {
+          "rc_frame/seismic_rc_frame/seismic_rc_frame_1/retrofitted_evidence_rc_frame": "8.22) Is there any evidence that the school has been retrofitted in the past?"
+        },
+        {
+          "rc_frame/seismic_rc_frame/seismic_rc_frame_1/retrofitted_evidence_rc_frame_other": "Specify other."
+        },
+        {
+          "rc_frame/seismic_rc_frame/seismic_rc_frame_1/comment_retrofitted_evidence_rc_frame": "Comment"
+        },
+        {
+          "rc_frame/seismic_rc_frame/seismic_rc_frame_1/image_retrofitted_evidence_rc_frame": "Take photo"
+        },
+        {
+          "rc_frame/construction_quality_rc_frame/structural_defect_rc_frame": "8.23) Specify any structural defect that the structure has, which has not been reported before :"
+        },
+        {
+          "rc_frame/construction_quality_rc_frame/overall_quality_rc_frame": "8.24) Describe the overall quality of the construction:"
+        }
+      ],
+      [
+        {
+          "load_bearing/wall/masonry_wall_type": "7.1) Masonry Wall Type"
+        },
+        {
+          "load_bearing/wall/masonry_wall_type_other": "Specify other."
+        },
+        {
+          "load_bearing/wall/wall_1/stone_type": "7.2) If stone what Type of stone"
+        },
+        {
+          "load_bearing/wall/wall_1/comment_stone_type": "Comment"
+        },
+        {
+          "load_bearing/wall/wall_1/image_stone_type": "Take photo"
+        },
+        {
+          "load_bearing/wall/wall_2/wall_panel_principal_direction": "7.3) Does the building have at least two lines of load bearing wall in each direction?"
+        },
+        {
+          "load_bearing/wall/wall_2/comment_wall_panel_principal_direction": "Comment"
+        },
+        {
+          "load_bearing/wall/wall_2/image_wall_panel_principal_direction": "Take photo"
+        },
+        {
+          "load_bearing/wall/wall_3/wall_thickness": "7.4) Wall thickness (in cm)"
+        },
+        {
+          "load_bearing/wall/wall_3/comment_stone_type": "Comment"
+        },
+        {
+          "load_bearing/wall/wall_3/image_stone_type": "Take photo"
+        },
+        {
+          "load_bearing/wall/wall_4/wall_panel_length": "7.5) Wall panel length (m)"
+        },
+        {
+          "load_bearing/wall/wall_4/comment_wall_panel_length": "Comment"
+        },
+        {
+          "load_bearing/wall/wall_4/image_wall_panel_length": "Photo of Wall Panel Length"
+        },
+        {
+          "load_bearing/wall/wall_5/wall_height": "7.6) Wall height (in m)"
+        },
+        {
+          "load_bearing/wall/wall_5/comment_wall_height": "Comment"
+        },
+        {
+          "load_bearing/wall/wall_5/image_wall_height": "Photo of Wall Height"
+        },
+        {
+          "load_bearing/wall/wall_6/width_opening_single_storey": "7.7) For Single Storey blocks - Combined width of the openings on a wall between two consecutive cross-walls less than 35% of total wall length"
+        },
+        {
+          "load_bearing/wall/wall_6/comment_width_opening_single_storey": "Comment"
+        },
+        {
+          "load_bearing/wall/wall_6/image_width_opening_single_storey": "Take photo"
+        },
+        {
+          "load_bearing/wall/wall_7/width_opening_multiple_storey": "7.8) For multi-storey - Combined width of the openings on a wall between two consecutive cross-walls less than 25% of total wall length"
+        },
+        {
+          "load_bearing/wall/wall_7/comment_width_opening_multiple_storey": "Comment"
+        },
+        {
+          "load_bearing/wall/wall_7/image_width_opening_multiple_storey": "Take photo"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_1/wall_collapsed": "7.9) Collapsed wall"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_1/comment_wall_collapsed": "Comment"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_1/image_wall_collapsed": "Take photo"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_2/corner_separation": "7.10) Gable walls damage - Total or partial wall collapse?"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_2/comment_corner_separation": "Comment"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_2/image_corner_separation": "Take photo"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_3/corner_separation": "7.11) Corner Seperation"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_3/comment_corner_separation": "Comment"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_3/image_corner_separation": "Take photo"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_4/cracking_evidence": "7.12) Evidence of cracking around openings"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_4/comment_cracking_evidence": "Comment"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_4/image_cracking_evidence": "Take photo"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_5/extent_of_cracking": "7.12.1) Extent of cracking typically around openings"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_5/comment_extent_of_cracking": "Comment"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_5/image_extent_of_cracking": "Take photo"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_6/diagonal_cracking": "7.13) In-plane failure of masonry walls - Is there evidence of diagonal cracking of walls or cracking of bed-joints"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_6/comment_diagonal_cracking": "Comment"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_6/image_diagonal_cracking": "Take photo"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_7/extent_of_in_plane_wall_damage": "7.13.1) Extent of in-plane wall damage"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_7/comment_extent_of_in_plane_wall_damage": "Comment"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_7/image_extent_of_in_plane_wall_damage": "Take photo"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_8/out_plane_failure": "7.14) Out-of-plane Failure"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_8/comment_out_plane_failure": "Comment"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_8/image_out_plane_failure": "Take photo"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_10/wall_delamination": "7.15) Delamination of walls"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_10/comment_wall_delamination": "Comment"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_10/image_wall_delamination": "Take photo"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_11/masonry_deteriorated": "7.16) Is the masonry deteriorated?"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_11/comment_masonry_deteriorated": "Comment"
+        },
+        {
+          "load_bearing/wall_damage/wall_damage_11/image_masonry_deteriorated": "Take photo"
+        },
+        {
+          "load_bearing/seismic/seismic_1/seismic_enhancement": "7.17) Have seismic enhancements have been included in the original construction?"
+        },
+        {
+          "load_bearing/seismic/seismic_1/seismic_enhancement_other": "Specify other."
+        },
+        {
+          "load_bearing/seismic/seismic_1/comment_seismic_enhancement": "Comment"
+        },
+        {
+          "load_bearing/seismic/seismic_1/image_seismic_enhancement": "Take photo"
+        },
+        {
+          "load_bearing/seismic/seismic_2/retrofitted": "7.18) Is there any evidence that the school has been retrofitted in the past?"
+        },
+        {
+          "load_bearing/seismic/seismic_2/retrofitted_other": "Specify other"
+        },
+        {
+          "load_bearing/seismic/seismic_2/comment_retrofitted": "Comment"
+        },
+        {
+          "load_bearing/seismic/seismic_2/image_retrofitted": "Take photo"
+        },
+        {
+          "load_bearing/construction_quality_load_bearing/structural_defect_load_bearing": "7.19) Specify any structural defect that the structure has, which has not been reported before :"
+        },
+        {
+          "load_bearing/construction_quality_load_bearing/overall_quality_load_bearing": "7.20) Describe the overall quality of the construction:"
+        }
+      ],
+      [
+        {
+          "steel_frame/infill_walls/infill_walls_1/masonry_built": "9.1) Is the masonry wall built in line with the steel frame or offset from the frame?"
+        },
+        {
+          "steel_frame/infill_walls/infill_walls_1/comment_masonry_built": "Comment"
+        },
+        {
+          "steel_frame/infill_walls/masonry_wall_type_steel_frame": "9.2) Masonry wall type confirmed"
+        },
+        {
+          "steel_frame/infill_walls/infill_walls_2/stone_type_steel_frame": "9.3) If stone what type of stone"
+        },
+        {
+          "steel_frame/infill_walls/infill_walls_2/comment_stone_type_steel_frame": "Comment"
+        },
+        {
+          "steel_frame/infill_walls/infill_walls_2/image_stone_type_steel_frame": "Take photo"
+        },
+        {
+          "steel_frame/infill_walls/infill_walls_3/wall_thickness_steel_frame": "9.4) Walls thickness (in cm)"
+        },
+        {
+          "steel_frame/infill_walls/infill_walls_3/comment_wall_thickness_steel_frame": "Comment"
+        },
+        {
+          "steel_frame/infill_walls/infill_walls_3/image_wall_thickness_steel_frame": "Take photo"
+        },
+        {
+          "steel_frame/infill_walls/infill_walls_4/wall_panel_length_steel_frame": "9.5) Walls panel length (m)"
+        },
+        {
+          "steel_frame/infill_walls/infill_walls_4/comment_wall_panel_length_steel_frame": "Comment"
+        },
+        {
+          "steel_frame/infill_walls/infill_walls_4/image_wall_panel_length_steel_frame": "Take photo"
+        },
+        {
+          "steel_frame/infill_walls/infill_walls_5/wall_height_steel_frame": "9.6) Wall height (in m)"
+        },
+        {
+          "steel_frame/infill_walls/infill_walls_5/comment_wall_height_steel_frame": "Comment"
+        },
+        {
+          "steel_frame/infill_walls/infill_walls_5/image_wall_height_steel_frame": "Wall Height"
+        },
+        {
+          "steel_frame/infill_walls/infill_walls_6/combined_width": "9.7)Is combined width of the openings on a wall between two consecutive cross-walls less than 35% of total wall length"
+        },
+        {
+          "steel_frame/infill_walls/infill_walls_6/comment_combined_width": "Comment"
+        },
+        {
+          "steel_frame/infill_walls/infill_walls_6/image_combined_width": "Take photo"
+        },
+        {
+          "steel_frame/condition_steel_structure/steel_structure_condition": "9.8) Condition of Steel Structure"
+        },
+        {
+          "steel_frame/condition_steel_structure/steel_structure_condition_other": "Specify other."
+        },
+        {
+          "steel_frame/condition_steel_structure/comment_steel_structure_condition": "Comment"
+        },
+        {
+          "steel_frame/condition_steel_structure/image_steel_structure_condition": "Take photo"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_1/wall_collapsed_steel_frame": "9.9) Collapsed wall - Have any of the walls completely collapsed?"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_1/comment_wall_collapsed_steel_frame": "Comment"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_1/image_wall_collapsed_steel_frame": "Take photo"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_2/cracking_evidence_steel_frame": "9.10) Evidence of cracking around openings ?"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_2/comment_cracking_evidence_steel_frame": "Comment"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_2/image_cracking_evidence_steel_frame": "Take photo"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_3/diagonal_cracking_steel_frame": "9.11) IN-plane failure of masonry walls - Is there evidence of diagonal or bed joint cracking?"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_3/comment_diagonal_cracking_steel_frame": "Comment"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_3/image_diagonal_cracking_steel_frame": "Take photo"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_4/corner_separation_steel_frame": "9.12) Corner separation"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_4/comment_corner_separation_steel_frame": "Comment"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_4/image_corner_separation_steel_frame": "Take photo"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_5/out_plane_failure_steel_frame": "9.13) Out of plane failure - collapse or partial collapse"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_5/comment_out_plane_failure_steel_frame": "Comment"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_5/image_out_plane_failure_steel_frame": "Take photo"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_6/wall_delamination_steel_frame": "9.14) Delamination of walls"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_6/comment_wall_delamination_steel_frame": "Comment"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_6/image_wall_delamination_steel_frame": "Take photo"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_7/gable_wall_damage_steel_frame": "9.15) Gable walls damage"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_7/comment_gable_wall_damage_steel_frame": "Comment"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_7/image_gable_wall_damage_steel_frame": "Take photo"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_8/masonry_deteriorated_steel_frame": "9.16) Is the masonry deteriorated?"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_8/comment_masonry_deteriorated_steel_frame": "Comment"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/wall_damage_steel_frame_8/image_masonry_deteriorated_steel_frame": "Take photo"
+        },
+        {
+          "steel_frame/wall_damage_steel_frame/mortar_deteriorated_steel_frame": "9.17) Is the mortar deteriorated?"
+        },
+        {
+          "steel_frame/seismic_steel_frame/seismic_steel_frame_1/seismic_enhancement_steel_frame": "9.18) Have seismic enhancements been included in the original construction?"
+        },
+        {
+          "steel_frame/seismic_steel_frame/seismic_steel_frame_1/seismic_enhancement_steel_frame_other": "Specify other"
+        },
+        {
+          "steel_frame/seismic_steel_frame/seismic_steel_frame_1/comment_seismic_enhancement_steel_frame": "Comment"
+        },
+        {
+          "steel_frame/seismic_steel_frame/seismic_steel_frame_1/image_seismic_enhancement_steel_frame": "Take photo"
+        },
+        {
+          "steel_frame/seismic_steel_frame/seismic_steel_frame_2/retrofitted_evidence_steel_frame": "9.19) Has the education facility been retrofitted?"
+        },
+        {
+          "steel_frame/seismic_steel_frame/seismic_steel_frame_2/retrofitted_evidence_steel_frame_other": "Specify other."
+        },
+        {
+          "steel_frame/seismic_steel_frame/seismic_steel_frame_2/comment_retrofitted_evidence_steel_frame": "Comment"
+        },
+        {
+          "steel_frame/seismic_steel_frame/seismic_steel_frame_2/image_retrofitted_evidence_steel_frame": "Take photo"
+        },
+        {
+          "steel_frame/construction_quality_steel_frame/structural_defect_steel_frame": "9.20) Specify any structural defect that the structure has, which has not been reported before:"
+        },
+        {
+          "steel_frame/construction_quality_steel_frame/overall_quality_steel_frame": "9.21) Describe the overall quality of the construction:"
+        }
+      ]
+    ],
+    {
+      "building_element/roof/roof_1/roof_shape": "6.7) What is the shape of the roof?",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_1/roof_shape_other": "Specify other.",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_1/comment_roof_shape": "Comment",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_1/image_roof_shape": "Take photo",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_2/roofing_structure": "6.8) What is the roofing structure?",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_2/roofing_structure_other": "Specify other.",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_2/comment_roof_structure": "Comment",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_2/image_roof_structure": "Take photo",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_3/roof_3a/roofing_material": "6.8.1) Roofing Material",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_3/roof_3a/roofing_material_other": "Specify other.",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_3/roof_3a/comment_roofing_material": "Comment",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_3/roof_3a/image_roofing_material": "Take photo",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_3/roof_covering_tied": "6.8.2)Is the roof covering adequately tied to the roof structure to resist wind uplift?",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_3/roof_3c/roof_structure_connection": "6.8.3) How is the Roof structure connected to the wall / frame?",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_3/roof_3c/roof_structure_connection_other": "Specify other.",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_3/roof_3c/comment_roof_structure_connection": "Comment",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_3/roof_3c/image_roof_structure_connection": "Photo of Roof Structure Connection",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_4/roof_condition": "6.9) Condition of Roof",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_4/comment_roof_condition": "Comment",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_4/image_roof_condition": "Take photo",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_5/gable_wall_damage_roof": "6.10) Gable walls damage",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_5/comment_gable_wall_damage_roof": "Comment",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_5/image_gable_wall_damage_roof": "Take photo",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_6/parapets": "6.11) Are there any parapets?",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_6/comment_parapets": "Comment",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_6/image_parapets": "Take photo",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_7/parapets_height": "6.11.1) What is the parapet height? (in m)",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_7/parapets_thickness": "6.11.2) What is the parapet thickness? (in cm)",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_7/roof_7a/parapets_damage": "6.11.3) Are the parapets damaged?",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_7/roof_7a/image_parapets_damage": "Take photo",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/pendiments": "6.12) Are there any pediments?",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_8/pendiments_damage": "6.12.1) Are the pediments damaged?",
+      "position": [
+        -1
+      ]
+    },
+    {
+      "building_element/roof/roof_8/image_pendiments_damage": "Take photo",
+      "position": [
+        -1
+      ]
+    }
+  ]
+}

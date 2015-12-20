@@ -124,7 +124,7 @@ var output_filenameRoot = (function(name){
     return prefix;
 }(process.argv[4]))+"_"+startDate.replace(/-/g,"_")+"_"+endDate.replace(/-/g,"_")+"_records_"+(filtered.length-1)+"_pictures_"+(zipList.split(" ").length-2);
 
-zipList = output_filenameRoot+".zip "+output_filenameRoot+".csv "+zipList;
+zipList = output_filenameRoot+".zip "+output_filenameRoot+".csv"+zipList;
 
 fs.writeFileSync(output_filenameRoot+".csv", filtered.join("\n"));
 fs.writeFileSync("emis.txt", emis);

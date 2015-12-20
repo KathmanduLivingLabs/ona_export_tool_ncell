@@ -39,7 +39,7 @@ data = []
 
 output_filenameRoot = str(getFileNameRoot(sys.argv[3])) + '_' + startDate.replace('-', '_') + '_' + endDate.replace('-', '_') + '_records_' + str((len(filtered) - 1)) + '_pictures_' + str((len(zipList.split(' ')) - 2)) 
 
-zipList = output_filenameRoot + '.zip ' + output_filenameRoot + '.csv ' + zipList
+zipList = output_filenameRoot + '.zip ' + output_filenameRoot + '.csv' + zipList
 
 
 open(output_filenameRoot+'.csv', 'w').write('\n'.join(filtered))

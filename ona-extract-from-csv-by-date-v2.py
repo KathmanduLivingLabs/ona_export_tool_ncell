@@ -29,7 +29,7 @@ def getFileNameRoot(name):
 for item in data:
         itemSubmissionDate = item[dateColumn].split('T',1)[0]
         if itemSubmissionDate >= startDate and itemSubmissionDate <= endDate:
-                filtered.append(','.join(item))
+                filtered.append('"'+'","'.join(item)+'"')
                 emis += ', ' + item[emisColumn]
                 #zipList += " " + item.join(";").match(/(\d)+.jpg/gi).join(" ").replace(/.jpg/gi, "-large.jpg");
                 zipList += ' ' + re.compile('(\d+).jpg').sub('\\1-large.jpg',' '.join(re.compile('\d+.jpg', re.IGNORECASE).findall(';'.join(item))))

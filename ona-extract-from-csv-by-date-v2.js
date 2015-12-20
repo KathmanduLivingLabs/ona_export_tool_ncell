@@ -103,7 +103,7 @@ data.forEach(function(item, index){
     var itemSubmissionDate = item[dateColumn].split("T")[0];
 
     if(itemSubmissionDate>=startDate && itemSubmissionDate<=endDate){
-        filtered.push(item.join(","));
+        filtered.push('"'+item.join('","')+'"');
         emis += ", "+item[emisColumn];
         zipList += " " + item.join(";").match(/(\d)+.jpg/gi).join(" ").replace(/.jpg/gi, "-large.jpg");
     }else{

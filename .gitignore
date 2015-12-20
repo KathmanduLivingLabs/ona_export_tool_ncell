@@ -6,6 +6,9 @@ dump
 school.json
 schools.json
 buildings.json
+schools.csv
+buildings.csv
+buildingelements.csv
 building_elements.json
 *.csv
 *.zip

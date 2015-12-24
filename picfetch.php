@@ -19,6 +19,6 @@ foreach($arr as $k=>$i){
 
 $timeelapsed = (time()-$starttime)/60;
 
-echo "All files downloaded! Total time taken for operation: ".$timeelapsed." minutes.\n";
+echo "All $total files downloaded! Total time taken for operation: ".$timeelapsed." minutes.\n";
 
 ?>

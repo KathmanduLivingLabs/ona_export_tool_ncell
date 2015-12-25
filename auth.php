@@ -6,6 +6,11 @@ header('Content-Type: text/plain');
 $authString1 = $_POST['auth1'];
 $authString2 = $_POST['auth2'];
 
+if(!($authString1 && $authString2)){
+	echo "false";
+	exit();
+}
+
 if(preg_match("/\W/", $authString1, $c)){
 	echo "false";
 	exit();
@@ -20,7 +25,10 @@ $clientAddr = $_SERVER['REMOTE_ADDR'];
 
 if($authString1 == $validAuth1 && $authString2Calc == $validAuth2){
 	if(preg_match("/\d+\.\d+\.\d+\.\d+/",$clientAddr, $result)){
-		file_put_contents($clientAddr, 'true');
+		$logfile = fopen('authlog.log','a');
+		file_put_contents($clientAddr, 'true'); //very bad hack; TODO: fix this
+		fwrite($logfile,date("Y-m-d h:i:s T")."\t".$authString1."\t".$clientAddr."\n");
+		fclose($logfile);
 	
 	echo "true";
 }else{

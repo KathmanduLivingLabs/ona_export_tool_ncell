@@ -10,11 +10,13 @@ echo "Files to download = ".$total."\n";
 $starttime = time();
 
 foreach($arr as $k=>$i){
-	echo("downloading: ".$i."\n");
+	//echo("downloading: ".$i."\n");
+	if($i) {
 	exec("./picfetch.sh ".$i);
 	if(!($k%500)) {
 		$timeelapsed = (time()-$starttime)/60;
 		echo $k."/".$total." files downloaded..Time elapsed: ". $timeelapsed." minutes..\n";
+	}
 	}
 }
 

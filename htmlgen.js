@@ -91,7 +91,7 @@ _.map(data, function(item, index) {
 	});
 
 	tempEmis = emis; 
-	if (emis.match(/EMIS[0-9]+-[a-z]+-[0-9]+/gi)) {
+	if (emis.match(/EMIS[0-9a-zA-Z]+-[a-z]+-[0-9]+/gi)) {
 			tempEmis = emis.replace(/EMIS[0-9][0-9]/, "EMIS");
 		}
 

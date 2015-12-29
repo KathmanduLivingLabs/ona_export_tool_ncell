@@ -15,4 +15,5 @@ building_elements.json
 _temp/
 output/
 node_modules/
+node_modules/*
 .updatetime

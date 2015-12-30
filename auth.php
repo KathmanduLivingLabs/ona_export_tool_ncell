@@ -27,7 +27,7 @@ if($authString1 == $validAuth1 && $authString2Calc == $validAuth2){
 	if(preg_match("/\d+\.\d+\.\d+\.\d+/",$clientAddr, $result)){
 		$logfile = fopen('authlog.log','a');
 		file_put_contents($clientAddr, 'true'); //very bad hack; TODO: fix this
-		fwrite($logfile,date("Y-m-d h:i:s T")."\t".$authString1."\t".$clientAddr."\n");
+		fwrite($logfile,date("Y-m-d h:i:s/a T")."\t".$authString1."\t".$clientAddr."\n");
 		fclose($logfile);
 	
 	echo "true";

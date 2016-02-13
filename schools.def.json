@@ -98,7 +98,7 @@
     "physical_planning/owns_land_other": "Specify other.",
     "physical_planning/physical_planning_3/safe_location": "3.4) Is there a safe location outside the buildings where ALL staff and students can currently assemble in an emergency event?",
     "physical_planning/physical_planning_3/image_safe_location": "Take Photo",
-    "physical_planning/physical_planning_4/safe_location": "3.5) Excluding safe assembly location is there any additional space for Temporary Learning Centers on the school campus?",
+    "physical_planning/physical_planning_4/location_for_tlc": "3.5) Excluding safe assembly location is there any additional space for Temporary Learning Centers on the school campus?",
     "physical_planning/physical_planning_4/comment_safe_location": "Comment",
     "physical_planning/physical_planning_4/image_safe_location": "Take Photo",
     "physical_planning/physical_planning_5/toilet_functioning": "3.6) Number of functioning toilets?",

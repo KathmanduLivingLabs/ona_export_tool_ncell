@@ -12,7 +12,7 @@
   "building_assessment/general_building_info/gps_coordinates": "GPS Coordinates [latitude x.yº, longitude x.yºm altitude m, accuracy m]",
   "building_assessment/general_building_info/general_building_info_2/initial_condition_state": "4.2) Initial Assesment of Condition State of Block",
   "building_assessment/general_building_info/general_building_info_2/comment_initial_condition_state": "Comment",
-  "building_assessment/general_building_info/general_building_info_2/image_initial_condition_state": "Photo",
+  "building_assessment/general_building_info/general_building_info_2/image_initial_condition": "Photo",
   "building_assessment/general_building_info/block_level": "4.3) School Block - grades",
   "building_assessment/general_building_info/num_pupils": "4.4) Number of pupils using Block pre-earthquake",
   "building_assessment/general_building_info/general_building_info_3/classrooms": "4.5) Number of Classrooms in Block",

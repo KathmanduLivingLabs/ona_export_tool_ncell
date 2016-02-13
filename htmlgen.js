@@ -24,9 +24,9 @@ _.map(data, function(item, index) {
 		return item[0][key][1];
 	}();
 	var pagetitle = function() {
-		if (emis.match(/EMIS[0-9]+-[a-z]+-[0-9]+/gi)) {
+		if (emis.match(/EMIS[0-9]+-[a-z0-9]+-[0-9]+/gi)) {
 			return "Building Element: " + emis.replace(/EMIS\d\d(.*)/, "EMIS$1") + indicatorMsges.replace(/_/g, " ");
-		}else if(emis.match(/EMIS[0-9]+-[a-z]+/gi)){
+		}else if(emis.match(/EMIS[0-9]+-[a-z0-9]+/gi)){
 			return "Building: " + emis + indicatorMsges.replace(/_/g, " ");
 		}else{
 			return "School: " + emis + indicatorMsges.replace(/_/g, " ");
@@ -91,7 +91,7 @@ _.map(data, function(item, index) {
 	});
 
 	tempEmis = emis; 
-	if (emis.match(/EMIS[0-9a-zA-Z]+-[a-z]+-[0-9]+/gi)) {
+	if (emis.match(/EMIS[0-9a-zA-Z]+-[a-z0-9]+-[0-9]+/gi)) {
 			tempEmis = emis.replace(/EMIS[0-9][0-9]/, "EMIS");
 		}
 

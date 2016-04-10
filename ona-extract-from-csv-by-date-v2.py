@@ -15,7 +15,6 @@ data = csv.reader(datafile)
 headers = data.next()
 
 dateColumn = headers.index('_submission_time')
-emisColumn = headers.index('general_detail/emis/school_emis')
 
 filtered = [','.join(headers)]
 
@@ -35,7 +34,7 @@ for item in data:
                 item = []
 data = []
 
-output_filenameRoot = str(getFileNameRoot(sys.argv[3])) + '_' + startDate.replace('-', '_') + '_' + endDate.replace('-', '_') + '_records_' + str((len(filtered) - 1)) + '_pictures_' + str((len(zipList.split(' ')) - 2)) 
+output_filenameRoot = getFileNameRoot(sys.argv[3])[0] + '_' + startDate.replace('-', '_') + '_' + endDate.replace('-', '_') + '_records_' + str((len(filtered) - 1)) + '_pictures_' + str((len(zipList.split(' ')) - 2)) 
 
 zipList = output_filenameRoot + '.zip ' + output_filenameRoot + '.csv' + zipList
 

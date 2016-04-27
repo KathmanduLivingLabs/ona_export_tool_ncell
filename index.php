@@ -40,7 +40,7 @@ exit();
 
 if (preg_match("/\d+\.\d+\.\d+\.\d+/", $clientAddr, $result)) {
 	$validSessionCookieForClient = file_get_contents($clientAddr.'.addr');
-	if (preg_match("/\w+/", $validSessionCookieForClient, $validCookieHash) && $clientSessionCookie == $validCookieHash[0]) {
+	if (preg_match("/\w+-\w+/", $validSessionCookieForClient, $validCookieHash) && $clientSessionCookie == $validCookieHash[0]) {
 		if (preg_match("/.php/", $requestURI)) {
 			include_once str_replace('/', '', $requestURI);
 		} else if (preg_match("/.jpg/", $requestURI) || preg_match("/.pdf/", $requestURI) || preg_match("/.csv/", $requestURI)) {

@@ -2,8 +2,10 @@
 
 header("Access-Control-Allow-Origin: *");
 
-$clientAddr          = $_SERVER['REMOTE_ADDR'];
-$clientSessionCookie = $_COOKIE['session'];
+$clientAddr = $_SERVER['REMOTE_ADDR'];
+//$clientSessionCookie = $_COOKIE['session'];
+
+$clientSessionCookie = $_GET['key'];
 
 $requestURI = $_SERVER['REQUEST_URI'];
 

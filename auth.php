@@ -29,14 +29,14 @@ if ($authString1 == $validAuth1 && $authString2Calc == $validAuth2) {
 	if (preg_match("/\d+\.\d+\.\d+\.\d+/", $clientAddr, $result)) {
 		$secret_word  = exec("date")+rand();
 		$cookieString = $authString1.','.md5($validAuth1.$secret_word);
-		setcookie('session', $cookieString);
-		setcookie('surveyor_id', $surveyor_id);
+		//setcookie('session', $cookieString);
+		//setcookie('surveyor_id', $surveyor_id);
 
 		$logfile = fopen('authlog.log', 'a');
 		file_put_contents($clientAddr.'.addr', $cookieString);
 		fwrite($logfile, date("Y-m-d h:i:s/a T")."\t".$authString1."\t".$clientAddr."\n");
 		fclose($logfile);
-		echo "true";
+		echo '{"authorized":true,"session":{"surveyor_id"'.$surveyor_id.',"key":'.$cookieString.'}}';
 	} else {
 		echo "false";
 	}

@@ -45,7 +45,7 @@ if (preg_match("/\d+\.\d+\.\d+\.\d+/", $clientAddr, $result)) {
 		if (preg_match("/.php/", $requestURI)) {
 			include_once '.'.$requestScript;
 		} else if (preg_match("/.jpg/", $requestURI)) {
-			echo file_get_contents('.'.$requestURI);
+			echo file_get_contents('.'.$requestScript);
 		} else if (preg_match("/.pdf/", $requestURI) || preg_match("/.csv/", $requestURI)) {
 			header("Pragma: public");
 			header("Expires: 0");
@@ -53,13 +53,13 @@ if (preg_match("/\d+\.\d+\.\d+\.\d+/", $clientAddr, $result)) {
 			header("Content-Type: application/force-download");
 			header("Content-Type: application/octet-stream");
 			header("Content-Type: application/download");
-			header('Content-Length: '.filesize('.'.$requestURI));
-			header("Content-Disposition: attachment;filename=".str_replace('/', '', $requestURI));
+			header('Content-Length: '.filesize('.'.$requestScript));
+			header("Content-Disposition: attachment;filename=".str_replace('/', '', $requestScript));
 			header("Content-Transfer-Encoding: binary ");
-			echo file_get_contents('.'.$requestURI);
+			echo file_get_contents('.'.$requestScript);
 		} else if (preg_match("/.html/", $requestURI)) {
 			header('Content-Type: text/html');
-			echo file_get_contents('.'.$requestURI);
+			echo file_get_contents('.'.$requestScript);
 		} else {
 			header('Content-Type: text/plain');
 			echo "no";

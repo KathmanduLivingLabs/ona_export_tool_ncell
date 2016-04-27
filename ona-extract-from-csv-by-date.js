@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/env node
 
 var fs = require('fs');
 var dataFile = fs.readFileSync(process.argv[4], "utf8");

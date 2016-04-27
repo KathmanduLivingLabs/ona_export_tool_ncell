@@ -36,7 +36,7 @@ if ($authString1 == $validAuth1 && $authString2Calc == $validAuth2) {
 		file_put_contents($clientAddr.'.addr', $cookieString);
 		fwrite($logfile, date("Y-m-d h:i:s/a T")."\t".$authString1."\t".$clientAddr."\n");
 		fclose($logfile);
-		echo '{"authorized":true,"session":{"surveyor_id"'.$surveyor_id.',"key":'.$cookieString.'}}';
+		echo '{"authorized":true,"session":{"surveyor_id":"'.$surveyor_id.'","key":"'.$cookieString.'"}}';
 	} else {
 		echo "false";
 	}

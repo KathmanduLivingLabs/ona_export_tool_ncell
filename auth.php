@@ -28,7 +28,7 @@ $clientAddr = $_SERVER['REMOTE_ADDR'];
 if ($authString1 == $validAuth1 && $authString2Calc == $validAuth2) {
 	if (preg_match("/\d+\.\d+\.\d+\.\d+/", $clientAddr, $result)) {
 		$secret_word  = exec("date")+rand();
-		$cookieString = $authString1.','.md5($validAuth1.$secret_word);
+		$cookieString = $authString1.'-'.md5($validAuth1.$secret_word);
 		//setcookie('session', $cookieString);
 		//setcookie('surveyor_id', $surveyor_id);
 

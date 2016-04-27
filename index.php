@@ -12,31 +12,7 @@ if (preg_match("/auth.php/", $requestURI)) {
 	exit();
 }
 
-if (preg_match("/.php/", $requestURI)) {
-	include_once $requestURI;
-} else if (preg_match("/.jpg/", $requestURI) || preg_match("/.pdf/", $requestURI) || preg_match("/.csv/", $requestURI)) {
-	header("Pragma: public");
-	header("Expires: 0");
-	header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-	header("Content-Type: application/force-download");
-	header("Content-Type: application/octet-stream");
-	header("Content-Type: application/download");
-	header('Content-Length: '.filesize($requestURI));
-	header("Content-Disposition: attachment;filename=".$requestURI);
-	header("Content-Transfer-Encoding: binary ");
-} else if (preg_match("/.html/", $requestURI)) {
-	header('Content-Type: text/html');
-	echo file_get_contents($requestURI);
-} else {
-	header('Content-Type: text/plain');
-	echo "no";
-	exit();
-}
-
 /*
-if (preg_match("/\d+\.\d+\.\d+\.\d+/", $clientAddr, $result)) {
-$validSessionCookieForClient = file_get_contents($clientAddr.'.addr');
-if (preg_match("/\w+/", $validSessionCookieForClient, $validCookieHash) && $clientSessionCookie == $validCookieHash[0]) {
 if (preg_match("/.php/", $requestURI)) {
 include_once $requestURI;
 } else if (preg_match("/.jpg/", $requestURI) || preg_match("/.pdf/", $requestURI) || preg_match("/.csv/", $requestURI)) {
@@ -46,27 +22,53 @@ header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
 header("Content-Type: application/force-download");
 header("Content-Type: application/octet-stream");
 header("Content-Type: application/download");
-header('Content-Length: '.filesize($requestURI));
-header("Content-Disposition: attachment;filename=".$requestURI);
+header('Content-Length: '.filesize(str_replace('/', '', $requestURI)));
+header("Content-Disposition: attachment;filename=".str_replace('/', '', $requestURI));
 header("Content-Transfer-Encoding: binary ");
+echo file_get_contents(str_replace('/', '', $requestURI));
 } else if (preg_match("/.html/", $requestURI)) {
 header('Content-Type: text/html');
-echo file_get_contents($requestURI);
-} else {
-header('Content-Type: text/plain');
-echo "no";
-exit();
-}
-} else {
-header('Content-Type: text/plain');
-echo "no";
-exit();
-}
+echo file_get_contents(str_replace('/', '', $requestURI));
 } else {
 header('Content-Type: text/plain');
 echo "no";
 exit();
 }
  */
+
+if (preg_match("/\d+\.\d+\.\d+\.\d+/", $clientAddr, $result)) {
+	$validSessionCookieForClient = file_get_contents($clientAddr.'.addr');
+	if (preg_match("/\w+/", $validSessionCookieForClient, $validCookieHash) && $clientSessionCookie == $validCookieHash[0]) {
+		if (preg_match("/.php/", $requestURI)) {
+			include_once str_replace('/', '', $requestURI);
+		} else if (preg_match("/.jpg/", $requestURI) || preg_match("/.pdf/", $requestURI) || preg_match("/.csv/", $requestURI)) {
+			header("Pragma: public");
+			header("Expires: 0");
+			header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+			header("Content-Type: application/force-download");
+			header("Content-Type: application/octet-stream");
+			header("Content-Type: application/download");
+			header('Content-Length: '.filesize(str_replace('/', '', $requestURI)));
+			header("Content-Disposition: attachment;filename=".str_replace('/', '', $requestURI));
+			header("Content-Transfer-Encoding: binary ");
+			echo file_get_contents(str_replace('/', '', $requestURI));
+		} else if (preg_match("/.html/", $requestURI)) {
+			header('Content-Type: text/html');
+			echo file_get_contents(str_replace('/', '', $requestURI));
+		} else {
+			header('Content-Type: text/plain');
+			echo "no";
+			exit();
+		}
+	} else {
+		header('Content-Type: text/plain');
+		echo "no";
+		exit();
+	}
+} else {
+	header('Content-Type: text/plain');
+	echo "no";
+	exit();
+}
 
 ?>

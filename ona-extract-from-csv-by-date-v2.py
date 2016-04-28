@@ -15,6 +15,17 @@ data = csv.reader(datafile)
 headers = data.next()
 
 dateColumn = headers.index('_submission_time')
+filterBySurveyorIdColumn = False
+
+if(sys.argv[4] != '999'):
+        ddata = []
+        for item in data:
+                if item[0].upper() in sys.argv[4].upper():
+                        ddata.push(item)
+        data = ddata
+        ddata = 0
+
+
 
 filtered = [','.join(headers)]
 

@@ -5,6 +5,7 @@ header('Content-Type: text/plain');
 $emis  = $_GET['emis'];
 $query = $_GET['query'];
 //$group = $_GET['group'];
+$surveyor_id = $_GET['surveyor_id'];
 
 if ($query == 'gettimestamp') {
 	$updateTime = file_get_contents(".updatetime");
@@ -34,7 +35,11 @@ function tocSort($a, $b) {
 }
 
 if (!($emis)) {
-	echo exec('./ona-list-emis.sh');
+	if ($surveyor_id) {
+		echo exec('./ona-list-emis.sh '.$surveyor_id);
+	} else {
+		echo exec('./ona-list-emis.sh 999');
+	}
 } elseif (preg_match("/EMIS\d+/", $emis, $tmp)) {
 	$genDocList = array("$emis.pdf");
 	//if($group=='schools'){

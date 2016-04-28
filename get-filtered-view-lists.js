@@ -9,7 +9,7 @@ var submissionTime = [];
 var surveyorID = [];
 
 data.forEach(function(item, index) {
-	if (sys.argv[2] !== '999' && !sys.argv[2].match(new RegExp(item.surveyor_id, 'i'))) {
+	if (process.argv[2] !== '999' && !process.argv[2].match(new RegExp(item.surveyor_id, 'i'))) {
 		return;
 	}
 	var itemSubmissionDate = item._submission_time.split("T")[0];

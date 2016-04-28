@@ -10,5 +10,5 @@ do
 	echo $filename
 	flattened=$(node flattener-labeller.js _temp/$filename $2.def.json)
 	echo $flattened >_temp/$filename
-	node htmlgen.js _temp/$filename $2 $1
+	node htmlgen.js _temp/$filename $2 $3
 done

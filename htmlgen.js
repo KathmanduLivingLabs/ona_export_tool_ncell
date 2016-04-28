@@ -4,6 +4,8 @@ var $ = require('cheerio').load('');
 
 var data = fs.readFileSync(process.argv[2], "utf-8");
 
+var sessionKey = process.argv[3];
+
 var ignoreList = fs.readFileSync("ignorelist.lst", "utf-8");
 
 
@@ -73,9 +75,9 @@ _.map(data, function(item, index) {
 
 		if(unescape(item_1[key][1]).match(".jpg")){
 			tableRow.find(".value").append($("<a/>").append($("<img/>").attr({
-				src: "../"+unescape(item_1[key][1]).split(".")[0]+"-large.jpg"
+				src: "../"+unescape(item_1[key][1]).split(".")[0]+"-large.jpg?key="+sessionKey
 			})).attr({
-				href: "../"+unescape(item_1[key][1]).split(".")[0]+"-large.jpg",
+				href: "../"+unescape(item_1[key][1]).split(".")[0]+"-large.jpg?key="+sessionKey,
 				target: "_blank"
 			}));
 			tableRow.addClass("has-photo");

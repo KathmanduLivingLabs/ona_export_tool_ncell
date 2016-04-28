@@ -6,6 +6,7 @@ $emis  = $_GET['emis'];
 $query = $_GET['query'];
 //$group = $_GET['group'];
 $surveyor_id = $_GET['surveyor_id'];
+$session_key = $_GET['key'];
 
 if ($query == 'gettimestamp') {
 	$updateTime = file_get_contents(".updatetime");
@@ -40,12 +41,14 @@ if (!($emis)) {
 	} else {
 		echo exec('./ona-list-emis.sh 999');
 	}
+} else if (!preg_match('/^[a-zA-z]{4,16}-[a-f0-9]{32}$/', $session_key)) {
+	echo "Invalid session. Please login again.";
 } elseif (preg_match("/EMIS\d+/", $emis, $tmp)) {
 	$genDocList = array("$emis.pdf");
 	//if($group=='schools'){
-	exec("./htmlgen2.sh $emis schools");
+	exec("./htmlgen2.sh $emis schools $session_key");
 	//}else if($group=='buildings'){
-	exec("./htmlgen2.sh $emis buildings");
+	exec("./htmlgen2.sh $emis buildings $session_key");
 
 	//$data = file_get_contents('buildings.json');
 	//echo $emis;
@@ -55,7 +58,7 @@ if (!($emis)) {
 	//$genDoc = array_merge($matches);
 	//}else{
 	//$emis = preg_replace('/(EMIS)(\\d{2})/', "$1$2$2", $emis);
-	exec("./htmlgen2.sh ".preg_replace('/(EMIS)(\\d{2})/', "$1$2$2", $emis)." building_elements");
+	exec("./htmlgen2.sh ".preg_replace('/(EMIS)(\\d{2})/', "$1$2$2", $emis)." building_elements $session_key");
 
 	//$data = file_get_contents('building_elements.json');
 	//echo $data;

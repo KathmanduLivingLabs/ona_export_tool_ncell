@@ -45,6 +45,7 @@ if (preg_match("/\d+\.\d+\.\d+\.\d+/", $clientAddr, $result)) {
 		if (preg_match("/.php/", $requestURI)) {
 			include_once '.'.$requestScript;
 		} else if (preg_match("/.jpg/", $requestURI)) {
+			header('Content-Type: image/jpeg');
 			echo file_get_contents('.'.$requestScript);
 		} else if (preg_match("/.pdf/", $requestURI) || preg_match("/.csv/", $requestURI)) {
 			header("Pragma: public");

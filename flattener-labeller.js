@@ -45,24 +45,24 @@ var output = _.map(data, function(dataItem, dataIndex){
 					if(gDefItem_1 && typeof gDefItem_1 === "object" && !gDefItem_1.push){
 						//console.log((gDataIndex_1-1) && !gDefItem_1["position"]+","+!(gDefItem_1["position"] === (gDataIndex_1-1)));
 						//if((gDataIndex_1) && !gDefItem_1["position"]) console.log((gDataIndex_1)+","+!gDefItem_1["position"]);
-						
+
 						if((gDataIndex_1) && !gDefItem_1["position"]) return;
 						//if(gDefItem_1["position"] && (gDefItem_1["position"] > (gDataIndex_1))) console.log((gDataIndex_1)+","+gDefItem_1["position"]);
 						if(gDefItem_1["position"] && gDefItem_1["position"][0] > gDataIndex_1+1) return;
 						if(gDefItem_1["position"] && gDefItem_1["position"][0]<0 && ((dataItem[defIndex].length+gDefItem_1["position"][0])>gDataIndex_1)) return;
 						ithFlattened.push({
 							//[gDefItemKey_1]: [gDefItem_1[gDefItemKey_1], escape(gDataItem_1[defIndex+"/"+gDefItemKey_1])==="undefined" ? "na" :escape(gDataItem_1[defIndex+"/"+gDefItemKey_1])]
-							[gDefItemKey_1]: [gDefItem_1[gDefItemKey_1], escape(gDataItem_1[defIndex+"/"+gDefItemKey_1])]
+							[gDefItemKey_1]: [gDefItem_1[gDefItemKey_1], escape(gDataItem_1[gDefItemKey_1])]
 						});
 					}else if(gDefItem_1 && typeof gDefItem_1 === "object"){
 						_.map(gDefItem_1, function(gDefItem_c_1, gDefIndex_c_1){
-						
+
 						var _mutualXORGroup = _.map(gDefItem_c_1, function(conditionalItemDef_1, conditionalItemDefIndex_1){
 												var _key = Object.keys(conditionalItemDef_1)[0];
-												
+
 													return {
 														//[_key]: [conditionalItemDef_1[_key], ((escape(gDataItem_1[defIndex+"/"+_key])==="undefined")? "na" : escape(gDataItem_1[defIndex+"/"+_key]))]
-														[_key]: [conditionalItemDef_1[_key], escape(gDataItem_1[defIndex+"/"+_key])]
+														[_key]: [conditionalItemDef_1[_key], escape(gDataItem_1[_key])]
 													};
 												});
 						//console.log(_mutualXORGroup);
@@ -83,7 +83,7 @@ var output = _.map(data, function(dataItem, dataIndex){
 					}
 				});
 			});
-			
+
 		}
 	});
 	return ithFlattened;

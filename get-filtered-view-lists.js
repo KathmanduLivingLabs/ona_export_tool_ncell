@@ -13,7 +13,7 @@ data.forEach(function(item, index) {
 		return;
 	}
 	var itemSubmissionDate = item._submission_time.split("T")[0];
-	emis.push(item["general_detail/emis/school_emis"].replace("EMIS", ""));
+	emis.push(item["school_emis"].replace("EMIS", ""));
 	submissionTime.push(itemSubmissionDate);
 	surveyorID.push(item.surveyor_id);
 });

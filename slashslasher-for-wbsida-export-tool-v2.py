@@ -15,7 +15,7 @@ with open(sys.argv[1],'r',encoding='utf-8') as rawDataJSONFile:
     rawDataJSONFile.close()
 
 with open('duplicated-keys.list', 'r') as duplicatedKeysListFile:
-    duplicatedKeys = duplicatedKeysListFile.read().rtrim().split(',')
+    duplicatedKeys = duplicatedKeysListFile.read().rstrip().split(',')
     duplicatedKeysListFile.close()
 
 dupliCounter = 0

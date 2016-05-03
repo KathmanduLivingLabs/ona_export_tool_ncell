@@ -34,8 +34,7 @@
 	"section-break":"1.12) Number of available teachers/lecturers",
 	"number_staff_female":"1.12.1) Estimate number of teachers/lecturers (Female)",
 	"number_staff_male":"1.12.2) Estimate number of teachers/lecturers (Male)",
-	"section-break":"1.12.3) Estimate number of adults (teachers, lecturers and staff) with special needs that attend the school per
-		category of disability:",
+	"section-break":"1.12.3) Estimate number of adults (teachers, lecturers and staff) with special needs that attend the school per category of disability:",
 	"difficulty_mobility_girl":"Difficulties with mobility",
 	"seeing_girl":"Seeing",
 	"hearing_girl":"Hearing",
@@ -70,8 +69,7 @@
 	"truck_building_material":"Truck / Tractor",
 	"other_building_material":"Other Specify",
 	"other_1":"Other",
-	"comment_travel_time_to_major_town":"Specify the place from where the major building materials can be taken. Include the location of the place and
-describe the type of materials.",
+	"comment_travel_time_to_major_town":"Specify the place from where the major building materials can be taken. Include the location of the place and describe the type of materials.",
 	"section-break":"2.3) Travel time to nearest local sand source (sand includes coarse aggregate; in hours)",
 	"on_foot_travel_time_to_major_town":"On foot / walking",
 	"motorbike_travel_time_to_major_town":"Motorbike",
@@ -121,8 +119,7 @@ describe the type of materials.",
 	"road_condition":"2.11) Condition of road",
 	"comment_road_condition":"Comment",
 	"image_road_condition":"Take Photo",
-	"linear_feature":"2.12) Are there any linear features or vertical offsets on the site, which could indicate an active fault/landslide
-risk?",
+	"linear_feature":"2.12) Are there any linear features or vertical offsets on the site, which could indicate an active fault/landslide risk?",
 	"image_linear_feature":"Take Photo",
 	"mobile_communication":"2.13) Is mobile communication possible at the site?",
 	"internet_access":"2.14) Is internet available at the site?",
@@ -139,17 +136,14 @@ risk?",
 	"classes_in_tlc_other":"Specify other.",
 	"owns_land":"3.3) Who owns school campus land?",
 	"owns_land_other":"Specify other.",
-	"safe_location":"3.4) Is there a safe location outside the buildings where ALL staff and students can currently assemble in an
-emergency event?",
+	"safe_location":"3.4) Is there a safe location outside the buildings where ALL staff and students can currently assemble in an emergency event?",
 	"comment_safe_location":"Comment",
 	"image_safe_location":"Take Photo",
-	"location_for_tlc":"3.5) Excluding safe assembly location, is there any additional space for Temporary Learning Centers (TLCs)
-and/or new Blocks on the school campus?",
+	"location_for_tlc":"3.5) Excluding safe assembly location, is there any additional space for Temporary Learning Centers (TLCs) and/or new Blocks on the school campus?",
 	"comment_safe_location":"Comment",
 	"image_safe_location":"Take Photo",
 	"area_school":"3.5.1) Estimate the total area of the school/college campus in square meters",
-	"area_open":"3.5.2) Estimate total open area on the school/college campus in square meters (this area includes open sport
-facilities, gardens, paths, etc)",
+	"area_open":"3.5.2) Estimate total open area on the school/college campus in square meters (this area includes open sport facilities, gardens, paths, etc)",
 	"area_tlc":"3.5.3) Estimate available area on the school/college campus for new TLCs and/or Blocks in square meters",
 	"section-break":"3.6) Functioning toilets",
 	"functioning_toilet_unit_girls":"3.6.1) Estimate the number of individual units available for students (Girls)",
@@ -193,8 +187,7 @@ facilities, gardens, paths, etc)",
 	"image_compound_wall_damage":"Take Photo",
 	"compound_wall_condition":"3.14.2) If the school has compound wall, What is the condition of the compound wall?",
 	"site_plan":"3.15) Site Plan",
-	"proximity_to_unsafe":"3.16) Is there proximity to unsafe structures, such as, perimeter walls, water towers, trees, generator and
-potentially damaging debris?",
+	"proximity_to_unsafe":"3.16) Is there proximity to unsafe structures, such as, perimeter walls, water towers, trees, generator and potentially damaging debris?",
 	"proximity_to_unsafe_other":"Specify other.",
 	"comment_proximity_to_unsafe":"Comment",
 	"image_proximity_to_unsafe":"Take Photo",
@@ -221,6 +214,5 @@ potentially damaging debris?",
 	"fuel_space_heating_other":"Specify other.",
 	"fuel_consumption_cooking":"3.17.9) Fuel consumption - Cooking",
 	"fuel_consumption_heating":"3.17.10) Fuel consumption â€“ Space heating",
-	"electricity_monthly_payment":"3.17.11) If electricity is used for cooking or heating â€“ what is the monthly payment for electricity OR what
-monthly payment can be ascribed to electricity for cooking/ heating?"
+	"electricity_monthly_payment":"3.17.11) If electricity is used for cooking or heating â€“ what is the monthly payment for electricity OR what monthly payment can be ascribed to electricity for cooking/ heating?"
 }

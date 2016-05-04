@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 #python3 remove groupnames from formhub/ona jsonarray output :: ie. transform ../../../var_name --> var_name on each item
 #syntax:
 #     curl -g -X GET -u "username:password" https://api.ona.io/api/v1/data/projectid.json?query='{"_submission_time":{"$gte":"yyyy-mm-ddT00:00:00","$lt":"yyyy-mm-dd2T00:00:00"}}' | python3 slashslasher.py >output.json
@@ -6,13 +8,17 @@
 import json
 import sys
 import re
+import fileinput
 
 data = []
 duplicatedKeys = []
 
-with open(sys.argv[1],'r',encoding='utf-8') as rawDataJSONFile:
-    data = json.loads(rawDataJSONFile.read())
-    rawDataJSONFile.close()
+for line in fileinput.input():
+    data = json.loads(line)
+
+#with open(sys.argv[1],'r',encoding='utf-8') as rawDataJSONFile:
+#    data = json.loads(rawDataJSONFile.read())
+#    rawDataJSONFile.close()
 
 with open('duplicated-keys.list', 'r') as duplicatedKeysListFile:
     duplicatedKeys = duplicatedKeysListFile.read().rstrip().split(',')

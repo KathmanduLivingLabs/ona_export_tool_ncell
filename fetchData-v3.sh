@@ -32,7 +32,7 @@ curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113434.json | ./slashslas
 
 
 
-./merge-source-json.py
+./merge-source-json-v2.py
 
 
 

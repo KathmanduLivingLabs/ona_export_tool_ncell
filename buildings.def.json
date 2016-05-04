@@ -1,11 +1,11 @@
 {
+	"building_ref":"Block Reference",
+	"school_code": "EMIS School/College Code",
 	"surveyor_id":"Surveyor ID",
 	"section-break":"4) Building Assessment General - Perimeter walk around",
 	"section-break":"General Building Info",
 	"district":"District:",
 	"vdc":"VDC / Municipality",
-	"school_code":"EMIS School/College Code",
-	"building_ref":"4.1) Block Reference",
 	"image_building":"Take photo of front elevation",
 	"gps_coordinates":"GPS Coordinates",
 	"initial_condition_state":"4.2) Initial Assessment of Condition State of Block",

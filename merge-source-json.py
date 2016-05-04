@@ -34,7 +34,7 @@ rawDataList = []
 
 for sourceFile in sourceFiles:
 	with open(dirpath+'/'+sourceFile, 'r', encoding='utf-8') as jsonArrayFile:
-		rawDataList.append(jsonArrayFile.read()[1:-1])
+		rawDataList.append(jsonArrayFile.read().rstrip().strip()[1:-1])
 		jsonArrayFile.close()
 
 with open(outputFileName+'.json', 'w', encoding='utf-8') as mergedJSONArrayFile:

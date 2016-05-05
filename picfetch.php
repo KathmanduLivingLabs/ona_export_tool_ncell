@@ -1,7 +1,7 @@
 <?php
 
-$arr = file_get_contents("arraylist.txt");
-$arr = explode(" ", $arr);
+$arr = file_get_contents("photostodownload.data.list");
+$arr = explode("\n", trim($arr));
 
 $total = count($arr);
 

@@ -8,7 +8,7 @@ s3cmd ls s3://onadata/wbsida321/attachments/ > photosins3.withfullpath.data.list
 
 cat photosins3.withfullpath.data.list | grep -o "[0-9]\{3,13\}.jpg" > photosins3.data.list
 
-./set-a-b-overlap-minus-x.py phototaken.data.list photosins3.data.list photoshere.data.list > photostodownload.data.list
+./set-a-b-overlap-minus-x.py photostaken.data.list photosins3.data.list photoshere.data.list > photostodownload.data.list
 
 php picfetch.php
 

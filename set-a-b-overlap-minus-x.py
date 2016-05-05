@@ -19,7 +19,7 @@ with open(sys.argv[3], 'r', encoding='utf-8') as setXListFile:
 	setXListFile.close()
 
 
-print("\n".join((A & B) - X))
+print("\n".join((setA & setB) - setX))
 
 
 

@@ -47,7 +47,7 @@ if (preg_match("/\d+\.\d+\.\d+\.\d+/", $clientAddr, $result)) {
 		} else if (preg_match("/.jpg/", $requestURI)) {
 			header('Content-Type: image/jpeg');
 			echo file_get_contents('.'.$requestScript);
-		} else if (preg_match("/.pdf/", $requestURI) || preg_match("/.csv/", $requestURI) || preg_match("/.csv/", $requestURI)) {
+		} else if (preg_match("/.pdf/", $requestURI) || preg_match("/.zip/", $requestURI) || preg_match("/.csv/", $requestURI)) {
 			header("Pragma: public");
 			header("Expires: 0");
 			header("Cache-Control: must-revalidate, post-check=0, pre-check=0");

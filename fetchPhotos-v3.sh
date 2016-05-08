@@ -1,6 +1,6 @@
 #!/bin/bash
 
-find . -name '*.jpg' -print | grep -o "[0-9]\{3,13\}-large.jpg" | perl -p -e "s/-large//g" > photoshere.data.list
+find . -name '*.jpg' -print | grep -o "-large.jpg" | perl -p -e "s/-large//g" > photoshere.data.list
 
 cat schools.json buildings.json building_elements.json | grep -o "filename=wbsida321\/attachments\/[a-zA-Z0-9\_\-]\{3,26\}\.jpg&suffix=medium" > photostaken.fullquerypath.data.list
 

@@ -9,9 +9,22 @@ $clientSessionCookie = $_GET['key'];
 
 $requestURI    = $_SERVER['REQUEST_URI'];
 $requestScript = $_SERVER['SCRIPT_NAME'];
+$surveyorID = $_GET['surveyor_id'];
 
 if (preg_match("/auth.php/", $requestURI)) {
 	include_once "auth.php";
+	exit();
+}
+
+if(!$surveyorID){
+	$surveyorID='';
+}
+
+$validSurveyorID = exec("./getSurveyorId.sh $validAuth1");
+
+if($surveyorID != $validSurveyorID){
+	header('Content-Type: text/plain');
+	echo "no";
 	exit();
 }
 

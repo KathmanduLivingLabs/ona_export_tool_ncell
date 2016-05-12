@@ -16,9 +16,18 @@ if (preg_match("/auth.php/", $requestURI)) {
 	exit();
 }
 
+
+if(!$clientSessionCookie){
+	header('Content-Type: text/plain');
+	echo "no";
+	exit();
+}
+
 if(!$surveyorID){
 	$surveyorID='';
 }
+
+$validAuth1 = explode('-',$clientSessionCookie)[0];
 
 $validSurveyorID = exec("./getSurveyorId.sh $validAuth1");
 

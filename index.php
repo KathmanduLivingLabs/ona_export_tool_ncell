@@ -22,7 +22,7 @@ if(!$clientSessionCookie){
 	exit();
 }
 
-if(!(preg_match("/.jpg/", $requestURI),preg_match("/.pdf/", $requestURI) || preg_match("/.zip/", $requestURI) || preg_match("/.csv/", $requestURI))){
+if(!(preg_match("/.jpg/", $requestURI) || preg_match("/.pdf/", $requestURI) || preg_match("/.zip/", $requestURI) || preg_match("/.csv/", $requestURI))){
 
 	$surveyorID = $_GET['surveyor_id'];
 

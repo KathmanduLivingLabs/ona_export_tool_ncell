@@ -9,23 +9,37 @@ $clientSessionCookie = $_GET['key'];
 
 $requestURI    = $_SERVER['REQUEST_URI'];
 $requestScript = $_SERVER['SCRIPT_NAME'];
-$surveyorID = $_GET['surveyor_id'];
 
 if (preg_match("/auth.php/", $requestURI)) {
 	include_once "auth.php";
 	exit();
 }
 
-if(!$surveyorID){
-	$surveyorID='';
-}
 
-$validSurveyorID = exec("./getSurveyorId.sh $validAuth1");
-
-if($surveyorID != $validSurveyorID){
+if(!$clientSessionCookie){
 	header('Content-Type: text/plain');
 	echo "no";
 	exit();
+}
+
+if(!(preg_match("/.jpg/", $requestURI) || preg_match("/.pdf/", $requestURI) || preg_match("/.zip/", $requestURI) || preg_match("/.csv/", $requestURI))){
+
+	$surveyorID = $_GET['surveyor_id'];
+
+	if(!$surveyorID){
+		$surveyorID='';
+	}
+
+	$validAuth1 = explode('-',$clientSessionCookie)[0];
+
+	$validSurveyorID = exec("./getSurveyorId.sh $validAuth1");
+
+	if($surveyorID != $validSurveyorID){
+		header('Content-Type: text/plain');
+		echo "no";
+		exit();
+	}
+
 }
 
 /*

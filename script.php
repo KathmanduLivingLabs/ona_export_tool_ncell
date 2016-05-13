@@ -9,6 +9,8 @@ $tableIDs    = json_decode($tableIDs, true);
 $query       = $_GET['query'];
 $surveyor_id = $_GET['surveyor_id'];
 
+
+
 /*
 $clientAddr = $_SERVER['REMOTE_ADDR'];
 
@@ -33,9 +35,9 @@ if (preg_match("/(\d{4})-(\d{2})-(\d{2})/", $startDate, $results)
 } elseif (preg_match("/(\d{4})-(\d{2})-(\d{2})/", $startDate, $results)
 	 && preg_match("/(\d{4})-(\d{2})-(\d{2})/", $endDate, $results2) && $tableIDs[$tableName]) {
 	if ($surveyor_id) {
-		echo explode(" ", exec('./ona-get-data-and-run-extractor.sh '.$startDate.' '.$endDate.' '.$tableName.' '.$tableIDs[$tableName].' '.$surveyor_id))[0];
+		echo explode(" ", exec('./ona-get-data-and-run-extractor.sh '.$startDate.' '.$endDate.' '.$tableName.' '.$tableIDs[$tableName].' '.$surveyor_id.' '.explode('-',$clientSessionCookie)[1]))[0];
 	} else {
-		echo explode(" ", exec('./ona-get-data-and-run-extractor.sh '.$startDate.' '.$endDate.' '.$tableName.' '.$tableIDs[$tableName].' 999'))[0];
+		echo explode(" ", exec('./ona-get-data-and-run-extractor.sh '.$startDate.' '.$endDate.' '.$tableName.' '.$tableIDs[$tableName].' 999 '.explode('-',$clientSessionCookie)[1]))[0];
 	}
 } else {
 	echo "no";

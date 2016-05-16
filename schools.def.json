@@ -36,12 +36,7 @@
 	"section-break-4":"1.12) Number of available teachers/lecturers",
 	"number_staff_female":"1.12.1) Estimate number of teachers/lecturers (Female)",
 	"number_staff_male":"1.12.2) Estimate number of teachers/lecturers (Male)",
-<<<<<<< HEAD
-	"section-break":"1.12.3) Estimate number of adults (teachers, lecturers and staff) with special needs that attend the school per category of disability:",
-=======
-	"section-break-5":"1.12.3) Estimate number of adults (teachers, lecturers and staff) with special needs that attend the school per
-		category of disability:",
->>>>>>> may-2-v2-jedi
+	"section-break-5":"1.12.3) Estimate number of adults (teachers, lecturers and staff) with special needs that attend the school per category of disability:",
 	"difficulty_mobility_girl":"Difficulties with mobility",
 	"seeing_girl":"Seeing",
 	"hearing_girl":"Hearing",
@@ -76,14 +71,8 @@
 	"truck_building_material":"Truck / Tractor",
 	"other_building_material":"Other Specify",
 	"other_1":"Other",
-<<<<<<< HEAD
 	"comment_travel_time_to_major_town":"Specify the place from where the major building materials can be taken. Include the location of the place and describe the type of materials.",
-	"section-break":"2.3) Travel time to nearest local sand source (sand includes coarse aggregate; in hours)",
-=======
-	"comment_travel_time_to_major_town":"Specify the place from where the major building materials can be taken. Include the location of the place and
-describe the type of materials.",
 	"section-break-9":"2.3) Travel time to nearest local sand source (sand includes coarse aggregate; in hours)",
->>>>>>> may-2-v2-jedi
 	"on_foot_travel_time_to_major_town":"On foot / walking",
 	"motorbike_travel_time_to_major_town":"Motorbike",
 	"car_travel_time_to_major_town":"Car",

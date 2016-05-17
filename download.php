@@ -41,6 +41,8 @@ if (!($emis)) {
 	} else {
 		echo exec('./ona-list-emis.sh 999');
 	}
+} elseif(!preg_match('/^EMIS[0-9]{5}[a-zA-Z0-9]{4}$/', $emis)){
+	echo "No record selected.";
 } else if (!preg_match('/^[a-zA-z]{4,16}-[a-f0-9]{32}$/', $session_key)) {
 	echo "Invalid session. Please login again.";
 } elseif (preg_match("/EMIS\d+/", $emis, $tmp)) {

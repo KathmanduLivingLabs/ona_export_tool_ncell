@@ -24,27 +24,26 @@ with open('duplicated-keys.list', 'r') as duplicatedKeysListFile:
     duplicatedKeys = duplicatedKeysListFile.read().rstrip().split(',')
     duplicatedKeysListFile.close()
 
-dupliCounter = 0
-
-cleanedData = []
 
 def jsonArrayKeyShortener(jsonArray):
     outputJsonArray = []
+    dupliCounter = 0
     for item in jsonArray:
         cleanedItem = {}
         for item_1, val_1 in item.items():
-            if(item_1 in duplicatedKeys):
-              item_1 = item_1+dupliCounter
+            slashSlasshededKey = re.sub(r'(^.).*(.)/(\w+$)', r'\3', item_1)
+            if(slashSlasshededKey in duplicatedKeys):
+              slashSlasshededKey = slashSlasshededKey+'_'+str(dupliCounter)
               dupliCounter += 1
             if type(val_1) is str:
-                cleanedItem[re.sub(r'(^.).*(.)/(\w+$)', r'\3', item_1)] = val_1.replace("\n","")
+                cleanedItem[slashSlasshededKey] = val_1.replace("\n","")
             elif type(val_1) is int or type(val_1) is float:
-                cleanedItem[re.sub(r'(^.).*(.)/(\w+$)', r'\3', item_1)] = val_1
+                cleanedItem[slashSlasshededKey] = val_1
             elif type(val_1) is list:
                 if len(val_1) and type(val_1[0]) is dict:
-                    cleanedItem[re.sub(r'(^.).*(.)/(\w+$)', r'\3', item_1)] = jsonArrayKeyShortener(val_1)
+                    cleanedItem[slashSlasshededKey] = jsonArrayKeyShortener(val_1)
                 else:
-                    cleanedItem[re.sub(r'(^.).*(.)/(\w+$)', r'\3', item_1)] = val_1
+                    cleanedItem[slashSlasshededKey] = val_1
         outputJsonArray.append(cleanedItem)
     return outputJsonArray
 

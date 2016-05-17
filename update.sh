@@ -8,7 +8,7 @@ cd $DIR
 
 ./fetchPhotos-v3.sh
 
-
+date -d 'now' +%s > .updatetime
 
 
 

@@ -1,7 +1,7 @@
 {
 	"piece_reference": "Piece Reference",
 	"surveyor_id":"Surveyor ID",
-	"_submission_date": "Upload Date",
+	"_submission_time": "Upload Date",
 	"section-break-1":"5) Piece Assessment",
 	"district":"District:",
 	"vdc":"VDC / Municipality",

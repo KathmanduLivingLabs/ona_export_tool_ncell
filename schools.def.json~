@@ -1,5 +1,6 @@
 {
 	"surveyor_id": "Dk12",
+	"_submission_date": "Upload Date",
 	"section-break-1": "1) General School Detail",
 	"general_detail/genral_detail0/surveyed_date": "1.1) Date Surveyed:",
 	"senior_surveyor":"1.2) Name of Senior Surveyor:",
@@ -36,11 +37,11 @@
 	"number_staff_male":"1.12.2) Estimate number of teachers/lecturers (Male)",
 	"section-break-5":"1.12.3) Estimate number of adults (teachers, lecturers and staff) with special needs that attend the school per
 		category of disability:",
-	"difficulty_mobility_girl":"Difficulties with mobility",
-	"seeing_girl":"Seeing",
-	"hearing_girl":"Hearing",
-	"other_girl":"Other",
-	"specify_other_girl":"Specify Other",
+	"difficulty_mobility_girl_1":"Difficulties with mobility",
+	"seeing_girl_1":"Seeing",
+	"hearing_girl_1":"Hearing",
+	"other_girl_1":"Other",
+	"specify_other_girl_1":"Specify Other",
 	"section-break-6":"1.13) Maintenance",
 	"maintenance_committee":"1.13.1) Does the school have a maintenance or construction committee?",
 	"maintenance_fund_available":"1.13.2) Does the school have funds available for maintenance?",

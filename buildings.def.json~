@@ -1,7 +1,5 @@
 {
-	"building_ref_no": "Building Reference",
 	"surveyor_id":"Surveyor ID",
-	"_submission_date": "Upload Date",
 	"section-break-1":"4) Building Assessment General - Perimeter walk around",
 	"section-break-2":"General Building Info",
 	"district":"District:",
@@ -60,7 +58,8 @@
 	"image_building_less_thn_1m":"Take photo",
 	"smallest_gap":"4.14.1) What is the smallest gap between this school/college block and adjacent buildings ?",
 	"image_smallest_gap":"Take photo",
-	"disability_accessible":"4.15) Is the building accessible for people with disability (includes students and adults with difficulties of mobility, such as people in wheelchairs)?",
+	"disability_accessible":"4.15) Is the building accessible for people with disability (includes students and adults with difficulties of
+mobility, such as people in wheelchairs)?",
 "area_not_accessible":"Specify the areas that are not accessible, if any, including the reason why there is no accessibility.",
 "image_area_not_accessible":"Take photo",
 "measures_undertaken":"Specify any measures undertaken to improve the mobility of people with difficulties of mobility, if any.",

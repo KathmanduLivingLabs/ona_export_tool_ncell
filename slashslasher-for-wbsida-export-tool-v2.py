@@ -36,7 +36,7 @@ def jsonArrayKeyShortener(jsonArray):
                 if(slashSlasshededKey in dupliCounter):
                     slashSlasshededKey = slashSlasshededKey+'_'+str(dupliCounter[slashSlasshededKey])
                 else:
-                    dupliCounter[slashSlasshededKey] += 0
+                    dupliCounter[slashSlasshededKey] = 0
                     slashSlasshededKey = slashSlasshededKey+'_'+str(dupliCounter[slashSlasshededKey])
                 dupliCounter[slashSlasshededKey] += 1
             if type(val_1) is str:

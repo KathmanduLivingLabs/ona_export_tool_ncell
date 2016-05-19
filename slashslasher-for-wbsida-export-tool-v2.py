@@ -27,8 +27,8 @@ with open('duplicated-keys.list', 'r') as duplicatedKeysListFile:
 
 def jsonArrayKeyShortener(jsonArray):
     outputJsonArray = []
-    dupliCounter = 0
     for item in jsonArray:
+        dupliCounter = 0
         cleanedItem = {}
         for item_1, val_1 in item.items():
             slashSlasshededKey = re.sub(r'(^.).*(.)/(\w+$)', r'\3', item_1)

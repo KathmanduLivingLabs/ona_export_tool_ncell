@@ -63,7 +63,7 @@
 	],
 	"section-break-7":"2) Exposure",
 	"building_material":"2.1) What are the most commonly available building materials in the surrounding area?",
-	"building_material":"Specify other.",
+	"building_material_other":"Specify other.",
 	"section-break-8":"2.2) Travel time to nearest source of building material (in hours)",
 	"on_foot_building_material":"On foot / walking",
 	"motorbike_building_material":"Motorbike",

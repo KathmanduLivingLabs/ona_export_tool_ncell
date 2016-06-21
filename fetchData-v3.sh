@@ -8,10 +8,10 @@ mkdir srcjson/building_elements
 onaAuth=$(../auth/onadata-auth.sh)
 
 ##schools##
-curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113422.json?page=1&page_size=5000 | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/schools/kd.json
-curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113425.json?page=1&page_size=5000 | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/schools/dk.json
-curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113429.json?page=1&page_size=5000 | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/schools/bda.json
-curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113432.json?page=1&page_size=5000 | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/schools/pace.json
+curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113422.json | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/schools/kd.json
+curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113425.json | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/schools/dk.json
+curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113429.json | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/schools/bda.json
+curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113432.json | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/schools/pace.json
 
 curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113422.csv > schoolkd10.csv
 curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113425.csv > schooldk12.csv
@@ -20,10 +20,10 @@ curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113432.csv > schoolpace12
 ####
 
 ##buildings##
-curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113423.json?page=1&page_size=5000 | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/buildings/kd.json
-curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113426.json?page=1&page_size=5000 | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/buildings/dk.json
-curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113430.json?page=1&page_size=5000 | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/buildings/bda.json
-curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113433.json?page=1&page_size=5000 | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/buildings/pace.json
+curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113423.json | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/buildings/kd.json
+curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113426.json | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/buildings/dk.json
+curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113430.json | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/buildings/bda.json
+curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113433.json | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/buildings/pace.json
 
 curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113423.csv > buildingkd10.csv
 curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113426.csv > buildingdk12.csv

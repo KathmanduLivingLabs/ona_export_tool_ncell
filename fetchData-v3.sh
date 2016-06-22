@@ -32,10 +32,10 @@ curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113433.csv > buildingpace
 ####
 
 ##building_elements##
-curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113424.json?page=1&page_size=5000 | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/building_elements/kd.json
-curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113427.json?page=1&page_size=5000 | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/building_elements/dk.json
-curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113431.json?page=1&page_size=5000 | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/building_elements/bda.json
-curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113434.json?page=1&page_size=5000 | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/building_elements/pace.json
+curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113424.json | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/building_elements/kd.json
+curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113427.json | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/building_elements/dk.json
+curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113431.json | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/building_elements/bda.json
+curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113434.json | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/building_elements/pace.json
 
 curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113424.csv > buildingelementkd10.csv
 curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113427.csv > buildingelementdk12.csv

@@ -77,9 +77,9 @@ _.map(data, function(item, index) {
 
 		if(unescape(item_1[key][1]).match(".jpg")){
 			tableRow.find(".value").append($("<a/>").append($("<img/>").attr({
-				src: "../"+unescape(item_1[key][1]).split(".")[0]+"-large.jpg?key="+sessionKey
+				src: "https://ona.io/attachment/medium?media_file=ncell/attachments/"+unescape(item_1[key][1]).split(".")[0]+".jpg"
 			})).attr({
-				href: "../"+unescape(item_1[key][1]).split(".")[0]+"-large.jpg?key="+sessionKey,
+				href: "https://ona.io/attachment/medium?media_file=ncell/attachments/"+unescape(item_1[key][1]).split(".")[0]+".jpg",
 				target: "_blank"
 			}));
 			tableRow.addClass("has-photo");

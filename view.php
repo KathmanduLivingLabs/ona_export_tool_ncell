@@ -46,10 +46,10 @@ function tocSort($a, $b) {
 	usort($genDocList, "tocSort");
 	$baseFileName = $genDocList[0];
 
-	//$tocml       = "<html><head></head><body><style>h4{display: inline-block; margin-left: 20px;}</style><h1>Individual Record</h1>";
-	//$tocFileName = $baseFileName."-toc";
+	$tocml       = "<html><head></head><body><style>h4{display: inline-block; margin-left: 20px;}</style><h1>Tunnel House</h1>";
+	$tocFileName = $baseFileName."-toc";
 
-	//$contents = "<div class='pagebreak' style='page-break-after: always; margin: 4em 0em; border-bottom: #999999 thin solid;'></div>";
+	$contents = "<div class='pagebreak' style='page-break-after: always; margin: 4em 0em; border-bottom: #999999 thin solid;'></div>";
 
 	//$numPages = 2;
 
@@ -62,7 +62,7 @@ function tocSort($a, $b) {
 		$contents .= file_get_contents("output/$docName.html")."<div class='pagebreak' style='page-break-after: always;'></div>";
 		//EMIS250050003.html
 		//php -r 'echo exec("xvfb-run --server-args=\"-screen 0, 1366x768x24\" --header-left=\"[webpage]\" --header-right=\"[page]/[toPage]\" --top 2cm --header-line wkhtmltopdf output/EMIS210490003-C.html _temp/EMIS210490003-C.pdf");'
-	//	$tocml .= "<div class='toc'><h4>".preg_replace('/-has-([0-9]+)-(.+)-(.+)-(.+)/ui', " has $1 $2 $3 $4", preg_replace('/_/', '-', str_replace(".pdf", "", $docName)))."</h4></div>";
+		//$tocml .= "<div class='toc'><h4>".preg_replace('/-has-([0-9]+)-(.+)-(.+)-(.+)/ui', " has $1 $2 $3 $4", preg_replace('/_/', '-', str_replace(".pdf", "", $docName)))."</h4></div>";
 		//."</h4>  ................  <h4>".$numPages."</h4></div>";
 		//$numPages += intval(exec("pdfinfo _temp/$docName.pdf | grep Pages | awk '{print $2}'"));
 	}

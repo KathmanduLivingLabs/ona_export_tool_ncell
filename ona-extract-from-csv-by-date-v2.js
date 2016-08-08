@@ -92,7 +92,7 @@ csvParse(dataFile, {comment: '#'}, function(err, data){
 //console.log(data.length);
 
     var dateColumn = headers.indexOf("_submission_time");
-var emisColumn = headers.indexOf("general_detail/emis/school_emis");
+var emisColumn = headers.indexOf("_id");
 
 
 var filtered = [headers.join(",")];

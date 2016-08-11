@@ -46,7 +46,7 @@ function tocSort($a, $b) {
 	usort($genDocList, "tocSort");
 	$baseFileName = $genDocList[0];
 
-	$tocml       = "<html><head></head><body><style>h4{display: inline-block; margin-left: 20px;}</style><h1>Awareness Campaign</h1>";
+	$tocml       = "<html><head></head><body><style>h4{display: inline-block; margin-left: 20px;}</style><h1>Tunnel House</h1>";
 	$tocFileName = $baseFileName."-toc";
 
 	$contents = "<div class='pagebreak' style='page-break-after: always; margin: 4em 0em; border-bottom: #999999 thin solid;'></div>";

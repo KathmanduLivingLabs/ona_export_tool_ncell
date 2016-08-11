@@ -2,11 +2,11 @@
 header("Access-Control-Allow-Origin: *");
 header('Content-Type: text/plain');
 
-$emis  = $_GET['emis'];
-$query = $_GET['query'];
+$emis  = isset($_GET['emis'])? $_GET['emis']: false;
+$query = isset($_GET['query'])? $_GET['query']: false;
 //$group = $_GET['group'];
-$surveyor_id = $_GET['surveyor_id'];
-$session_key = $_GET['key'];
+$surveyor_id = isset($_GET['surveyor_id'])? $_GET['surveyor_id']: false;
+$session_key = isset($_GET['key'])? $_GET['key']: false;
 
 if ($query == 'gettimestamp') {
 	$updateTime = file_get_contents(".updatetime");
@@ -34,7 +34,7 @@ function tocSort($a, $b) {
 	}
 	return ($a < $b)?-1:1;
 }
-echo exec('./ona-list-emis.sh '.$surveyor_id);
+//echo exec('./ona-list-emis.sh '.$surveyor_id);
 if (!($emis)) {
 	if ($surveyor_id) {
 		echo exec('./ona-list-emis.sh '.$surveyor_id);

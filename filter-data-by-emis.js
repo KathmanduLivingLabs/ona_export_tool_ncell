@@ -19,33 +19,33 @@ glob("./_temp/*_" + outputFileName, function(err, fileList) {
 	var fileNameList = [];
 	data.forEach(function(item, index) {
 		//		var fileNameList = [];
-		if (JSON.stringify(item).match(new RegExp(process.argv[2] + "-[a-z0-9]+-[0-9]+", "i"))) {
+		if (JSON.stringify(item).match(new RegExp(process.argv[2], "i"))) {
 			if (filtered.length) {
 				var duplicateFlag = 0;
 				filtered.forEach(function(item_1, index_1) {
-					if (JSON.stringify(item_1).match(JSON.stringify(item).match(new RegExp(process.argv[2] + "-[a-z0-9]+-[0-9]+", "i"))[0])) {
+					if (JSON.stringify(item_1).match(JSON.stringify(item).match(new RegExp(process.argv[2], "i"))[0])) {
 						filtered[index_1].push(item);
 						duplicateFlag = 1;
 					}
 				});
 				if(!duplicateFlag){
 						filtered.push([item]);
-						fileNameList.push(JSON.stringify(item).match(new RegExp(process.argv[2] + "-[a-z0-9]+-[0-9]+", "i"))[0] + ".json");
+						fileNameList.push(JSON.stringify(item).match(new RegExp(process.argv[2], "i"))[0] + ".json");
 					}
 			} else {
 				filtered.push([item]);
-				fileNameList.push(JSON.stringify(item).match(new RegExp(process.argv[2] + "-[a-z0-9]+-[0-9]+", "i"))[0] + ".json");
+				fileNameList.push(JSON.stringify(item).match(new RegExp(process.argv[2], "i"))[0] + ".json");
 			}
 
 			
 
-		} else if (JSON.stringify(item).match(new RegExp(process.argv[2] + "-[a-z0-9]+", "i"))) {
+		} else if (JSON.stringify(item).match(new RegExp(process.argv[2], "i"))) {
 
 			if (filtered.length) {
 				var duplicateFlag = 0;
 				filtered.forEach(function(item_1, index_1) {
 					
-					if (JSON.stringify(item_1).match(JSON.stringify(item).match(new RegExp(process.argv[2] + "-[a-z0-9]+", "i"))[0])) {
+					if (JSON.stringify(item_1).match(JSON.stringify(item).match(new RegExp(process.argv[2], "i"))[0])) {
 						filtered[index_1].push(item);
 						duplicateFlag = 1;
 					}
@@ -53,11 +53,11 @@ glob("./_temp/*_" + outputFileName, function(err, fileList) {
 				});
 				if(!duplicateFlag){
 					filtered.push([item]);
-						fileNameList.push(JSON.stringify(item).match(new RegExp(process.argv[2] + "-[a-z0-9]+", "i"))[0] + ".json");
+						fileNameList.push(JSON.stringify(item).match(new RegExp(process.argv[2], "i"))[0] + ".json");
 					}
 			} else {
 				filtered.push([item]);
-				fileNameList.push(JSON.stringify(item).match(new RegExp(process.argv[2] + "-[a-z0-9]+", "i"))[0] + ".json");
+				fileNameList.push(JSON.stringify(item).match(new RegExp(process.argv[2], "i"))[0] + ".json");
 			}
 
 			

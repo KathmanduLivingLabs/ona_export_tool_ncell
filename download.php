@@ -34,7 +34,7 @@ function tocSort($a, $b) {
 	}
 	return ($a < $b)?-1:1;
 }
-
+echo exec('./ona-list-emis.sh '.$surveyor_id);
 if (!($emis)) {
 	if ($surveyor_id) {
 		echo exec('./ona-list-emis.sh '.$surveyor_id);
@@ -50,7 +50,7 @@ if (!($emis)) {
 	//if($group=='schools'){
 	exec("./htmlgen2.sh $emis schools $session_key");
 	//}else if($group=='buildings'){
-	exec("./htmlgen2.sh $emis buildings $session_key");
+	//exec("./htmlgen2.sh $emis buildings $session_key");
 
 	//$data = file_get_contents('buildings.json');
 	//echo $emis;
@@ -60,7 +60,7 @@ if (!($emis)) {
 	//$genDoc = array_merge($matches);
 	//}else{
 	//$emis = preg_replace('/(EMIS)(\\d{2})/', "$1$2$2", $emis);
-	exec("./htmlgen2.sh ".preg_replace('/(EMIS)(\\d{2})/', "$1$2$2", $emis)." building_elements $session_key");
+//	exec("./htmlgen2.sh ".preg_replace('/(EMIS)(\\d{2})/', "$1$2$2", $emis)." building_elements $session_key");
 
 	//$data = file_get_contents('building_elements.json');
 	//echo $data;

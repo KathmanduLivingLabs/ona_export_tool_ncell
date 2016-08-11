@@ -2,7 +2,7 @@
 
 find . -name '*.jpg' -print | grep "\-large.jpg" | perl -p -e 's/\.\///' | perl -p -e "s/-large//g" > photoshere.data.list
 
-cat schools.json buildings.json building_elements.json | grep -o "filename=wbsida321\/attachments\/[a-zA-Z0-9\_\-]\{3,26\}\.jpg&suffix=medium" > photostaken.fullquerypath.data.list
+cat schools.json | grep -o "filename=ncell\/attachments\/[a-zA-Z0-9\_\-]\{3,26\}\.jpg&suffix=medium" > photostaken.fullquerypath.data.list
 
 cat photostaken.fullquerypath.data.list | grep -o "[a-zA-Z0-9\_\-]\{3,26\}\.jpg" > photostaken.data.list
 

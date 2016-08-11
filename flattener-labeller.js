@@ -23,7 +23,7 @@ var output = _.map(data, function(dataItem, dataIndex){
 	var ithFlattened = [];
 	_.map(def, function(defItem, defIndex){
 		if(typeof defItem === "string"){
-			if(defIndex.match(/section-break-\d+/gi)){
+			if(defIndex.match("section-break")){
 				ithFlattened.push([defItem]);
 			}else{
 			ithFlattened.push(eval({

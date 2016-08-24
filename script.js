@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	var QUERY_URL = 'http://139.59.28.75/ona_export_tool_ncell_health_camp/script.php'
-	var SERVER_URL = 'http://139.59.28.75/ona_export_tool_ncell_health_camp/'
+	var QUERY_URL = 'http://139.59.28.75/ona_export_tool_ncell_bamboo_house/script.php'
+	var SERVER_URL = 'http://139.59.28.75/ona_export_tool_ncell_bamboo_house/'
 	var fromDate = '';
 	var toDate = ''
 	var formType = '';

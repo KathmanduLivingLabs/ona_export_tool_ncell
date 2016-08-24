@@ -25,7 +25,6 @@ echo "no";
 exit();
 }
  */
-
 function tocSort($a, $b) {
 	$a = preg_replace('/.has.*/ui', '', $a);
 	$b = preg_replace('/.has.*/ui', '', $b);

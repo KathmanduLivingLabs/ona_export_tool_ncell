@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	var QUERY_URL = 'http://45.55.41.12:8000/script.php'
-	var SERVER_URL = 'http://45.55.41.12:8000/'
+	var QUERY_URL = 'http://139.59.28.75/ona_export_tool_ncell_tunnel_house/script.php'
+	var SERVER_URL = 'http://139.59.28.75/ona_export_tool_ncell_tunnel_house/'
 	var fromDate = '';
 	var toDate = ''
 	var formType = '';

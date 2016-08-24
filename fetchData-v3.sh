@@ -8,7 +8,7 @@ mkdir srcjson/building_elements
 onaAuth=$(../auth/onadata-auth.sh)
 
 ##schools##
-curl -X GET -u "ncell:Ncellnepal" https://api.ona.io/api/v1/data/98391.json | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/schools/kd.json
+curl -X GET -u "ncell:Ncellnepal" https://api.ona.io/api/v1/data/107094.json | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/schools/kd.json
 #curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113425.json | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/schools/dk.json
 #curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113429.json | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/schools/bda.json
 #curl -X GET -u $onaAuth https://api.ona.io/api/v1/data/113432.json | ./slashslasher-for-wbsida-export-tool-v2.py > srcjson/schools/pace.json

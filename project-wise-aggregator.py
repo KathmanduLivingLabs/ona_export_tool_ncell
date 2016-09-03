@@ -22,7 +22,7 @@ for item in dictListData:
             # print(e)
             pass
             
-print(json.dumps(aggSumDict))
+print(json.dumps([aggSumDict]))
 
 
 

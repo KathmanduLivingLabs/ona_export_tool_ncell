@@ -28,6 +28,7 @@ with open(outputFileName+'.json', 'w', encoding='utf-8') as mergedJSONArrayFile:
 
 ####
 
+'''
 ##buildings##
 
 dirpath = 'srcjson/buildings'
@@ -69,7 +70,7 @@ with open(outputFileName+'.json', 'w', encoding='utf-8') as mergedJSONArrayFile:
 	mergedJSONArrayFile.close()
 
 ####
-
+'''
 
 
 

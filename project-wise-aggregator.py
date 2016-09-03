@@ -5,7 +5,7 @@ import json
 
 dictListData = None
 
-with open sys.stdin as jsonFile:
+with sys.stdin as jsonFile:
     dictListData = json.loads(jsonFile)
     jsonFile.close()
 

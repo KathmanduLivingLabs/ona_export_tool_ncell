@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-
-from os import listdir
+import os
+from os import listdir 
+from shutil import copyfile
 import json
 
 
@@ -8,6 +9,10 @@ import json
 
 dirpath = 'srcjson/schools'
 outputFileName = 'schools'
+destFolder = '/var/www/html/aggregator/helpnepal'
+if not os.path.exists(destFolder):
+    os.makedirs(destFolder)
+
 
 sourceFiles = listdir(dirpath)
 
@@ -25,7 +30,9 @@ with open(outputFileName+'.json', 'w', encoding='utf-8') as mergedJSONArrayFile:
 	#mergedJSONArrayFile.write('['+','.join(rawDataList)+']')
 	mergedJSONArrayFile.write(json.dumps(rawDataList))
 	mergedJSONArrayFile.close()
-
+destFile = open(destFolder+"/toilet.json",'w')
+copyfile(outputFileName+".json",destFolder+"/toilet.json")
+destFile.close()
 ####
 
 ##buildings##
